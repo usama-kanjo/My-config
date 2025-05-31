@@ -1,26 +1,16 @@
 hello evry one
 
-
-
 ### Installation
 
-Requirements: `tmux` version 1.9 (or higher), `git`, `bash`.
+## TMUX
 
-Clone TPM:
-
-```bash
-# Debian/Ubuntu
-sudo apt install subversion
-
-# macOS (Homebrew)
-brew install subversion
-```
-Next :
+First : Clone TPM:
 ```bash
 git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 ```
+And next : clone tmux config folder
 ```bash
-svn export
+git clone https://github.com/usama-kanjo/My-config.git && cd My-config && rm -rf README.md .git .gitignore zsh/ && mv tmux/ ~/.config/ && cd .. && rm -rf My-config && echo "it is done"
 ```
 
 
