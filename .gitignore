@@ -1,11 +1,10 @@
 .oh-my-zsh/
 bash/
 git/
-htop/
-neofetch/
 pulse/
 ranger/
 ssh/
 tmux/plugins/
-vim/
 zsh/plugins/
+vim/autoload
+vim/plugged

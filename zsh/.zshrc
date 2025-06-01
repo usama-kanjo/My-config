@@ -91,7 +91,7 @@ echo -e "${yellow}Hello osama, welcome to the terminal!${RESET}" | cowsay | lolc
 
 # Created by `pipx` on 2025-01-26 19:25:40
 export PATH="$PATH:/home/kanjo/.local/bin"
-
+export VIMINIT='let $MYVIMRC="$HOME/.config/vim/.vimrc" | source $MYVIMRC'
 
 
 
