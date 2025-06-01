@@ -20,24 +20,40 @@
 $
 
 # Command Line History (newest to oldest):
-:q
-|2,0,1748773544,,"q"
-:PlugInstall
-|2,0,1748773516,,"PlugInstall"
+:source ~/.config/vim/.vimrc
+|2,0,1748793191,,"source ~/.config/vim/.vimrc"
+:w
+|2,0,1748793187,,"w"
+:loadview
+|2,0,1748792414,,"loadview"
+:%b
+|2,0,1748791919,,"%b"
 :wq
-|2,0,1748773487,,"wq"
+|2,0,1748791502,,"wq"
+:q
+|2,0,1748791499,,"q"
+:tab ba
+|2,0,1748791341,,"tab ba"
+:ls
+|2,0,1748791327,,"ls"
+:nohlsearch
+|2,0,1748790415,,"nohlsearch"
+:mkview
+|2,0,1748788790,,"mkview"
+:reg
+|2,0,1748786495,,"reg"
+:erg
+|2,0,1748786492,,"erg"
+:PlugInstall
+|2,0,1748786025,,"PlugInstall"
+:nnoremap
+|2,0,1748784611,,"nnoremap"
 :q!
 |2,0,1748773459,,"q!"
 :set runtimepath?
 |2,0,1748773414,,"set runtimepath?"
 :qw
 |2,0,1748773292,,"qw"
-:source ~/.config/vim/.vimrc
-|2,0,1748773223,,"source ~/.config/vim/.vimrc"
-:w
-|2,0,1748772570,,"w"
-:reg
-|2,0,1748772483,,"reg"
 :tabnew ~/.config/vim/.vimrc.plug
 |2,0,1748772437,,"tabnew ~/.config/vim/.vimrc.plug"
 :tabnew ~/.config/vim/.vimrc
@@ -66,14 +82,10 @@ $
 |2,0,1748739121,,"qa!"
 :qa
 |2,0,1748739107,,"qa"
-:tab ba
-|2,0,1748738575,,"tab ba"
 :bn
 |2,0,1748738548,,"bn"
 :new b omar.txt
 |2,0,1748738491,,"new b omar.txt"
-:ls
-|2,0,1748738005,,"ls"
 :b1
 |2,0,1748737997,,"b1"
 :b2
@@ -111,291 +123,450 @@ $
 
 # Registers:
 "0	LINE	0
-	zsh:1: command not found: l
-|3,0,0,1,1,0,1748763379,"zsh:1: command not found: l"
-""1	LINE	0
-	call plug#end()
-|3,1,1,1,1,0,1748773147,"call plug#end()"
+	
+	alias exa='eza'
+|3,0,0,1,2,0,1748798118,"","alias exa='eza'"
+"1	LINE	0
+	alias bat='batcat'
+|3,0,1,1,1,0,1748798387,"alias bat='batcat'"
 "2	LINE	0
 	
-|3,0,2,1,1,0,1748773146,""
+|3,0,2,1,1,0,1748798135,""
 "3	LINE	0
-	Plug 'rust-lang/rust.vim'
-|3,0,3,1,1,0,1748773146,"Plug 'rust-lang/rust.vim'"
+	alias exa='eza'
+|3,0,3,1,1,0,1748798134,"alias exa='eza'"
 "4	LINE	0
-	Plug 'preservim/nerdtree'
-|3,0,4,1,1,0,1748773145,"Plug 'preservim/nerdtree'"
-"5	LINE	0
-	Plug 'junegunn/fzf.vim'
-|3,0,5,1,1,0,1748773145,"Plug 'junegunn/fzf.vim'"
-"6	LINE	0
 	
-|3,0,6,1,1,0,1748773145,""
+|3,0,4,1,1,0,1748798131,""
+"5	LINE	0
+	
+|3,0,5,1,1,0,1748798129,""
+"6	LINE	0
+	# ~/.zshrc'ye ekleyin
+|3,0,6,1,1,0,1748797444,"# ~/.zshrc'ye ekleyin"
 "7	LINE	0
-	call plug#begin()
-|3,0,7,1,1,0,1748773145,"call plug#begin()"
+	bindkey -s "^\er" "ranger-cd\n"
+|3,0,7,1,1,0,1748797057,"bindkey -s \"^\\er\" \"ranger-cd\\n\""
 "8	LINE	0
-	s fjsdf shdhf jsdhjhf sd fhi s hdfjh hdh shd fhsdh kanjohfd hsdhf shdf sdf hsdsdsdfsfs
-|3,0,8,1,1,0,1748772461,"s fjsdf shdhf jsdhjhf sd fhi s hdfjh hdh shd fhsdh kanjohfd hsdhf shdf sdf hsdsdsdfsfs"
+	#ranger-cd will run by alt+r
+|3,0,8,1,1,0,1748797057,"#ranger-cd will run by alt+r"
 "9	LINE	0
-	sdf jsdfshdjfh sjdhfj sdf kanjo hsdjfhshdfjsdjsdfh dhf hdhhhhfds hi hdf sjf hsdh
-|3,0,9,1,1,0,1748772460,"sdf jsdfshdjfh sjdhfj sdf kanjo hsdjfhshdfjsdjsdfh dhf hdhhhhfds hi hdf sjf hsdh"
+	
+|3,0,9,1,1,0,1748797057,""
+"q	CHAR	0
+	€kb
+|3,0,26,0,1,0,1748789182,"€kb"
 "-	CHAR	0
-	d
-|3,0,36,0,1,0,1748738438,"d"
+	-
+|3,0,36,0,1,0,1748796960,"-"
 
 # File marks:
-'0  1  29  ~/.config/vim/.vimrc
-|4,48,1,29,1748773487,"~/.config/vim/.vimrc"
-'1  1  0  ~/.config/vim/.vimrc
-|4,49,1,0,1748773294,"~/.config/vim/.vimrc"
-'2  27  14  ~/.config/vim/.vimrc
-|4,50,27,14,1748773188,"~/.config/vim/.vimrc"
-'3  27  14  ~/.config/vim/.vimrc
-|4,51,27,14,1748773188,"~/.config/vim/.vimrc"
-'4  24  14  ~/.config/vim/.vimrc
-|4,52,24,14,1748773188,"~/.config/vim/.vimrc"
-'5  24  14  ~/.config/vim/.vimrc
-|4,53,24,14,1748773188,"~/.config/vim/.vimrc"
-'6  28  14  ~/.config/vim/.vimrc
-|4,54,28,14,1748772770,"~/.config/vim/.vimrc"
-'7  26  14  ~/.config/vim/.vimrc
-|4,55,26,14,1748772770,"~/.config/vim/.vimrc"
-'8  28  14  ~/.config/vim/.vimrc
-|4,56,28,14,1748772770,"~/.config/vim/.vimrc"
-'9  26  14  ~/.config/vim/.vimrc
-|4,57,26,14,1748772770,"~/.config/vim/.vimrc"
+'0  1  0  ~/.config/zsh/.zshrc
+|4,48,1,0,1748798828,"~/.config/zsh/.zshrc"
+'1  101  0  ~/.config/zsh/.zshrc
+|4,49,101,0,1748798400,"~/.config/zsh/.zshrc"
+'2  101  0  ~/.config/zsh/.zshrc
+|4,50,101,0,1748798400,"~/.config/zsh/.zshrc"
+'3  120  0  ~/.config/zsh/.zshrc
+|4,51,120,0,1748798158,"~/.config/zsh/.zshrc"
+'4  121  0  ~/.config/zsh/.zshrc
+|4,52,121,0,1748798158,"~/.config/zsh/.zshrc"
+'5  120  0  ~/.config/zsh/.zshrc
+|4,53,120,0,1748798158,"~/.config/zsh/.zshrc"
+'6  121  0  ~/.config/zsh/.zshrc
+|4,54,121,0,1748798158,"~/.config/zsh/.zshrc"
+'7  39  15  ~/.config/zsh/.zshrc
+|4,55,39,15,1748797719,"~/.config/zsh/.zshrc"
+'8  39  15  ~/.config/zsh/.zshrc
+|4,56,39,15,1748797719,"~/.config/zsh/.zshrc"
+'9  39  15  ~/.config/zsh/.zshrc
+|4,57,39,15,1748797719,"~/.config/zsh/.zshrc"
 
 # Jumplist (newest first):
--'  1  29  ~/.config/vim/.vimrc
-|4,39,1,29,1748773487,"~/.config/vim/.vimrc"
--'  1  29  ~/.config/vim/.vimrc
-|4,39,1,29,1748773487,"~/.config/vim/.vimrc"
--'  1  0  ~/.config/vim/.vimrc
-|4,39,1,0,1748773294,"~/.config/vim/.vimrc"
--'  1  0  ~/.config/vim/.vimrc
-|4,39,1,0,1748773294,"~/.config/vim/.vimrc"
--'  1  0  ~/.config/vim/.vimrc
-|4,39,1,0,1748773294,"~/.config/vim/.vimrc"
--'  1  0  ~/.config/vim/.vimrc
-|4,39,1,0,1748773294,"~/.config/vim/.vimrc"
--'  1  0  ~/.config/vim/.vimrc
-|4,39,1,0,1748773294,"~/.config/vim/.vimrc"
--'  1  0  ~/.config/vim/.vimrc
-|4,39,1,0,1748773294,"~/.config/vim/.vimrc"
--'  1  0  ~/.config/vim/.vimrc
-|4,39,1,0,1748773294,"~/.config/vim/.vimrc"
--'  1  0  ~/.config/vim/.vimrc
-|4,39,1,0,1748773294,"~/.config/vim/.vimrc"
--'  27  14  ~/.config/vim/.vimrc
-|4,39,27,14,1748773188,"~/.config/vim/.vimrc"
--'  24  14  ~/.config/vim/.vimrc
-|4,39,24,14,1748773188,"~/.config/vim/.vimrc"
--'  24  14  ~/.config/vim/.vimrc
-|4,39,24,14,1748773188,"~/.config/vim/.vimrc"
--'  24  14  ~/.config/vim/.vimrc
-|4,39,24,14,1748773188,"~/.config/vim/.vimrc"
--'  24  14  ~/.config/vim/.vimrc
-|4,39,24,14,1748773188,"~/.config/vim/.vimrc"
--'  24  14  ~/.config/vim/.vimrc
-|4,39,24,14,1748773188,"~/.config/vim/.vimrc"
--'  24  14  ~/.config/vim/.vimrc
-|4,39,24,14,1748773188,"~/.config/vim/.vimrc"
--'  24  14  ~/.config/vim/.vimrc
-|4,39,24,14,1748773188,"~/.config/vim/.vimrc"
--'  24  14  ~/.config/vim/.vimrc
-|4,39,24,14,1748773188,"~/.config/vim/.vimrc"
--'  24  14  ~/.config/vim/.vimrc
-|4,39,24,14,1748773188,"~/.config/vim/.vimrc"
--'  24  14  ~/.config/vim/.vimrc
-|4,39,24,14,1748773188,"~/.config/vim/.vimrc"
--'  24  14  ~/.config/vim/.vimrc
-|4,39,24,14,1748773188,"~/.config/vim/.vimrc"
--'  24  14  ~/.config/vim/.vimrc
-|4,39,24,14,1748773188,"~/.config/vim/.vimrc"
--'  27  14  ~/.config/vim/.vimrc
-|4,39,27,14,1748773188,"~/.config/vim/.vimrc"
--'  24  14  ~/.config/vim/.vimrc
-|4,39,24,14,1748773188,"~/.config/vim/.vimrc"
--'  24  14  ~/.config/vim/.vimrc
-|4,39,24,14,1748773188,"~/.config/vim/.vimrc"
--'  24  14  ~/.config/vim/.vimrc
-|4,39,24,14,1748773188,"~/.config/vim/.vimrc"
--'  24  14  ~/.config/vim/.vimrc
-|4,39,24,14,1748773188,"~/.config/vim/.vimrc"
--'  24  14  ~/.config/vim/.vimrc
-|4,39,24,14,1748773188,"~/.config/vim/.vimrc"
--'  24  14  ~/.config/vim/.vimrc
-|4,39,24,14,1748773188,"~/.config/vim/.vimrc"
--'  24  14  ~/.config/vim/.vimrc
-|4,39,24,14,1748773188,"~/.config/vim/.vimrc"
--'  24  14  ~/.config/vim/.vimrc
-|4,39,24,14,1748773188,"~/.config/vim/.vimrc"
--'  24  14  ~/.config/vim/.vimrc
-|4,39,24,14,1748773188,"~/.config/vim/.vimrc"
--'  24  14  ~/.config/vim/.vimrc
-|4,39,24,14,1748773188,"~/.config/vim/.vimrc"
--'  24  14  ~/.config/vim/.vimrc
-|4,39,24,14,1748773188,"~/.config/vim/.vimrc"
--'  24  14  ~/.config/vim/.vimrc
-|4,39,24,14,1748773188,"~/.config/vim/.vimrc"
--'  1  0  ~/.config/vim/.vimrc
-|4,39,1,0,1748773138,"~/.config/vim/.vimrc"
--'  1  0  ~/.config/vim/.vimrc
-|4,39,1,0,1748773138,"~/.config/vim/.vimrc"
--'  1  0  ~/.config/vim/.vimrc
-|4,39,1,0,1748773138,"~/.config/vim/.vimrc"
--'  1  0  ~/.config/vim/.vimrc
-|4,39,1,0,1748773138,"~/.config/vim/.vimrc"
--'  1  0  ~/.config/vim/.vimrc
-|4,39,1,0,1748773138,"~/.config/vim/.vimrc"
--'  1  0  ~/.config/vim/.vimrc
-|4,39,1,0,1748773138,"~/.config/vim/.vimrc"
--'  1  0  ~/.config/vim/.vimrc
-|4,39,1,0,1748773138,"~/.config/vim/.vimrc"
--'  1  0  ~/.config/vim/.vimrc
-|4,39,1,0,1748773138,"~/.config/vim/.vimrc"
--'  1  0  ~/.config/vim/.vimrc
-|4,39,1,0,1748773138,"~/.config/vim/.vimrc"
--'  1  0  ~/.config/vim/.vimrc
-|4,39,1,0,1748773138,"~/.config/vim/.vimrc"
--'  1  0  ~/.config/vim/.vimrc
-|4,39,1,0,1748773138,"~/.config/vim/.vimrc"
--'  1  0  ~/.config/vim/.vimrc
-|4,39,1,0,1748773138,"~/.config/vim/.vimrc"
--'  1  0  ~/.config/vim/.vimrc
-|4,39,1,0,1748773138,"~/.config/vim/.vimrc"
--'  1  0  ~/.config/vim/.vimrc
-|4,39,1,0,1748773138,"~/.config/vim/.vimrc"
--'  1  0  ~/.config/vim/.vimrc
-|4,39,1,0,1748773138,"~/.config/vim/.vimrc"
--'  1  0  ~/.config/vim/.vimrc
-|4,39,1,0,1748773138,"~/.config/vim/.vimrc"
--'  28  14  ~/.config/vim/.vimrc
-|4,39,28,14,1748772770,"~/.config/vim/.vimrc"
--'  26  14  ~/.config/vim/.vimrc
-|4,39,26,14,1748772770,"~/.config/vim/.vimrc"
--'  25  14  ~/.config/vim/.vimrc
-|4,39,25,14,1748772770,"~/.config/vim/.vimrc"
--'  23  14  ~/.config/vim/.vimrc
-|4,39,23,14,1748772770,"~/.config/vim/.vimrc"
--'  25  14  ~/.config/vim/.vimrc
-|4,39,25,14,1748772770,"~/.config/vim/.vimrc"
--'  23  14  ~/.config/vim/.vimrc
-|4,39,23,14,1748772770,"~/.config/vim/.vimrc"
--'  23  14  ~/.config/vim/.vimrc
-|4,39,23,14,1748772770,"~/.config/vim/.vimrc"
--'  25  14  ~/.config/vim/.vimrc
-|4,39,25,14,1748772770,"~/.config/vim/.vimrc"
--'  23  14  ~/.config/vim/.vimrc
-|4,39,23,14,1748772770,"~/.config/vim/.vimrc"
--'  23  14  ~/.config/vim/.vimrc
-|4,39,23,14,1748772770,"~/.config/vim/.vimrc"
--'  25  14  ~/.config/vim/.vimrc
-|4,39,25,14,1748772770,"~/.config/vim/.vimrc"
--'  23  14  ~/.config/vim/.vimrc
-|4,39,23,14,1748772770,"~/.config/vim/.vimrc"
--'  25  14  ~/.config/vim/.vimrc
-|4,39,25,14,1748772770,"~/.config/vim/.vimrc"
--'  23  14  ~/.config/vim/.vimrc
-|4,39,23,14,1748772770,"~/.config/vim/.vimrc"
--'  23  14  ~/.config/vim/.vimrc
-|4,39,23,14,1748772770,"~/.config/vim/.vimrc"
--'  25  14  ~/.config/vim/.vimrc
-|4,39,25,14,1748772770,"~/.config/vim/.vimrc"
--'  23  14  ~/.config/vim/.vimrc
-|4,39,23,14,1748772770,"~/.config/vim/.vimrc"
--'  23  14  ~/.config/vim/.vimrc
-|4,39,23,14,1748772770,"~/.config/vim/.vimrc"
--'  25  14  ~/.config/vim/.vimrc
-|4,39,25,14,1748772770,"~/.config/vim/.vimrc"
--'  23  14  ~/.config/vim/.vimrc
-|4,39,23,14,1748772770,"~/.config/vim/.vimrc"
--'  25  14  ~/.config/vim/.vimrc
-|4,39,25,14,1748772770,"~/.config/vim/.vimrc"
--'  23  14  ~/.config/vim/.vimrc
-|4,39,23,14,1748772770,"~/.config/vim/.vimrc"
--'  23  14  ~/.config/vim/.vimrc
-|4,39,23,14,1748772770,"~/.config/vim/.vimrc"
--'  25  14  ~/.config/vim/.vimrc
-|4,39,25,14,1748772770,"~/.config/vim/.vimrc"
--'  23  14  ~/.config/vim/.vimrc
-|4,39,23,14,1748772770,"~/.config/vim/.vimrc"
--'  23  14  ~/.config/vim/.vimrc
-|4,39,23,14,1748772770,"~/.config/vim/.vimrc"
--'  25  14  ~/.config/vim/.vimrc
-|4,39,25,14,1748772770,"~/.config/vim/.vimrc"
--'  23  14  ~/.config/vim/.vimrc
-|4,39,23,14,1748772770,"~/.config/vim/.vimrc"
--'  25  14  ~/.config/vim/.vimrc
-|4,39,25,14,1748772770,"~/.config/vim/.vimrc"
--'  23  14  ~/.config/vim/.vimrc
-|4,39,23,14,1748772770,"~/.config/vim/.vimrc"
--'  23  14  ~/.config/vim/.vimrc
-|4,39,23,14,1748772770,"~/.config/vim/.vimrc"
--'  25  14  ~/.config/vim/.vimrc
-|4,39,25,14,1748772770,"~/.config/vim/.vimrc"
--'  23  14  ~/.config/vim/.vimrc
-|4,39,23,14,1748772770,"~/.config/vim/.vimrc"
--'  23  14  ~/.config/vim/.vimrc
-|4,39,23,14,1748772770,"~/.config/vim/.vimrc"
--'  28  14  ~/.config/vim/.vimrc
-|4,39,28,14,1748772770,"~/.config/vim/.vimrc"
--'  26  14  ~/.config/vim/.vimrc
-|4,39,26,14,1748772770,"~/.config/vim/.vimrc"
--'  25  14  ~/.config/vim/.vimrc
-|4,39,25,14,1748772770,"~/.config/vim/.vimrc"
--'  23  14  ~/.config/vim/.vimrc
-|4,39,23,14,1748772770,"~/.config/vim/.vimrc"
--'  25  14  ~/.config/vim/.vimrc
-|4,39,25,14,1748772770,"~/.config/vim/.vimrc"
--'  23  14  ~/.config/vim/.vimrc
-|4,39,23,14,1748772770,"~/.config/vim/.vimrc"
--'  23  14  ~/.config/vim/.vimrc
-|4,39,23,14,1748772770,"~/.config/vim/.vimrc"
--'  25  14  ~/.config/vim/.vimrc
-|4,39,25,14,1748772770,"~/.config/vim/.vimrc"
--'  23  14  ~/.config/vim/.vimrc
-|4,39,23,14,1748772770,"~/.config/vim/.vimrc"
--'  23  14  ~/.config/vim/.vimrc
-|4,39,23,14,1748772770,"~/.config/vim/.vimrc"
--'  25  14  ~/.config/vim/.vimrc
-|4,39,25,14,1748772770,"~/.config/vim/.vimrc"
--'  23  14  ~/.config/vim/.vimrc
-|4,39,23,14,1748772770,"~/.config/vim/.vimrc"
--'  25  14  ~/.config/vim/.vimrc
-|4,39,25,14,1748772770,"~/.config/vim/.vimrc"
+-'  1  0  ~/.config/zsh/.zshrc
+|4,39,1,0,1748798828,"~/.config/zsh/.zshrc"
+-'  101  0  ~/.config/zsh/.zshrc
+|4,39,101,0,1748798400,"~/.config/zsh/.zshrc"
+-'  101  0  ~/.config/zsh/.zshrc
+|4,39,101,0,1748798400,"~/.config/zsh/.zshrc"
+-'  1  0  ~/.config/zsh/.zshrc
+|4,39,1,0,1748798365,"~/.config/zsh/.zshrc"
+-'  120  0  ~/.config/zsh/.zshrc
+|4,39,120,0,1748798158,"~/.config/zsh/.zshrc"
+-'  121  0  ~/.config/zsh/.zshrc
+|4,39,121,0,1748798158,"~/.config/zsh/.zshrc"
+-'  120  0  ~/.config/zsh/.zshrc
+|4,39,120,0,1748798158,"~/.config/zsh/.zshrc"
+-'  121  0  ~/.config/zsh/.zshrc
+|4,39,121,0,1748798158,"~/.config/zsh/.zshrc"
+-'  105  0  ~/.config/zsh/.zshrc
+|4,39,105,0,1748798098,"~/.config/zsh/.zshrc"
+-'  106  0  ~/.config/zsh/.zshrc
+|4,39,106,0,1748798098,"~/.config/zsh/.zshrc"
+-'  105  0  ~/.config/zsh/.zshrc
+|4,39,105,0,1748798098,"~/.config/zsh/.zshrc"
+-'  106  0  ~/.config/zsh/.zshrc
+|4,39,106,0,1748798098,"~/.config/zsh/.zshrc"
+-'  1  0  ~/.config/zsh/.zshrc
+|4,39,1,0,1748798043,"~/.config/zsh/.zshrc"
+-'  39  15  ~/.config/zsh/.zshrc
+|4,39,39,15,1748797719,"~/.config/zsh/.zshrc"
+-'  39  15  ~/.config/zsh/.zshrc
+|4,39,39,15,1748797719,"~/.config/zsh/.zshrc"
+-'  39  15  ~/.config/zsh/.zshrc
+|4,39,39,15,1748797719,"~/.config/zsh/.zshrc"
+-'  39  15  ~/.config/zsh/.zshrc
+|4,39,39,15,1748797719,"~/.config/zsh/.zshrc"
+-'  1  0  ~/.config/zsh/.zshrc
+|4,39,1,0,1748797703,"~/.config/zsh/.zshrc"
+-'  39  40  ~/.config/zsh/.zshrc
+|4,39,39,40,1748797642,"~/.config/zsh/.zshrc"
+-'  1  0  ~/.config/zsh/.zshrc
+|4,39,1,0,1748797636,"~/.config/zsh/.zshrc"
+-'  36  0  ~/.config/zsh/.zshrc
+|4,39,36,0,1748797612,"~/.config/zsh/.zshrc"
+-'  36  0  ~/.config/zsh/.zshrc
+|4,39,36,0,1748797612,"~/.config/zsh/.zshrc"
+-'  36  0  ~/.config/zsh/.zshrc
+|4,39,36,0,1748797612,"~/.config/zsh/.zshrc"
+-'  36  0  ~/.config/zsh/.zshrc
+|4,39,36,0,1748797612,"~/.config/zsh/.zshrc"
+-'  36  0  ~/.config/zsh/.zshrc
+|4,39,36,0,1748797612,"~/.config/zsh/.zshrc"
+-'  36  0  ~/.config/zsh/.zshrc
+|4,39,36,0,1748797612,"~/.config/zsh/.zshrc"
+-'  1  0  ~/.config/zsh/.zshrc
+|4,39,1,0,1748797591,"~/.config/zsh/.zshrc"
+-'  118  97  ~/.config/zsh/.zshrc
+|4,39,118,97,1748797506,"~/.config/zsh/.zshrc"
+-'  117  97  ~/.config/zsh/.zshrc
+|4,39,117,97,1748797506,"~/.config/zsh/.zshrc"
+-'  114  97  ~/.config/zsh/.zshrc
+|4,39,114,97,1748797506,"~/.config/zsh/.zshrc"
+-'  113  97  ~/.config/zsh/.zshrc
+|4,39,113,97,1748797506,"~/.config/zsh/.zshrc"
+-'  119  97  ~/.config/zsh/.zshrc
+|4,39,119,97,1748797506,"~/.config/zsh/.zshrc"
+-'  115  97  ~/.config/zsh/.zshrc
+|4,39,115,97,1748797506,"~/.config/zsh/.zshrc"
+-'  118  97  ~/.config/zsh/.zshrc
+|4,39,118,97,1748797506,"~/.config/zsh/.zshrc"
+-'  117  97  ~/.config/zsh/.zshrc
+|4,39,117,97,1748797506,"~/.config/zsh/.zshrc"
+-'  114  97  ~/.config/zsh/.zshrc
+|4,39,114,97,1748797506,"~/.config/zsh/.zshrc"
+-'  113  97  ~/.config/zsh/.zshrc
+|4,39,113,97,1748797506,"~/.config/zsh/.zshrc"
+-'  119  97  ~/.config/zsh/.zshrc
+|4,39,119,97,1748797506,"~/.config/zsh/.zshrc"
+-'  118  97  ~/.config/zsh/.zshrc
+|4,39,118,97,1748797506,"~/.config/zsh/.zshrc"
+-'  115  97  ~/.config/zsh/.zshrc
+|4,39,115,97,1748797506,"~/.config/zsh/.zshrc"
+-'  114  97  ~/.config/zsh/.zshrc
+|4,39,114,97,1748797506,"~/.config/zsh/.zshrc"
+-'  115  97  ~/.config/zsh/.zshrc
+|4,39,115,97,1748797506,"~/.config/zsh/.zshrc"
+-'  114  97  ~/.config/zsh/.zshrc
+|4,39,114,97,1748797506,"~/.config/zsh/.zshrc"
+-'  114  97  ~/.config/zsh/.zshrc
+|4,39,114,97,1748797506,"~/.config/zsh/.zshrc"
+-'  7  0  ~/.config/zsh/.zshrc
+|4,39,7,0,1748797495,"~/.config/zsh/.zshrc"
+-'  7  0  ~/.config/zsh/.zshrc
+|4,39,7,0,1748797495,"~/.config/zsh/.zshrc"
+-'  7  0  ~/.config/zsh/.zshrc
+|4,39,7,0,1748797495,"~/.config/zsh/.zshrc"
+-'  7  0  ~/.config/zsh/.zshrc
+|4,39,7,0,1748797495,"~/.config/zsh/.zshrc"
+-'  7  0  ~/.config/zsh/.zshrc
+|4,39,7,0,1748797495,"~/.config/zsh/.zshrc"
+-'  7  0  ~/.config/zsh/.zshrc
+|4,39,7,0,1748797495,"~/.config/zsh/.zshrc"
+-'  7  0  ~/.config/zsh/.zshrc
+|4,39,7,0,1748797495,"~/.config/zsh/.zshrc"
+-'  1  0  ~/.config/zsh/.zshrc
+|4,39,1,0,1748797493,"~/.config/zsh/.zshrc"
+-'  73  0  ~/.config/zsh/.zshrc
+|4,39,73,0,1748797449,"~/.config/zsh/.zshrc"
+-'  72  0  ~/.config/zsh/.zshrc
+|4,39,72,0,1748797449,"~/.config/zsh/.zshrc"
+-'  73  0  ~/.config/zsh/.zshrc
+|4,39,73,0,1748797449,"~/.config/zsh/.zshrc"
+-'  72  0  ~/.config/zsh/.zshrc
+|4,39,72,0,1748797449,"~/.config/zsh/.zshrc"
+-'  73  0  ~/.config/zsh/.zshrc
+|4,39,73,0,1748797449,"~/.config/zsh/.zshrc"
+-'  72  0  ~/.config/zsh/.zshrc
+|4,39,72,0,1748797449,"~/.config/zsh/.zshrc"
+-'  73  0  ~/.config/zsh/.zshrc
+|4,39,73,0,1748797449,"~/.config/zsh/.zshrc"
+-'  72  0  ~/.config/zsh/.zshrc
+|4,39,72,0,1748797449,"~/.config/zsh/.zshrc"
+-'  73  0  ~/.config/zsh/.zshrc
+|4,39,73,0,1748797449,"~/.config/zsh/.zshrc"
+-'  72  0  ~/.config/zsh/.zshrc
+|4,39,72,0,1748797449,"~/.config/zsh/.zshrc"
+-'  72  0  ~/.config/zsh/.zshrc
+|4,39,72,0,1748797449,"~/.config/zsh/.zshrc"
+-'  72  0  ~/.config/zsh/.zshrc
+|4,39,72,0,1748797449,"~/.config/zsh/.zshrc"
+-'  1  0  ~/.config/zsh/.zshrc
+|4,39,1,0,1748797430,"~/.config/zsh/.zshrc"
+-'  68  27  ~/.config/zsh/.zshrc
+|4,39,68,27,1748797313,"~/.config/zsh/.zshrc"
+-'  67  27  ~/.config/zsh/.zshrc
+|4,39,67,27,1748797313,"~/.config/zsh/.zshrc"
+-'  68  27  ~/.config/zsh/.zshrc
+|4,39,68,27,1748797313,"~/.config/zsh/.zshrc"
+-'  67  27  ~/.config/zsh/.zshrc
+|4,39,67,27,1748797313,"~/.config/zsh/.zshrc"
+-'  68  27  ~/.config/zsh/.zshrc
+|4,39,68,27,1748797313,"~/.config/zsh/.zshrc"
+-'  67  27  ~/.config/zsh/.zshrc
+|4,39,67,27,1748797313,"~/.config/zsh/.zshrc"
+-'  68  27  ~/.config/zsh/.zshrc
+|4,39,68,27,1748797313,"~/.config/zsh/.zshrc"
+-'  67  27  ~/.config/zsh/.zshrc
+|4,39,67,27,1748797313,"~/.config/zsh/.zshrc"
+-'  68  27  ~/.config/zsh/.zshrc
+|4,39,68,27,1748797313,"~/.config/zsh/.zshrc"
+-'  67  27  ~/.config/zsh/.zshrc
+|4,39,67,27,1748797313,"~/.config/zsh/.zshrc"
+-'  67  27  ~/.config/zsh/.zshrc
+|4,39,67,27,1748797313,"~/.config/zsh/.zshrc"
+-'  67  27  ~/.config/zsh/.zshrc
+|4,39,67,27,1748797313,"~/.config/zsh/.zshrc"
+-'  67  27  ~/.config/zsh/.zshrc
+|4,39,67,27,1748797313,"~/.config/zsh/.zshrc"
+-'  1  0  ~/.config/zsh/.zshrc
+|4,39,1,0,1748797296,"~/.config/zsh/.zshrc"
+-'  62  71  ~/.config/zsh/.zshrc
+|4,39,62,71,1748797215,"~/.config/zsh/.zshrc"
+-'  61  71  ~/.config/zsh/.zshrc
+|4,39,61,71,1748797215,"~/.config/zsh/.zshrc"
+-'  62  71  ~/.config/zsh/.zshrc
+|4,39,62,71,1748797215,"~/.config/zsh/.zshrc"
+-'  61  71  ~/.config/zsh/.zshrc
+|4,39,61,71,1748797215,"~/.config/zsh/.zshrc"
+-'  62  71  ~/.config/zsh/.zshrc
+|4,39,62,71,1748797215,"~/.config/zsh/.zshrc"
+-'  61  71  ~/.config/zsh/.zshrc
+|4,39,61,71,1748797215,"~/.config/zsh/.zshrc"
+-'  62  71  ~/.config/zsh/.zshrc
+|4,39,62,71,1748797215,"~/.config/zsh/.zshrc"
+-'  61  71  ~/.config/zsh/.zshrc
+|4,39,61,71,1748797215,"~/.config/zsh/.zshrc"
+-'  62  71  ~/.config/zsh/.zshrc
+|4,39,62,71,1748797215,"~/.config/zsh/.zshrc"
+-'  61  71  ~/.config/zsh/.zshrc
+|4,39,61,71,1748797215,"~/.config/zsh/.zshrc"
+-'  61  71  ~/.config/zsh/.zshrc
+|4,39,61,71,1748797215,"~/.config/zsh/.zshrc"
+-'  61  71  ~/.config/zsh/.zshrc
+|4,39,61,71,1748797215,"~/.config/zsh/.zshrc"
+-'  61  71  ~/.config/zsh/.zshrc
+|4,39,61,71,1748797215,"~/.config/zsh/.zshrc"
+-'  61  71  ~/.config/zsh/.zshrc
+|4,39,61,71,1748797215,"~/.config/zsh/.zshrc"
+-'  1  0  ~/.config/zsh/.zshrc
+|4,39,1,0,1748797209,"~/.config/zsh/.zshrc"
+-'  36  0  ~/.config/zsh/.zshrc
+|4,39,36,0,1748797141,"~/.config/zsh/.zshrc"
+-'  36  0  ~/.config/zsh/.zshrc
+|4,39,36,0,1748797141,"~/.config/zsh/.zshrc"
+-'  36  0  ~/.config/zsh/.zshrc
+|4,39,36,0,1748797141,"~/.config/zsh/.zshrc"
+-'  36  0  ~/.config/zsh/.zshrc
+|4,39,36,0,1748797141,"~/.config/zsh/.zshrc"
+-'  36  0  ~/.config/zsh/.zshrc
+|4,39,36,0,1748797141,"~/.config/zsh/.zshrc"
+-'  1  0  ~/.config/zsh/.zshrc
+|4,39,1,0,1748797038,"~/.config/zsh/.zshrc"
 
 # History of marks within files (newest to oldest):
 
+> ~/.config/zsh/.zshrc
+	*	1748798538	0
+	"	1	0
+	.	101	0
+	+	113	0
+	+	1	1
+	+	116	37
+	+	83	0
+	+	82	61
+	+	58	60
+	+	33	48
+	+	80	0
+	+	81	0
+	+	82	0
+	+	64	31
+	+	39	0
+	+	62	0
+	+	28	0
+	+	31	0
+	+	32	0
+	+	29	0
+	+	29	80
+	+	29	72
+	+	29	66
+	+	30	48
+	+	30	106
+	+	30	102
+	+	30	0
+	+	29	9
+	+	64	0
+	+	33	0
+	+	31	0
+	+	30	0
+	+	29	0
+	+	33	9
+	+	38	48
+	+	35	29
+	+	36	29
+	+	57	0
+	+	62	71
+	+	65	0
+	+	69	0
+	+	70	0
+	+	68	27
+	+	71	0
+	+	72	0
+	+	73	0
+	+	77	0
+	+	78	0
+	+	76	19
+	+	73	0
+	+	118	0
+	+	119	0
+	+	120	0
+	+	121	0
+	+	118	97
+	+	40	0
+	+	39	15
+	+	105	0
+	+	101	0
+	+	102	0
+	+	103	0
+	+	101	17
+	+	101	0
+	+	121	0
+	+	101	0
+
 > ~/.config/vim/.vimrc
-	*	1748773485	0
-	"	1	29
-	^	1	30
-	.	1	29
-	+	5	9
-	+	28	0
-	+	5	17
-	+	8	13
-	+	7	10
-	+	8	15
-	+	10	14
-	+	9	7
-	+	10	9
-	+	9	28
-	+	12	7
-	+	11	60
-	+	13	1
-	+	14	17
-	+	15	79
-	+	15	116
-	+	15	26
-	+	15	92
-	+	28	14
-	+	28	0
-	+	27	15
-	+	3	0
-	+	1	29
+	*	1748793992	0
+	"	291	0
+	.	78	0
+	+	91	40
+	+	91	0
+	+	91	59
+	+	91	16
+	+	1	90
+	+	12	0
+	+	93	0
+	+	105	0
+	+	107	0
+	+	91	0
+	+	91	26
+	+	91	9
+	+	89	0
+	+	88	75
+	+	91	0
+	+	49	0
+	+	91	0
+	+	90	0
+	+	12	0
+	+	13	0
+	+	46	0
+	+	49	0
+	+	61	0
+	+	60	0
+	+	61	0
+	+	60	0
+	+	61	0
+	+	13	0
+	+	78	0
+	+	78	13
+	+	100	11
+	+	100	24
+	+	100	25
+	+	101	0
+	+	100	0
+	+	101	0
+	+	104	0
+	+	102	0
+	+	290	0
+	+	288	4
+	+	272	16
+	+	271	0
+	+	61	0
+	+	53	4
+	+	13	0
+	+	196	0
+	+	224	0
+	+	268	0
+	+	214	0
+	+	196	0
+	+	12	0
+	+	198	27
+	+	198	0
+	+	268	0
+	+	197	62
+	+	199	0
+	+	212	4
+	+	209	35
+	+	205	0
+	+	204	11
+	+	268	0
+	+	266	5
+	+	268	0
+	+	266	0
+	+	228	0
+	+	224	33
+	+	223	34
+	+	209	34
+	+	223	35
+	+	208	21
+	+	223	0
+	+	224	19
+	+	34	57
+	+	35	5
+	+	35	0
+	+	32	5
+	+	171	0
+	+	169	128
+	+	122	11
+	+	113	17
+	+	272	43
+	+	285	15
+	+	286	0
+	+	287	0
+	+	282	0
+	+	172	0
+	+	173	33
+	+	172	66
+	+	173	0
+	+	193	0
+	+	175	0
+	+	192	0
+	+	174	0
+	+	173	45
+	+	176	0
+	+	190	0
+	+	191	0
+	+	189	45
+	+	177	18
+	+	78	0
+
+> ~/Projects/commands/youtube-downloader.sh
+	*	1748791362	0
+	"	1	7
+
+> ~/NERD_tree_tab_1
+	*	1748791307	0
+	"	23	0
+	.	1	0
+	+	1	0
 
 > ~/.config/vim/.vimrc.plug
 	*	1748772623	0

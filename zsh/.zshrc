@@ -25,10 +25,18 @@ compinit
 # End of lines added by compinstall
 
 
+
+
+
+
+
 # Plugins
 source ~/.config/zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme
 source ~/.config/zsh/plugins/autosuggestions/zsh-autosuggestions.zsh
 source ~/.config/zsh/plugins/syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/doc/fzf/examples/key-bindings.zsh
+source /usr/share/doc/fzf/examples/completion.zsh
+source ~/.config/zsh/plugins/fzf-tab/fzf-tab.zsh
 
 
 # ranger-cd
@@ -46,25 +54,32 @@ function ranger-cd {
 bindkey -s "^\er" "ranger-cd\n"
 
 
-# ranger-cd
-function ranger-cd {
-    tempfile="$(mktemp -t tmp.XXXXXX)"
-    /usr/bin/ranger --choosedir="$tempfile" "${@:-$(pwd)}"
-    test -f "$tempfile" &&
-    if [ "$(cat -- "$tempfile")" != "$(echo -n `pwd`)" ]; then
-        cd -- "$(cat "$tempfile")"
-    fi  
-    rm -f -- "$tempfile"
-}
-
-#ranger-cd will run by alt+r
-bindkey -s "^\er" "ranger-cd\n"
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
 
 
+bindkey '^ ' autosuggest-accept  # Öneriyi kabul etmek için Ctrl+Space
 
+
+fzf-git-checkout() {
+  git checkout $(git branch -a | fzf --height 40% --reverse | sed 's/^.* //')
+}
+alias gco="fzf-git-checkout"
+
+
+
+
+fzf-ssh() {
+  ssh $(grep -i '^host' ~/.ssh/config | awk '{print $2}' | fzf)
+}
+alias sshf="fzf-ssh"
+
+
+
+#bindkey '^R' fzf-history-widget
+#bindkey '^T' fzf-file-widget
+#bindkey '\ec' fzf-cd-widget  # Alt+C için alternatif bağlama
 
 #
 
@@ -77,11 +92,15 @@ alias remove='sudo apt remove'
 alias autoremove='sudo apt autoremove'
 alias shutdown='sudo shutdown -h now'
 alias reboot='sudo shutdown -r now'
-alias zshrc='nano ~/.config/zsh/.zshrc'
+alias vimrc='vim ~/.config/vim/.vimrc'
+alias zshrc='vim ~/.config/zsh/.zshrc'
 alias rzshrc='source ~/.config/zsh/.zshrc'
 alias clean='sudo apt autoremove && sudo apt autoclean'
 alias l='lsd -1hlA'
 alias ls='lsd'
+alias exa='eza'
+
+
 yellow="\e[1;33m" # Sarı renk
 RESET="\e[0m" 
 
@@ -91,8 +110,11 @@ echo -e "${yellow}Hello osama, welcome to the terminal!${RESET}" | cowsay | lolc
 
 # Created by `pipx` on 2025-01-26 19:25:40
 export PATH="$PATH:/home/kanjo/.local/bin"
+
 export VIMINIT='let $MYVIMRC="$HOME/.config/vim/.vimrc" | source $MYVIMRC'
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border --preview "bat --color=always {}"'
 
 
-alias exa='eza'
