@@ -20,6 +20,14 @@
 $
 
 # Command Line History (newest to oldest):
+:Rg
+|2,0,1748800655,,"Rg"
+:Ag
+|2,0,1748800635,,"Ag"
+:PlugInstall
+|2,0,1748800609,,"PlugInstall"
+:rg
+|2,0,1748800277,,"rg"
 :source ~/.config/vim/.vimrc
 |2,0,1748793191,,"source ~/.config/vim/.vimrc"
 :w
@@ -44,8 +52,6 @@ $
 |2,0,1748786495,,"reg"
 :erg
 |2,0,1748786492,,"erg"
-:PlugInstall
-|2,0,1748786025,,"PlugInstall"
 :nnoremap
 |2,0,1748784611,,"nnoremap"
 :q!
@@ -126,265 +132,399 @@ $
 	
 	alias exa='eza'
 |3,0,0,1,2,0,1748798118,"","alias exa='eza'"
-"1	LINE	0
-	alias bat='batcat'
-|3,0,1,1,1,0,1748798387,"alias bat='batcat'"
+""1	LINE	0
+	ranger/
+|3,1,1,1,1,0,1748808277,"ranger/"
 "2	LINE	0
-	
-|3,0,2,1,1,0,1748798135,""
+	git/
+|3,0,2,1,1,0,1748808276,"git/"
 "3	LINE	0
-	alias exa='eza'
-|3,0,3,1,1,0,1748798134,"alias exa='eza'"
+	Plug 'junegunn/fzf.vim'
+|3,0,3,1,1,0,1748800550,"Plug 'junegunn/fzf.vim'"
 "4	LINE	0
-	
-|3,0,4,1,1,0,1748798131,""
+	Plug 'junegunn/fzf.vim'
+|3,0,4,1,1,0,1748800494,"Plug 'junegunn/fzf.vim'"
 "5	LINE	0
-	
-|3,0,5,1,1,0,1748798129,""
+	Plug 'junegunn/fzf.vim'
+|3,0,5,1,1,0,1748800484,"Plug 'junegunn/fzf.vim'"
 "6	LINE	0
-	# ~/.zshrc'ye ekleyin
-|3,0,6,1,1,0,1748797444,"# ~/.zshrc'ye ekleyin"
+	alias bat='batcat'
+|3,0,6,1,1,0,1748798387,"alias bat='batcat'"
 "7	LINE	0
-	bindkey -s "^\er" "ranger-cd\n"
-|3,0,7,1,1,0,1748797057,"bindkey -s \"^\\er\" \"ranger-cd\\n\""
+	
+|3,0,7,1,1,0,1748798135,""
 "8	LINE	0
-	#ranger-cd will run by alt+r
-|3,0,8,1,1,0,1748797057,"#ranger-cd will run by alt+r"
+	alias exa='eza'
+|3,0,8,1,1,0,1748798134,"alias exa='eza'"
 "9	LINE	0
 	
-|3,0,9,1,1,0,1748797057,""
+|3,0,9,1,1,0,1748798131,""
 "q	CHAR	0
 	€kb
 |3,0,26,0,1,0,1748789182,"€kb"
-""-	CHAR	0
-	g
-|3,1,36,0,1,0,1748799778,"g"
+"-	CHAR	0
+	false
+|3,0,36,0,1,0,1748808063,"false"
 
 # File marks:
-'0  119  53  ~/.config/zsh/.zshrc
-|4,48,119,53,1748799925,"~/.config/zsh/.zshrc"
-'1  119  44  ~/.config/zsh/.zshrc
-|4,49,119,44,1748799780,"~/.config/zsh/.zshrc"
-'2  119  50  ~/.config/zsh/.zshrc
-|4,50,119,50,1748799671,"~/.config/zsh/.zshrc"
-'3  119  50  ~/.config/zsh/.zshrc
-|4,51,119,50,1748799671,"~/.config/zsh/.zshrc"
-'4  1  0  ~/.config/zsh/.zshrc
-|4,52,1,0,1748798828,"~/.config/zsh/.zshrc"
-'5  1  0  ~/.config/zsh/.zshrc
-|4,53,1,0,1748798828,"~/.config/zsh/.zshrc"
-'6  1  0  ~/.config/zsh/.zshrc
-|4,54,1,0,1748798828,"~/.config/zsh/.zshrc"
-'7  1  0  ~/.config/zsh/.zshrc
-|4,55,1,0,1748798828,"~/.config/zsh/.zshrc"
-'8  1  0  ~/.config/zsh/.zshrc
-|4,56,1,0,1748798828,"~/.config/zsh/.zshrc"
-'9  1  0  ~/.config/zsh/.zshrc
-|4,57,1,0,1748798828,"~/.config/zsh/.zshrc"
+'0  27  72  ~/.config/README.md
+|4,48,27,72,1748808396,"~/.config/README.md"
+'1  1  0  ~/.config/.gitignore
+|4,49,1,0,1748808304,"~/.config/.gitignore"
+'2  2  0  ~/.config/.gitignore
+|4,50,2,0,1748808292,"~/.config/.gitignore"
+'3  2  0  ~/.config/.gitignore
+|4,51,2,0,1748808292,"~/.config/.gitignore"
+'4  756  6  ~/.config/ranger/rc.conf
+|4,52,756,6,1748808184,"~/.config/ranger/rc.conf"
+'5  117  26  ~/.config/ranger/rc.conf
+|4,53,117,26,1748807914,"~/.config/ranger/rc.conf"
+'6  117  26  ~/.config/ranger/rc.conf
+|4,54,117,26,1748807914,"~/.config/ranger/rc.conf"
+'7  117  28  ~/.config/ranger/rc.conf
+|4,55,117,28,1748807891,"~/.config/ranger/rc.conf"
+'8  117  28  ~/.config/ranger/rc.conf
+|4,56,117,28,1748807891,"~/.config/ranger/rc.conf"
+'9  74  22  ~/.config/ranger/rc.conf
+|4,57,74,22,1748807468,"~/.config/ranger/rc.conf"
 
 # Jumplist (newest first):
--'  119  53  ~/.config/zsh/.zshrc
-|4,39,119,53,1748799925,"~/.config/zsh/.zshrc"
--'  1  0  ~/.config/zsh/.zshrc
-|4,39,1,0,1748799825,"~/.config/zsh/.zshrc"
--'  119  44  ~/.config/zsh/.zshrc
-|4,39,119,44,1748799780,"~/.config/zsh/.zshrc"
--'  1  0  ~/.config/zsh/.zshrc
-|4,39,1,0,1748799769,"~/.config/zsh/.zshrc"
--'  119  50  ~/.config/zsh/.zshrc
-|4,39,119,50,1748799671,"~/.config/zsh/.zshrc"
--'  1  0  ~/.config/zsh/.zshrc
-|4,39,1,0,1748799666,"~/.config/zsh/.zshrc"
--'  1  0  ~/.config/zsh/.zshrc
-|4,39,1,0,1748798828,"~/.config/zsh/.zshrc"
--'  101  0  ~/.config/zsh/.zshrc
-|4,39,101,0,1748798400,"~/.config/zsh/.zshrc"
--'  101  0  ~/.config/zsh/.zshrc
-|4,39,101,0,1748798400,"~/.config/zsh/.zshrc"
--'  101  0  ~/.config/zsh/.zshrc
-|4,39,101,0,1748798400,"~/.config/zsh/.zshrc"
--'  101  0  ~/.config/zsh/.zshrc
-|4,39,101,0,1748798400,"~/.config/zsh/.zshrc"
--'  101  0  ~/.config/zsh/.zshrc
-|4,39,101,0,1748798400,"~/.config/zsh/.zshrc"
--'  1  0  ~/.config/zsh/.zshrc
-|4,39,1,0,1748798365,"~/.config/zsh/.zshrc"
--'  120  0  ~/.config/zsh/.zshrc
-|4,39,120,0,1748798158,"~/.config/zsh/.zshrc"
--'  121  0  ~/.config/zsh/.zshrc
-|4,39,121,0,1748798158,"~/.config/zsh/.zshrc"
--'  120  0  ~/.config/zsh/.zshrc
-|4,39,120,0,1748798158,"~/.config/zsh/.zshrc"
--'  121  0  ~/.config/zsh/.zshrc
-|4,39,121,0,1748798158,"~/.config/zsh/.zshrc"
--'  120  0  ~/.config/zsh/.zshrc
-|4,39,120,0,1748798158,"~/.config/zsh/.zshrc"
--'  121  0  ~/.config/zsh/.zshrc
-|4,39,121,0,1748798158,"~/.config/zsh/.zshrc"
--'  120  0  ~/.config/zsh/.zshrc
-|4,39,120,0,1748798158,"~/.config/zsh/.zshrc"
--'  121  0  ~/.config/zsh/.zshrc
-|4,39,121,0,1748798158,"~/.config/zsh/.zshrc"
--'  120  0  ~/.config/zsh/.zshrc
-|4,39,120,0,1748798158,"~/.config/zsh/.zshrc"
--'  121  0  ~/.config/zsh/.zshrc
-|4,39,121,0,1748798158,"~/.config/zsh/.zshrc"
--'  105  0  ~/.config/zsh/.zshrc
-|4,39,105,0,1748798098,"~/.config/zsh/.zshrc"
--'  106  0  ~/.config/zsh/.zshrc
-|4,39,106,0,1748798098,"~/.config/zsh/.zshrc"
--'  105  0  ~/.config/zsh/.zshrc
-|4,39,105,0,1748798098,"~/.config/zsh/.zshrc"
--'  106  0  ~/.config/zsh/.zshrc
-|4,39,106,0,1748798098,"~/.config/zsh/.zshrc"
--'  105  0  ~/.config/zsh/.zshrc
-|4,39,105,0,1748798098,"~/.config/zsh/.zshrc"
--'  106  0  ~/.config/zsh/.zshrc
-|4,39,106,0,1748798098,"~/.config/zsh/.zshrc"
--'  105  0  ~/.config/zsh/.zshrc
-|4,39,105,0,1748798098,"~/.config/zsh/.zshrc"
--'  106  0  ~/.config/zsh/.zshrc
-|4,39,106,0,1748798098,"~/.config/zsh/.zshrc"
--'  105  0  ~/.config/zsh/.zshrc
-|4,39,105,0,1748798098,"~/.config/zsh/.zshrc"
--'  106  0  ~/.config/zsh/.zshrc
-|4,39,106,0,1748798098,"~/.config/zsh/.zshrc"
--'  1  0  ~/.config/zsh/.zshrc
-|4,39,1,0,1748798043,"~/.config/zsh/.zshrc"
--'  39  15  ~/.config/zsh/.zshrc
-|4,39,39,15,1748797719,"~/.config/zsh/.zshrc"
--'  39  15  ~/.config/zsh/.zshrc
-|4,39,39,15,1748797719,"~/.config/zsh/.zshrc"
--'  39  15  ~/.config/zsh/.zshrc
-|4,39,39,15,1748797719,"~/.config/zsh/.zshrc"
--'  39  15  ~/.config/zsh/.zshrc
-|4,39,39,15,1748797719,"~/.config/zsh/.zshrc"
--'  39  15  ~/.config/zsh/.zshrc
-|4,39,39,15,1748797719,"~/.config/zsh/.zshrc"
--'  39  15  ~/.config/zsh/.zshrc
-|4,39,39,15,1748797719,"~/.config/zsh/.zshrc"
--'  39  15  ~/.config/zsh/.zshrc
-|4,39,39,15,1748797719,"~/.config/zsh/.zshrc"
--'  1  0  ~/.config/zsh/.zshrc
-|4,39,1,0,1748797703,"~/.config/zsh/.zshrc"
--'  39  40  ~/.config/zsh/.zshrc
-|4,39,39,40,1748797642,"~/.config/zsh/.zshrc"
--'  1  0  ~/.config/zsh/.zshrc
-|4,39,1,0,1748797636,"~/.config/zsh/.zshrc"
--'  36  0  ~/.config/zsh/.zshrc
-|4,39,36,0,1748797612,"~/.config/zsh/.zshrc"
--'  36  0  ~/.config/zsh/.zshrc
-|4,39,36,0,1748797612,"~/.config/zsh/.zshrc"
--'  36  0  ~/.config/zsh/.zshrc
-|4,39,36,0,1748797612,"~/.config/zsh/.zshrc"
--'  36  0  ~/.config/zsh/.zshrc
-|4,39,36,0,1748797612,"~/.config/zsh/.zshrc"
--'  36  0  ~/.config/zsh/.zshrc
-|4,39,36,0,1748797612,"~/.config/zsh/.zshrc"
--'  36  0  ~/.config/zsh/.zshrc
-|4,39,36,0,1748797612,"~/.config/zsh/.zshrc"
--'  36  0  ~/.config/zsh/.zshrc
-|4,39,36,0,1748797612,"~/.config/zsh/.zshrc"
--'  36  0  ~/.config/zsh/.zshrc
-|4,39,36,0,1748797612,"~/.config/zsh/.zshrc"
--'  36  0  ~/.config/zsh/.zshrc
-|4,39,36,0,1748797612,"~/.config/zsh/.zshrc"
--'  1  0  ~/.config/zsh/.zshrc
-|4,39,1,0,1748797591,"~/.config/zsh/.zshrc"
--'  118  97  ~/.config/zsh/.zshrc
-|4,39,118,97,1748797506,"~/.config/zsh/.zshrc"
--'  117  97  ~/.config/zsh/.zshrc
-|4,39,117,97,1748797506,"~/.config/zsh/.zshrc"
--'  114  97  ~/.config/zsh/.zshrc
-|4,39,114,97,1748797506,"~/.config/zsh/.zshrc"
--'  113  97  ~/.config/zsh/.zshrc
-|4,39,113,97,1748797506,"~/.config/zsh/.zshrc"
--'  115  97  ~/.config/zsh/.zshrc
-|4,39,115,97,1748797506,"~/.config/zsh/.zshrc"
--'  118  97  ~/.config/zsh/.zshrc
-|4,39,118,97,1748797506,"~/.config/zsh/.zshrc"
--'  117  97  ~/.config/zsh/.zshrc
-|4,39,117,97,1748797506,"~/.config/zsh/.zshrc"
--'  114  97  ~/.config/zsh/.zshrc
-|4,39,114,97,1748797506,"~/.config/zsh/.zshrc"
--'  113  97  ~/.config/zsh/.zshrc
-|4,39,113,97,1748797506,"~/.config/zsh/.zshrc"
--'  115  97  ~/.config/zsh/.zshrc
-|4,39,115,97,1748797506,"~/.config/zsh/.zshrc"
--'  118  97  ~/.config/zsh/.zshrc
-|4,39,118,97,1748797506,"~/.config/zsh/.zshrc"
--'  117  97  ~/.config/zsh/.zshrc
-|4,39,117,97,1748797506,"~/.config/zsh/.zshrc"
--'  114  97  ~/.config/zsh/.zshrc
-|4,39,114,97,1748797506,"~/.config/zsh/.zshrc"
--'  113  97  ~/.config/zsh/.zshrc
-|4,39,113,97,1748797506,"~/.config/zsh/.zshrc"
--'  115  97  ~/.config/zsh/.zshrc
-|4,39,115,97,1748797506,"~/.config/zsh/.zshrc"
--'  118  97  ~/.config/zsh/.zshrc
-|4,39,118,97,1748797506,"~/.config/zsh/.zshrc"
--'  117  97  ~/.config/zsh/.zshrc
-|4,39,117,97,1748797506,"~/.config/zsh/.zshrc"
--'  114  97  ~/.config/zsh/.zshrc
-|4,39,114,97,1748797506,"~/.config/zsh/.zshrc"
--'  113  97  ~/.config/zsh/.zshrc
-|4,39,113,97,1748797506,"~/.config/zsh/.zshrc"
--'  119  97  ~/.config/zsh/.zshrc
-|4,39,119,97,1748797506,"~/.config/zsh/.zshrc"
--'  115  97  ~/.config/zsh/.zshrc
-|4,39,115,97,1748797506,"~/.config/zsh/.zshrc"
--'  118  97  ~/.config/zsh/.zshrc
-|4,39,118,97,1748797506,"~/.config/zsh/.zshrc"
--'  117  97  ~/.config/zsh/.zshrc
-|4,39,117,97,1748797506,"~/.config/zsh/.zshrc"
--'  114  97  ~/.config/zsh/.zshrc
-|4,39,114,97,1748797506,"~/.config/zsh/.zshrc"
--'  113  97  ~/.config/zsh/.zshrc
-|4,39,113,97,1748797506,"~/.config/zsh/.zshrc"
--'  119  97  ~/.config/zsh/.zshrc
-|4,39,119,97,1748797506,"~/.config/zsh/.zshrc"
--'  118  97  ~/.config/zsh/.zshrc
-|4,39,118,97,1748797506,"~/.config/zsh/.zshrc"
--'  115  97  ~/.config/zsh/.zshrc
-|4,39,115,97,1748797506,"~/.config/zsh/.zshrc"
--'  114  97  ~/.config/zsh/.zshrc
-|4,39,114,97,1748797506,"~/.config/zsh/.zshrc"
--'  115  97  ~/.config/zsh/.zshrc
-|4,39,115,97,1748797506,"~/.config/zsh/.zshrc"
--'  114  97  ~/.config/zsh/.zshrc
-|4,39,114,97,1748797506,"~/.config/zsh/.zshrc"
--'  114  97  ~/.config/zsh/.zshrc
-|4,39,114,97,1748797506,"~/.config/zsh/.zshrc"
--'  7  0  ~/.config/zsh/.zshrc
-|4,39,7,0,1748797495,"~/.config/zsh/.zshrc"
--'  7  0  ~/.config/zsh/.zshrc
-|4,39,7,0,1748797495,"~/.config/zsh/.zshrc"
--'  7  0  ~/.config/zsh/.zshrc
-|4,39,7,0,1748797495,"~/.config/zsh/.zshrc"
--'  7  0  ~/.config/zsh/.zshrc
-|4,39,7,0,1748797495,"~/.config/zsh/.zshrc"
--'  7  0  ~/.config/zsh/.zshrc
-|4,39,7,0,1748797495,"~/.config/zsh/.zshrc"
--'  7  0  ~/.config/zsh/.zshrc
-|4,39,7,0,1748797495,"~/.config/zsh/.zshrc"
--'  7  0  ~/.config/zsh/.zshrc
-|4,39,7,0,1748797495,"~/.config/zsh/.zshrc"
--'  7  0  ~/.config/zsh/.zshrc
-|4,39,7,0,1748797495,"~/.config/zsh/.zshrc"
--'  7  0  ~/.config/zsh/.zshrc
-|4,39,7,0,1748797495,"~/.config/zsh/.zshrc"
--'  7  0  ~/.config/zsh/.zshrc
-|4,39,7,0,1748797495,"~/.config/zsh/.zshrc"
--'  1  0  ~/.config/zsh/.zshrc
-|4,39,1,0,1748797493,"~/.config/zsh/.zshrc"
--'  73  0  ~/.config/zsh/.zshrc
-|4,39,73,0,1748797449,"~/.config/zsh/.zshrc"
--'  72  0  ~/.config/zsh/.zshrc
-|4,39,72,0,1748797449,"~/.config/zsh/.zshrc"
--'  73  0  ~/.config/zsh/.zshrc
-|4,39,73,0,1748797449,"~/.config/zsh/.zshrc"
+-'  27  72  ~/.config/README.md
+|4,39,27,72,1748808396,"~/.config/README.md"
+-'  1  0  ~/.config/README.md
+|4,39,1,0,1748808312,"~/.config/README.md"
+-'  1  0  ~/.config/.gitignore
+|4,39,1,0,1748808304,"~/.config/.gitignore"
+-'  1  0  ~/.config/.gitignore
+|4,39,1,0,1748808304,"~/.config/.gitignore"
+-'  2  0  ~/.config/.gitignore
+|4,39,2,0,1748808292,"~/.config/.gitignore"
+-'  2  0  ~/.config/.gitignore
+|4,39,2,0,1748808292,"~/.config/.gitignore"
+-'  2  0  ~/.config/.gitignore
+|4,39,2,0,1748808292,"~/.config/.gitignore"
+-'  2  0  ~/.config/.gitignore
+|4,39,2,0,1748808292,"~/.config/.gitignore"
+-'  1  0  ~/.config/.gitignore
+|4,39,1,0,1748808265,"~/.config/.gitignore"
+-'  1  0  ~/.config/.gitignore
+|4,39,1,0,1748808265,"~/.config/.gitignore"
+-'  756  6  ~/.config/ranger/rc.conf
+|4,39,756,6,1748808184,"~/.config/ranger/rc.conf"
+-'  756  6  ~/.config/ranger/rc.conf
+|4,39,756,6,1748808184,"~/.config/ranger/rc.conf"
+-'  756  6  ~/.config/ranger/rc.conf
+|4,39,756,6,1748808184,"~/.config/ranger/rc.conf"
+-'  756  6  ~/.config/ranger/rc.conf
+|4,39,756,6,1748808184,"~/.config/ranger/rc.conf"
+-'  756  6  ~/.config/ranger/rc.conf
+|4,39,756,6,1748808184,"~/.config/ranger/rc.conf"
+-'  756  6  ~/.config/ranger/rc.conf
+|4,39,756,6,1748808184,"~/.config/ranger/rc.conf"
+-'  756  6  ~/.config/ranger/rc.conf
+|4,39,756,6,1748808184,"~/.config/ranger/rc.conf"
+-'  756  6  ~/.config/ranger/rc.conf
+|4,39,756,6,1748808184,"~/.config/ranger/rc.conf"
+-'  1  0  ~/.config/ranger/rc.conf
+|4,39,1,0,1748807926,"~/.config/ranger/rc.conf"
+-'  1  0  ~/.config/ranger/rc.conf
+|4,39,1,0,1748807926,"~/.config/ranger/rc.conf"
+-'  1  0  ~/.config/ranger/rc.conf
+|4,39,1,0,1748807926,"~/.config/ranger/rc.conf"
+-'  1  0  ~/.config/ranger/rc.conf
+|4,39,1,0,1748807926,"~/.config/ranger/rc.conf"
+-'  1  0  ~/.config/ranger/rc.conf
+|4,39,1,0,1748807926,"~/.config/ranger/rc.conf"
+-'  1  0  ~/.config/ranger/rc.conf
+|4,39,1,0,1748807926,"~/.config/ranger/rc.conf"
+-'  1  0  ~/.config/ranger/rc.conf
+|4,39,1,0,1748807926,"~/.config/ranger/rc.conf"
+-'  1  0  ~/.config/ranger/rc.conf
+|4,39,1,0,1748807926,"~/.config/ranger/rc.conf"
+-'  117  26  ~/.config/ranger/rc.conf
+|4,39,117,26,1748807914,"~/.config/ranger/rc.conf"
+-'  117  26  ~/.config/ranger/rc.conf
+|4,39,117,26,1748807914,"~/.config/ranger/rc.conf"
+-'  117  26  ~/.config/ranger/rc.conf
+|4,39,117,26,1748807914,"~/.config/ranger/rc.conf"
+-'  117  26  ~/.config/ranger/rc.conf
+|4,39,117,26,1748807914,"~/.config/ranger/rc.conf"
+-'  117  26  ~/.config/ranger/rc.conf
+|4,39,117,26,1748807914,"~/.config/ranger/rc.conf"
+-'  117  26  ~/.config/ranger/rc.conf
+|4,39,117,26,1748807914,"~/.config/ranger/rc.conf"
+-'  117  26  ~/.config/ranger/rc.conf
+|4,39,117,26,1748807914,"~/.config/ranger/rc.conf"
+-'  117  26  ~/.config/ranger/rc.conf
+|4,39,117,26,1748807914,"~/.config/ranger/rc.conf"
+-'  117  26  ~/.config/ranger/rc.conf
+|4,39,117,26,1748807914,"~/.config/ranger/rc.conf"
+-'  117  26  ~/.config/ranger/rc.conf
+|4,39,117,26,1748807914,"~/.config/ranger/rc.conf"
+-'  117  26  ~/.config/ranger/rc.conf
+|4,39,117,26,1748807914,"~/.config/ranger/rc.conf"
+-'  117  26  ~/.config/ranger/rc.conf
+|4,39,117,26,1748807914,"~/.config/ranger/rc.conf"
+-'  117  26  ~/.config/ranger/rc.conf
+|4,39,117,26,1748807914,"~/.config/ranger/rc.conf"
+-'  117  26  ~/.config/ranger/rc.conf
+|4,39,117,26,1748807914,"~/.config/ranger/rc.conf"
+-'  117  26  ~/.config/ranger/rc.conf
+|4,39,117,26,1748807914,"~/.config/ranger/rc.conf"
+-'  117  26  ~/.config/ranger/rc.conf
+|4,39,117,26,1748807914,"~/.config/ranger/rc.conf"
+-'  1  0  ~/.config/ranger/rc.conf
+|4,39,1,0,1748807910,"~/.config/ranger/rc.conf"
+-'  1  0  ~/.config/ranger/rc.conf
+|4,39,1,0,1748807910,"~/.config/ranger/rc.conf"
+-'  1  0  ~/.config/ranger/rc.conf
+|4,39,1,0,1748807910,"~/.config/ranger/rc.conf"
+-'  1  0  ~/.config/ranger/rc.conf
+|4,39,1,0,1748807910,"~/.config/ranger/rc.conf"
+-'  1  0  ~/.config/ranger/rc.conf
+|4,39,1,0,1748807910,"~/.config/ranger/rc.conf"
+-'  1  0  ~/.config/ranger/rc.conf
+|4,39,1,0,1748807910,"~/.config/ranger/rc.conf"
+-'  1  0  ~/.config/ranger/rc.conf
+|4,39,1,0,1748807910,"~/.config/ranger/rc.conf"
+-'  1  0  ~/.config/ranger/rc.conf
+|4,39,1,0,1748807910,"~/.config/ranger/rc.conf"
+-'  117  28  ~/.config/ranger/rc.conf
+|4,39,117,28,1748807891,"~/.config/ranger/rc.conf"
+-'  117  28  ~/.config/ranger/rc.conf
+|4,39,117,28,1748807891,"~/.config/ranger/rc.conf"
+-'  117  28  ~/.config/ranger/rc.conf
+|4,39,117,28,1748807891,"~/.config/ranger/rc.conf"
+-'  117  28  ~/.config/ranger/rc.conf
+|4,39,117,28,1748807891,"~/.config/ranger/rc.conf"
+-'  117  28  ~/.config/ranger/rc.conf
+|4,39,117,28,1748807891,"~/.config/ranger/rc.conf"
+-'  117  28  ~/.config/ranger/rc.conf
+|4,39,117,28,1748807891,"~/.config/ranger/rc.conf"
+-'  117  28  ~/.config/ranger/rc.conf
+|4,39,117,28,1748807891,"~/.config/ranger/rc.conf"
+-'  117  28  ~/.config/ranger/rc.conf
+|4,39,117,28,1748807891,"~/.config/ranger/rc.conf"
+-'  1  0  ~/.config/ranger/rc.conf
+|4,39,1,0,1748807866,"~/.config/ranger/rc.conf"
+-'  1  0  ~/.config/ranger/rc.conf
+|4,39,1,0,1748807866,"~/.config/ranger/rc.conf"
+-'  1  0  ~/.config/ranger/rc.conf
+|4,39,1,0,1748807866,"~/.config/ranger/rc.conf"
+-'  1  0  ~/.config/ranger/rc.conf
+|4,39,1,0,1748807866,"~/.config/ranger/rc.conf"
+-'  1  0  ~/.config/ranger/rc.conf
+|4,39,1,0,1748807866,"~/.config/ranger/rc.conf"
+-'  1  0  ~/.config/ranger/rc.conf
+|4,39,1,0,1748807866,"~/.config/ranger/rc.conf"
+-'  1  0  ~/.config/ranger/rc.conf
+|4,39,1,0,1748807866,"~/.config/ranger/rc.conf"
+-'  1  0  ~/.config/ranger/rc.conf
+|4,39,1,0,1748807866,"~/.config/ranger/rc.conf"
+-'  74  22  ~/.config/ranger/rc.conf
+|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
+-'  74  22  ~/.config/ranger/rc.conf
+|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
+-'  74  22  ~/.config/ranger/rc.conf
+|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
+-'  74  22  ~/.config/ranger/rc.conf
+|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
+-'  74  22  ~/.config/ranger/rc.conf
+|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
+-'  74  22  ~/.config/ranger/rc.conf
+|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
+-'  74  22  ~/.config/ranger/rc.conf
+|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
+-'  74  22  ~/.config/ranger/rc.conf
+|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
+-'  74  22  ~/.config/ranger/rc.conf
+|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
+-'  74  22  ~/.config/ranger/rc.conf
+|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
+-'  74  22  ~/.config/ranger/rc.conf
+|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
+-'  74  22  ~/.config/ranger/rc.conf
+|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
+-'  74  22  ~/.config/ranger/rc.conf
+|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
+-'  74  22  ~/.config/ranger/rc.conf
+|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
+-'  74  22  ~/.config/ranger/rc.conf
+|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
+-'  74  22  ~/.config/ranger/rc.conf
+|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
+-'  74  22  ~/.config/ranger/rc.conf
+|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
+-'  74  22  ~/.config/ranger/rc.conf
+|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
+-'  74  22  ~/.config/ranger/rc.conf
+|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
+-'  74  22  ~/.config/ranger/rc.conf
+|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
+-'  74  22  ~/.config/ranger/rc.conf
+|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
+-'  74  22  ~/.config/ranger/rc.conf
+|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
+-'  74  22  ~/.config/ranger/rc.conf
+|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
+-'  74  22  ~/.config/ranger/rc.conf
+|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
+-'  74  22  ~/.config/ranger/rc.conf
+|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
+-'  74  22  ~/.config/ranger/rc.conf
+|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
+-'  74  22  ~/.config/ranger/rc.conf
+|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
+-'  74  22  ~/.config/ranger/rc.conf
+|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
+-'  74  22  ~/.config/ranger/rc.conf
+|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
+-'  74  22  ~/.config/ranger/rc.conf
+|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
+-'  74  22  ~/.config/ranger/rc.conf
+|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
+-'  74  22  ~/.config/ranger/rc.conf
+|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
+-'  37  16  ~/.config/ranger/rc.conf
+|4,39,37,16,1748807360,"~/.config/ranger/rc.conf"
+-'  37  16  ~/.config/ranger/rc.conf
+|4,39,37,16,1748807360,"~/.config/ranger/rc.conf"
 
 # History of marks within files (newest to oldest):
+
+> ~/.config/README.md
+	*	1748808395	0
+	"	27	72
+	^	27	73
+	.	27	73
+	+	14	71
+	+	27	73
+
+> ~/.config/.gitignore
+	*	1748808302	0
+	"	1	0
+	.	4	0
+	+	3	0
+	+	4	0
+
+> ~/.config/ranger/rc.conf
+	*	1748808183	0
+	"	756	6
+	^	756	7
+	.	756	7
+	+	37	19
+	+	74	22
+	+	37	19
+	+	74	22
+	+	117	0
+	+	142	21
+	+	283	20
+	+	756	7
+
+> ~/.config/vim/.vimrc
+	*	1748800720	0
+	"	104	0
+	^	102	0
+	.	101	77
+	+	112	0
+	+	91	0
+	+	91	26
+	+	91	9
+	+	89	0
+	+	88	75
+	+	91	0
+	+	49	0
+	+	91	0
+	+	90	0
+	+	12	0
+	+	13	0
+	+	46	0
+	+	49	0
+	+	61	0
+	+	60	0
+	+	61	0
+	+	60	0
+	+	61	0
+	+	13	0
+	+	78	0
+	+	78	13
+	+	105	11
+	+	105	24
+	+	105	25
+	+	106	0
+	+	105	0
+	+	106	0
+	+	109	0
+	+	107	0
+	+	295	0
+	+	293	4
+	+	277	16
+	+	276	0
+	+	61	0
+	+	53	4
+	+	13	0
+	+	201	0
+	+	229	0
+	+	273	0
+	+	219	0
+	+	201	0
+	+	12	0
+	+	203	27
+	+	203	0
+	+	273	0
+	+	202	62
+	+	204	0
+	+	217	4
+	+	214	35
+	+	210	0
+	+	209	11
+	+	273	0
+	+	271	5
+	+	273	0
+	+	271	0
+	+	233	0
+	+	229	33
+	+	228	34
+	+	214	34
+	+	228	35
+	+	213	21
+	+	228	0
+	+	229	19
+	+	34	57
+	+	35	5
+	+	35	0
+	+	32	5
+	+	176	0
+	+	174	128
+	+	127	11
+	+	118	17
+	+	277	43
+	+	290	15
+	+	291	0
+	+	292	0
+	+	287	0
+	+	177	0
+	+	178	33
+	+	177	66
+	+	178	0
+	+	198	0
+	+	180	0
+	+	197	0
+	+	179	0
+	+	178	45
+	+	181	0
+	+	195	0
+	+	196	0
+	+	194	45
+	+	182	18
+	+	78	0
+	+	104	0
+	+	105	0
+	+	98	1
+	+	103	0
+	+	98	0
+	+	99	50
+	+	101	77
 
 > ~/.config/zsh/.zshrc
 	*	1748799925	0
@@ -454,111 +594,6 @@ $
 	+	121	0
 	+	101	0
 	+	119	53
-
-> ~/.config/vim/.vimrc
-	*	1748793992	0
-	"	291	0
-	.	78	0
-	+	91	40
-	+	91	0
-	+	91	59
-	+	91	16
-	+	1	90
-	+	12	0
-	+	93	0
-	+	105	0
-	+	107	0
-	+	91	0
-	+	91	26
-	+	91	9
-	+	89	0
-	+	88	75
-	+	91	0
-	+	49	0
-	+	91	0
-	+	90	0
-	+	12	0
-	+	13	0
-	+	46	0
-	+	49	0
-	+	61	0
-	+	60	0
-	+	61	0
-	+	60	0
-	+	61	0
-	+	13	0
-	+	78	0
-	+	78	13
-	+	100	11
-	+	100	24
-	+	100	25
-	+	101	0
-	+	100	0
-	+	101	0
-	+	104	0
-	+	102	0
-	+	290	0
-	+	288	4
-	+	272	16
-	+	271	0
-	+	61	0
-	+	53	4
-	+	13	0
-	+	196	0
-	+	224	0
-	+	268	0
-	+	214	0
-	+	196	0
-	+	12	0
-	+	198	27
-	+	198	0
-	+	268	0
-	+	197	62
-	+	199	0
-	+	212	4
-	+	209	35
-	+	205	0
-	+	204	11
-	+	268	0
-	+	266	5
-	+	268	0
-	+	266	0
-	+	228	0
-	+	224	33
-	+	223	34
-	+	209	34
-	+	223	35
-	+	208	21
-	+	223	0
-	+	224	19
-	+	34	57
-	+	35	5
-	+	35	0
-	+	32	5
-	+	171	0
-	+	169	128
-	+	122	11
-	+	113	17
-	+	272	43
-	+	285	15
-	+	286	0
-	+	287	0
-	+	282	0
-	+	172	0
-	+	173	33
-	+	172	66
-	+	173	0
-	+	193	0
-	+	175	0
-	+	192	0
-	+	174	0
-	+	173	45
-	+	176	0
-	+	190	0
-	+	191	0
-	+	189	45
-	+	177	18
-	+	78	0
 
 > ~/Projects/commands/youtube-downloader.sh
 	*	1748791362	0

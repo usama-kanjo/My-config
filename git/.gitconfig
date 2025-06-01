@@ -1,0 +1,5 @@
+[user]
+	email = m.osama.kanjo2007@gmail.com
+	name = Usama kanjo
+[include]
+    path = /home/kanjo/.config/git/config

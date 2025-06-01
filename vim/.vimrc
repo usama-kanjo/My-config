@@ -95,7 +95,12 @@ set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 call plug#begin('~/.config/vim/plugged')  " Eklentiler buraya kurulacak
 
 " Pluginlerinizi buraya ekleyin
-Plug 'junegunn/fzf.vim'
+
+" Temel FZF eklentisi (binary ve Vim entegrasyonu)
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }  " Bu kritik öneme sahip!
+Plug 'junegunn/fzf.vim'                              " FZF'nin Vim komutları
+
+
 Plug 'preservim/nerdtree'
 Plug 'dense-analysis/ale'
 "-----------Plug 'rust-lang/rust.vim'

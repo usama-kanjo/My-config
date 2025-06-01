@@ -1,8 +1,6 @@
 .oh-my-zsh/
 bash/
-git/
 pulse/
-ranger/
 ssh/
 tmux/plugins/
 zsh/plugins/

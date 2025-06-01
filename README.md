@@ -11,7 +11,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 ```bash
 git clone https://github.com/usama-kanjo/My-config.git && \
 cd My-config && \
-rm -rf README.md .git .gitignore zsh/ neofetch/ vim/ htop/ && \
+rm -rf README.md .git .gitignore zsh/ neofetch/ vim/ htop/ git/ ranger/ && \
 mv tmux/ ~/.config/ && \
 cd .. && \
 rm -rf My-config && \
@@ -24,7 +24,7 @@ echo "Tmux configuration installed successfully"
 ```bash
 git clone https://github.com/usama-kanjo/My-config.git && \
 cd My-config && \
-rm -rf README.md .git .gitignore zsh/ neofetch/ htop/ tmux/ && \
+rm -rf README.md .git .gitignore zsh/ neofetch/ htop/ tmux/ git/ ranger/ && \
 mv vim/ ~/.config && \
 cd .. && \
 rm -rf My-config && \
