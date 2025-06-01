@@ -116,5 +116,5 @@ export VIMINIT='let $MYVIMRC="$HOME/.config/vim/.vimrc" | source $MYVIMRC'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border --preview "bat --color=always {}"'
-
+export GIT_CONFIG_GLOBAL="$HOME/.config/git/.gitconfig"
 
