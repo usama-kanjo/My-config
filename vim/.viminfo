@@ -20,6 +20,16 @@
 $
 
 # Command Line History (newest to oldest):
+:!ls
+|2,0,1748843353,,"!ls"
+:reg
+|2,0,1748840774,,"reg"
+:rag
+|2,0,1748840768,,"rag"
+:rang
+|2,0,1748840661,,"rang"
+:!sshf
+|2,0,1748808789,,"!sshf"
 :Rg
 |2,0,1748800655,,"Rg"
 :Ag
@@ -48,8 +58,6 @@ $
 |2,0,1748790415,,"nohlsearch"
 :mkview
 |2,0,1748788790,,"mkview"
-:reg
-|2,0,1748786495,,"reg"
 :erg
 |2,0,1748786492,,"erg"
 :nnoremap
@@ -72,8 +80,6 @@ $
 |2,0,1748763248,,"ex"
 :!l
 |2,0,1748744422,,"!l"
-:!ls
-|2,0,1748744405,,"!ls"
 :r !ls
 |2,0,1748744392,,"r !ls"
 :r !l
@@ -132,298 +138,390 @@ $
 	
 	alias exa='eza'
 |3,0,0,1,2,0,1748798118,"","alias exa='eza'"
-""1	LINE	0
-	ranger/
-|3,1,1,1,1,0,1748808277,"ranger/"
+"1	LINE	0
+	xbindkeys -f ~/.config/xbindkeys/config >/dev/null 2>&1 & disown
+|3,0,1,1,1,0,1748842232,"xbindkeys -f ~/.config/xbindkeys/config >/dev/null 2>&1 & disown"
 "2	LINE	0
-	git/
-|3,0,2,1,1,0,1748808276,"git/"
+	xbindkeys -f ~/.config/xbindkeys/config &> /dev/null &
+|3,0,2,1,1,0,1748842123,"xbindkeys -f ~/.config/xbindkeys/config &> /dev/null &"
 "3	LINE	0
-	Plug 'junegunn/fzf.vim'
-|3,0,3,1,1,0,1748800550,"Plug 'junegunn/fzf.vim'"
+	xbindkeys -f ~/.config/xbindkeys/config &
+|3,0,3,1,1,0,1748842064,"xbindkeys -f ~/.config/xbindkeys/config &"
 "4	LINE	0
-	Plug 'junegunn/fzf.vim'
-|3,0,4,1,1,0,1748800494,"Plug 'junegunn/fzf.vim'"
+	ranger/
+|3,0,4,1,1,0,1748808277,"ranger/"
 "5	LINE	0
-	Plug 'junegunn/fzf.vim'
-|3,0,5,1,1,0,1748800484,"Plug 'junegunn/fzf.vim'"
+	git/
+|3,0,5,1,1,0,1748808276,"git/"
 "6	LINE	0
-	alias bat='batcat'
-|3,0,6,1,1,0,1748798387,"alias bat='batcat'"
+	Plug 'junegunn/fzf.vim'
+|3,0,6,1,1,0,1748800550,"Plug 'junegunn/fzf.vim'"
 "7	LINE	0
-	
-|3,0,7,1,1,0,1748798135,""
+	Plug 'junegunn/fzf.vim'
+|3,0,7,1,1,0,1748800494,"Plug 'junegunn/fzf.vim'"
 "8	LINE	0
-	alias exa='eza'
-|3,0,8,1,1,0,1748798134,"alias exa='eza'"
+	Plug 'junegunn/fzf.vim'
+|3,0,8,1,1,0,1748800484,"Plug 'junegunn/fzf.vim'"
 "9	LINE	0
-	
-|3,0,9,1,1,0,1748798131,""
+	alias bat='batcat'
+|3,0,9,1,1,0,1748798387,"alias bat='batcat'"
 "q	CHAR	0
 	€kb
 |3,0,26,0,1,0,1748789182,"€kb"
-"-	CHAR	0
-	false
-|3,0,36,0,1,0,1748808063,"false"
+""-	CHAR	0
+	
+|3,1,36,0,1,0,1748842279,""
 
 # File marks:
-'0  27  72  ~/.config/README.md
-|4,48,27,72,1748808396,"~/.config/README.md"
-'1  1  0  ~/.config/.gitignore
-|4,49,1,0,1748808304,"~/.config/.gitignore"
-'2  2  0  ~/.config/.gitignore
-|4,50,2,0,1748808292,"~/.config/.gitignore"
-'3  2  0  ~/.config/.gitignore
-|4,51,2,0,1748808292,"~/.config/.gitignore"
-'4  756  6  ~/.config/ranger/rc.conf
-|4,52,756,6,1748808184,"~/.config/ranger/rc.conf"
-'5  117  26  ~/.config/ranger/rc.conf
-|4,53,117,26,1748807914,"~/.config/ranger/rc.conf"
-'6  117  26  ~/.config/ranger/rc.conf
-|4,54,117,26,1748807914,"~/.config/ranger/rc.conf"
-'7  117  28  ~/.config/ranger/rc.conf
-|4,55,117,28,1748807891,"~/.config/ranger/rc.conf"
-'8  117  28  ~/.config/ranger/rc.conf
-|4,56,117,28,1748807891,"~/.config/ranger/rc.conf"
-'9  74  22  ~/.config/ranger/rc.conf
-|4,57,74,22,1748807468,"~/.config/ranger/rc.conf"
+'0  9  8  ~/.config/.gitignore
+|4,48,9,8,1748843404,"~/.config/.gitignore"
+'1  10  0  ~/.config/.gitignore
+|4,49,10,0,1748843380,"~/.config/.gitignore"
+'2  9  0  ~/.config/.gitignore
+|4,50,9,0,1748843380,"~/.config/.gitignore"
+'3  1  0  ~/.config/vim/test.txt
+|4,51,1,0,1748843094,"~/.config/vim/test.txt"
+'4  1  0  ~/.config/vim/test.txt
+|4,52,1,0,1748842856,"~/.config/vim/test.txt"
+'5  1  0  ~/.config/vim/test.txt
+|4,53,1,0,1748842660,"~/.config/vim/test.txt"
+'6  1  0  ~/.config/vim/test.txt
+|4,54,1,0,1748842660,"~/.config/vim/test.txt"
+'7  1  0  ~/.config/vim/osadjsajda
+|4,55,1,0,1748842505,"~/.config/vim/osadjsajda"
+'8  1  0  ~/.config/vim/osadjsajda
+|4,56,1,0,1748842454,"~/.config/vim/osadjsajda"
+'9  128  55  ~/.config/zsh/.zshrc
+|4,57,128,55,1748842287,"~/.config/zsh/.zshrc"
 
 # Jumplist (newest first):
--'  27  72  ~/.config/README.md
-|4,39,27,72,1748808396,"~/.config/README.md"
--'  1  0  ~/.config/README.md
-|4,39,1,0,1748808312,"~/.config/README.md"
+-'  9  8  ~/.config/.gitignore
+|4,39,9,8,1748843404,"~/.config/.gitignore"
 -'  1  0  ~/.config/.gitignore
-|4,39,1,0,1748808304,"~/.config/.gitignore"
+|4,39,1,0,1748843387,"~/.config/.gitignore"
+-'  10  0  ~/.config/.gitignore
+|4,39,10,0,1748843380,"~/.config/.gitignore"
+-'  9  0  ~/.config/.gitignore
+|4,39,9,0,1748843380,"~/.config/.gitignore"
 -'  1  0  ~/.config/.gitignore
-|4,39,1,0,1748808304,"~/.config/.gitignore"
--'  2  0  ~/.config/.gitignore
-|4,39,2,0,1748808292,"~/.config/.gitignore"
--'  2  0  ~/.config/.gitignore
-|4,39,2,0,1748808292,"~/.config/.gitignore"
--'  2  0  ~/.config/.gitignore
-|4,39,2,0,1748808292,"~/.config/.gitignore"
--'  2  0  ~/.config/.gitignore
-|4,39,2,0,1748808292,"~/.config/.gitignore"
--'  1  0  ~/.config/.gitignore
-|4,39,1,0,1748808265,"~/.config/.gitignore"
--'  1  0  ~/.config/.gitignore
-|4,39,1,0,1748808265,"~/.config/.gitignore"
--'  756  6  ~/.config/ranger/rc.conf
-|4,39,756,6,1748808184,"~/.config/ranger/rc.conf"
--'  756  6  ~/.config/ranger/rc.conf
-|4,39,756,6,1748808184,"~/.config/ranger/rc.conf"
--'  756  6  ~/.config/ranger/rc.conf
-|4,39,756,6,1748808184,"~/.config/ranger/rc.conf"
--'  756  6  ~/.config/ranger/rc.conf
-|4,39,756,6,1748808184,"~/.config/ranger/rc.conf"
--'  756  6  ~/.config/ranger/rc.conf
-|4,39,756,6,1748808184,"~/.config/ranger/rc.conf"
--'  756  6  ~/.config/ranger/rc.conf
-|4,39,756,6,1748808184,"~/.config/ranger/rc.conf"
--'  756  6  ~/.config/ranger/rc.conf
-|4,39,756,6,1748808184,"~/.config/ranger/rc.conf"
--'  756  6  ~/.config/ranger/rc.conf
-|4,39,756,6,1748808184,"~/.config/ranger/rc.conf"
--'  1  0  ~/.config/ranger/rc.conf
-|4,39,1,0,1748807926,"~/.config/ranger/rc.conf"
--'  1  0  ~/.config/ranger/rc.conf
-|4,39,1,0,1748807926,"~/.config/ranger/rc.conf"
--'  1  0  ~/.config/ranger/rc.conf
-|4,39,1,0,1748807926,"~/.config/ranger/rc.conf"
--'  1  0  ~/.config/ranger/rc.conf
-|4,39,1,0,1748807926,"~/.config/ranger/rc.conf"
--'  1  0  ~/.config/ranger/rc.conf
-|4,39,1,0,1748807926,"~/.config/ranger/rc.conf"
--'  1  0  ~/.config/ranger/rc.conf
-|4,39,1,0,1748807926,"~/.config/ranger/rc.conf"
--'  1  0  ~/.config/ranger/rc.conf
-|4,39,1,0,1748807926,"~/.config/ranger/rc.conf"
--'  1  0  ~/.config/ranger/rc.conf
-|4,39,1,0,1748807926,"~/.config/ranger/rc.conf"
--'  117  26  ~/.config/ranger/rc.conf
-|4,39,117,26,1748807914,"~/.config/ranger/rc.conf"
--'  117  26  ~/.config/ranger/rc.conf
-|4,39,117,26,1748807914,"~/.config/ranger/rc.conf"
--'  117  26  ~/.config/ranger/rc.conf
-|4,39,117,26,1748807914,"~/.config/ranger/rc.conf"
--'  117  26  ~/.config/ranger/rc.conf
-|4,39,117,26,1748807914,"~/.config/ranger/rc.conf"
--'  117  26  ~/.config/ranger/rc.conf
-|4,39,117,26,1748807914,"~/.config/ranger/rc.conf"
--'  117  26  ~/.config/ranger/rc.conf
-|4,39,117,26,1748807914,"~/.config/ranger/rc.conf"
--'  117  26  ~/.config/ranger/rc.conf
-|4,39,117,26,1748807914,"~/.config/ranger/rc.conf"
--'  117  26  ~/.config/ranger/rc.conf
-|4,39,117,26,1748807914,"~/.config/ranger/rc.conf"
--'  117  26  ~/.config/ranger/rc.conf
-|4,39,117,26,1748807914,"~/.config/ranger/rc.conf"
--'  117  26  ~/.config/ranger/rc.conf
-|4,39,117,26,1748807914,"~/.config/ranger/rc.conf"
--'  117  26  ~/.config/ranger/rc.conf
-|4,39,117,26,1748807914,"~/.config/ranger/rc.conf"
--'  117  26  ~/.config/ranger/rc.conf
-|4,39,117,26,1748807914,"~/.config/ranger/rc.conf"
--'  117  26  ~/.config/ranger/rc.conf
-|4,39,117,26,1748807914,"~/.config/ranger/rc.conf"
--'  117  26  ~/.config/ranger/rc.conf
-|4,39,117,26,1748807914,"~/.config/ranger/rc.conf"
--'  117  26  ~/.config/ranger/rc.conf
-|4,39,117,26,1748807914,"~/.config/ranger/rc.conf"
--'  117  26  ~/.config/ranger/rc.conf
-|4,39,117,26,1748807914,"~/.config/ranger/rc.conf"
--'  1  0  ~/.config/ranger/rc.conf
-|4,39,1,0,1748807910,"~/.config/ranger/rc.conf"
--'  1  0  ~/.config/ranger/rc.conf
-|4,39,1,0,1748807910,"~/.config/ranger/rc.conf"
--'  1  0  ~/.config/ranger/rc.conf
-|4,39,1,0,1748807910,"~/.config/ranger/rc.conf"
--'  1  0  ~/.config/ranger/rc.conf
-|4,39,1,0,1748807910,"~/.config/ranger/rc.conf"
--'  1  0  ~/.config/ranger/rc.conf
-|4,39,1,0,1748807910,"~/.config/ranger/rc.conf"
--'  1  0  ~/.config/ranger/rc.conf
-|4,39,1,0,1748807910,"~/.config/ranger/rc.conf"
--'  1  0  ~/.config/ranger/rc.conf
-|4,39,1,0,1748807910,"~/.config/ranger/rc.conf"
--'  1  0  ~/.config/ranger/rc.conf
-|4,39,1,0,1748807910,"~/.config/ranger/rc.conf"
--'  117  28  ~/.config/ranger/rc.conf
-|4,39,117,28,1748807891,"~/.config/ranger/rc.conf"
--'  117  28  ~/.config/ranger/rc.conf
-|4,39,117,28,1748807891,"~/.config/ranger/rc.conf"
--'  117  28  ~/.config/ranger/rc.conf
-|4,39,117,28,1748807891,"~/.config/ranger/rc.conf"
--'  117  28  ~/.config/ranger/rc.conf
-|4,39,117,28,1748807891,"~/.config/ranger/rc.conf"
--'  117  28  ~/.config/ranger/rc.conf
-|4,39,117,28,1748807891,"~/.config/ranger/rc.conf"
--'  117  28  ~/.config/ranger/rc.conf
-|4,39,117,28,1748807891,"~/.config/ranger/rc.conf"
--'  117  28  ~/.config/ranger/rc.conf
-|4,39,117,28,1748807891,"~/.config/ranger/rc.conf"
--'  117  28  ~/.config/ranger/rc.conf
-|4,39,117,28,1748807891,"~/.config/ranger/rc.conf"
--'  1  0  ~/.config/ranger/rc.conf
-|4,39,1,0,1748807866,"~/.config/ranger/rc.conf"
--'  1  0  ~/.config/ranger/rc.conf
-|4,39,1,0,1748807866,"~/.config/ranger/rc.conf"
--'  1  0  ~/.config/ranger/rc.conf
-|4,39,1,0,1748807866,"~/.config/ranger/rc.conf"
--'  1  0  ~/.config/ranger/rc.conf
-|4,39,1,0,1748807866,"~/.config/ranger/rc.conf"
--'  1  0  ~/.config/ranger/rc.conf
-|4,39,1,0,1748807866,"~/.config/ranger/rc.conf"
--'  1  0  ~/.config/ranger/rc.conf
-|4,39,1,0,1748807866,"~/.config/ranger/rc.conf"
--'  1  0  ~/.config/ranger/rc.conf
-|4,39,1,0,1748807866,"~/.config/ranger/rc.conf"
--'  1  0  ~/.config/ranger/rc.conf
-|4,39,1,0,1748807866,"~/.config/ranger/rc.conf"
--'  74  22  ~/.config/ranger/rc.conf
-|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
--'  74  22  ~/.config/ranger/rc.conf
-|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
--'  74  22  ~/.config/ranger/rc.conf
-|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
--'  74  22  ~/.config/ranger/rc.conf
-|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
--'  74  22  ~/.config/ranger/rc.conf
-|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
--'  74  22  ~/.config/ranger/rc.conf
-|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
--'  74  22  ~/.config/ranger/rc.conf
-|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
--'  74  22  ~/.config/ranger/rc.conf
-|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
--'  74  22  ~/.config/ranger/rc.conf
-|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
--'  74  22  ~/.config/ranger/rc.conf
-|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
--'  74  22  ~/.config/ranger/rc.conf
-|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
--'  74  22  ~/.config/ranger/rc.conf
-|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
--'  74  22  ~/.config/ranger/rc.conf
-|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
--'  74  22  ~/.config/ranger/rc.conf
-|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
--'  74  22  ~/.config/ranger/rc.conf
-|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
--'  74  22  ~/.config/ranger/rc.conf
-|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
--'  74  22  ~/.config/ranger/rc.conf
-|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
--'  74  22  ~/.config/ranger/rc.conf
-|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
--'  74  22  ~/.config/ranger/rc.conf
-|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
--'  74  22  ~/.config/ranger/rc.conf
-|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
--'  74  22  ~/.config/ranger/rc.conf
-|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
--'  74  22  ~/.config/ranger/rc.conf
-|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
--'  74  22  ~/.config/ranger/rc.conf
-|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
--'  74  22  ~/.config/ranger/rc.conf
-|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
--'  74  22  ~/.config/ranger/rc.conf
-|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
--'  74  22  ~/.config/ranger/rc.conf
-|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
--'  74  22  ~/.config/ranger/rc.conf
-|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
--'  74  22  ~/.config/ranger/rc.conf
-|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
--'  74  22  ~/.config/ranger/rc.conf
-|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
--'  74  22  ~/.config/ranger/rc.conf
-|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
--'  74  22  ~/.config/ranger/rc.conf
-|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
--'  74  22  ~/.config/ranger/rc.conf
-|4,39,74,22,1748807468,"~/.config/ranger/rc.conf"
--'  37  16  ~/.config/ranger/rc.conf
-|4,39,37,16,1748807360,"~/.config/ranger/rc.conf"
--'  37  16  ~/.config/ranger/rc.conf
-|4,39,37,16,1748807360,"~/.config/ranger/rc.conf"
+|4,39,1,0,1748843336,"~/.config/.gitignore"
+-'  1  0  ~/.config/vim/test.txt
+|4,39,1,0,1748843094,"~/.config/vim/test.txt"
+-'  1  0  ~/.config/vim/test.txt
+|4,39,1,0,1748843094,"~/.config/vim/test.txt"
+-'  1  0  ~/.config/vim/test.txt
+|4,39,1,0,1748843094,"~/.config/vim/test.txt"
+-'  1  0  ~/.config/vim/test.txt
+|4,39,1,0,1748843094,"~/.config/vim/test.txt"
+-'  1  0  ~/.config/vim/test.txt
+|4,39,1,0,1748842856,"~/.config/vim/test.txt"
+-'  1  0  ~/.config/vim/test.txt
+|4,39,1,0,1748842856,"~/.config/vim/test.txt"
+-'  1  0  ~/.config/vim/test.txt
+|4,39,1,0,1748842856,"~/.config/vim/test.txt"
+-'  1  0  ~/.config/vim/test.txt
+|4,39,1,0,1748842856,"~/.config/vim/test.txt"
+-'  1  0  ~/.config/vim/test.txt
+|4,39,1,0,1748842660,"~/.config/vim/test.txt"
+-'  1  0  ~/.config/vim/test.txt
+|4,39,1,0,1748842660,"~/.config/vim/test.txt"
+-'  1  0  ~/.config/vim/test.txt
+|4,39,1,0,1748842660,"~/.config/vim/test.txt"
+-'  1  0  ~/.config/vim/test.txt
+|4,39,1,0,1748842660,"~/.config/vim/test.txt"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842454,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842454,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842454,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842454,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842454,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842454,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842454,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842454,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842454,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842454,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842454,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842454,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842454,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842454,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842454,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842454,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842454,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842454,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842454,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842454,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842454,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842454,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842454,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842454,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842454,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842454,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842454,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842454,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842454,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842454,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842454,"~/.config/vim/osadjsajda"
+-'  1  0  ~/.config/vim/osadjsajda
+|4,39,1,0,1748842454,"~/.config/vim/osadjsajda"
+-'  128  55  ~/.config/zsh/.zshrc
+|4,39,128,55,1748842287,"~/.config/zsh/.zshrc"
+-'  128  55  ~/.config/zsh/.zshrc
+|4,39,128,55,1748842287,"~/.config/zsh/.zshrc"
+-'  128  55  ~/.config/zsh/.zshrc
+|4,39,128,55,1748842287,"~/.config/zsh/.zshrc"
+-'  128  55  ~/.config/zsh/.zshrc
+|4,39,128,55,1748842287,"~/.config/zsh/.zshrc"
+-'  128  55  ~/.config/zsh/.zshrc
+|4,39,128,55,1748842287,"~/.config/zsh/.zshrc"
+-'  128  55  ~/.config/zsh/.zshrc
+|4,39,128,55,1748842287,"~/.config/zsh/.zshrc"
+-'  128  55  ~/.config/zsh/.zshrc
+|4,39,128,55,1748842287,"~/.config/zsh/.zshrc"
+-'  128  55  ~/.config/zsh/.zshrc
+|4,39,128,55,1748842287,"~/.config/zsh/.zshrc"
+-'  128  55  ~/.config/zsh/.zshrc
+|4,39,128,55,1748842287,"~/.config/zsh/.zshrc"
+-'  128  55  ~/.config/zsh/.zshrc
+|4,39,128,55,1748842287,"~/.config/zsh/.zshrc"
+-'  128  55  ~/.config/zsh/.zshrc
+|4,39,128,55,1748842287,"~/.config/zsh/.zshrc"
+-'  128  55  ~/.config/zsh/.zshrc
+|4,39,128,55,1748842287,"~/.config/zsh/.zshrc"
+-'  128  55  ~/.config/zsh/.zshrc
+|4,39,128,55,1748842287,"~/.config/zsh/.zshrc"
+-'  128  55  ~/.config/zsh/.zshrc
+|4,39,128,55,1748842287,"~/.config/zsh/.zshrc"
+-'  128  55  ~/.config/zsh/.zshrc
+|4,39,128,55,1748842287,"~/.config/zsh/.zshrc"
+-'  128  55  ~/.config/zsh/.zshrc
+|4,39,128,55,1748842287,"~/.config/zsh/.zshrc"
+-'  128  55  ~/.config/zsh/.zshrc
+|4,39,128,55,1748842287,"~/.config/zsh/.zshrc"
+-'  128  55  ~/.config/zsh/.zshrc
+|4,39,128,55,1748842287,"~/.config/zsh/.zshrc"
+-'  128  55  ~/.config/zsh/.zshrc
+|4,39,128,55,1748842287,"~/.config/zsh/.zshrc"
 
 # History of marks within files (newest to oldest):
 
-> ~/.config/README.md
-	*	1748808395	0
-	"	27	72
-	^	27	73
-	.	27	73
-	+	14	71
-	+	27	73
-
 > ~/.config/.gitignore
-	*	1748808302	0
-	"	1	0
-	.	4	0
+	*	1748843403	0
+	"	9	8
+	^	9	9
+	.	9	8
 	+	3	0
 	+	4	0
+	+	10	0
+	+	8	4
+	+	10	0
+	+	9	8
 
-> ~/.config/ranger/rc.conf
-	*	1748808183	0
-	"	756	6
-	^	756	7
-	.	756	7
-	+	37	19
-	+	74	22
-	+	37	19
-	+	74	22
-	+	117	0
-	+	142	21
-	+	283	20
-	+	756	7
+> ~/.config/vim/test.txt
+	*	1748843091	0
+	"	1	0
+	^	1	0
+	.	1	0
+	+	1	0
+
+> ~/.config/vim/osadjsajda
+	*	1748842503	0
+	"	1	0
+	^	1	0
+
+> ~/.config/zsh/.zshrc
+	*	1748842279	0
+	"	128	55
+	^	130	0
+	.	128	56
+	+	118	0
+	+	1	1
+	+	121	37
+	+	88	0
+	+	87	61
+	+	58	60
+	+	33	48
+	+	85	0
+	+	86	0
+	+	87	0
+	+	64	31
+	+	39	0
+	+	62	0
+	+	28	0
+	+	31	0
+	+	32	0
+	+	29	0
+	+	29	80
+	+	29	72
+	+	29	66
+	+	30	48
+	+	30	106
+	+	30	102
+	+	30	0
+	+	29	9
+	+	64	0
+	+	33	0
+	+	31	0
+	+	30	0
+	+	29	0
+	+	33	9
+	+	38	48
+	+	35	29
+	+	36	29
+	+	57	0
+	+	62	71
+	+	65	0
+	+	69	0
+	+	70	0
+	+	68	27
+	+	75	0
+	+	76	0
+	+	77	0
+	+	80	20
+	+	80	19
+	+	77	0
+	+	123	0
+	+	124	0
+	+	125	0
+	+	132	0
+	+	123	97
+	+	40	0
+	+	39	15
+	+	110	0
+	+	106	0
+	+	107	0
+	+	108	0
+	+	106	17
+	+	106	0
+	+	132	0
+	+	106	0
+	+	124	53
+	+	70	14
+	+	71	94
+	+	72	1
+	+	71	2
+	+	73	22
+	+	81	0
+	+	84	18
+	+	126	0
+	+	132	0
+	+	127	0
+	+	131	0
+	+	130	0
+	+	127	4
+	+	128	56
+
+> ~/.config/vim/Windows.-vim-rc.bak
+	*	1748840785	0
+	"	2	0
+	.	2	0
+	+	2	0
+
+> ~/.config/vim/Windows._vimrc.bak
+	*	1748840708	0
+	"	1	0
+	^	1	0
+
+> ~/.lesshst
+	*	1748840473	0
+	"	1	0
 
 > ~/.config/vim/.vimrc
-	*	1748800720	0
-	"	104	0
+	*	1748840274	0
+	"	26	0
 	^	102	0
 	.	101	77
 	+	112	0
@@ -526,74 +624,27 @@ $
 	+	99	50
 	+	101	77
 
-> ~/.config/zsh/.zshrc
-	*	1748799925	0
-	"	119	53
-	^	119	54
-	.	119	53
-	+	113	0
-	+	1	1
-	+	116	37
-	+	83	0
-	+	82	61
-	+	58	60
-	+	33	48
-	+	80	0
-	+	81	0
-	+	82	0
-	+	64	31
-	+	39	0
-	+	62	0
-	+	28	0
-	+	31	0
-	+	32	0
-	+	29	0
-	+	29	80
-	+	29	72
-	+	29	66
-	+	30	48
-	+	30	106
-	+	30	102
-	+	30	0
-	+	29	9
-	+	64	0
-	+	33	0
-	+	31	0
-	+	30	0
-	+	29	0
-	+	33	9
-	+	38	48
-	+	35	29
-	+	36	29
-	+	57	0
-	+	62	71
-	+	65	0
-	+	69	0
-	+	70	0
-	+	68	27
-	+	71	0
-	+	72	0
-	+	73	0
-	+	77	0
-	+	78	0
-	+	76	19
-	+	73	0
-	+	118	0
-	+	119	0
-	+	120	0
-	+	121	0
-	+	118	97
-	+	40	0
-	+	39	15
-	+	105	0
-	+	101	0
-	+	102	0
-	+	103	0
-	+	101	17
-	+	101	0
-	+	121	0
-	+	101	0
-	+	119	53
+> ~/.config/README.md
+	*	1748808395	0
+	"	27	72
+	^	27	73
+	.	27	73
+	+	14	71
+	+	27	73
+
+> ~/.config/ranger/rc.conf
+	*	1748808183	0
+	"	756	6
+	^	756	7
+	.	756	7
+	+	37	19
+	+	74	22
+	+	37	19
+	+	74	22
+	+	117	0
+	+	142	21
+	+	283	20
+	+	756	7
 
 > ~/Projects/commands/youtube-downloader.sh
 	*	1748791362	0

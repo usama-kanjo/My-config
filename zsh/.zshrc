@@ -67,6 +67,10 @@ fzf-git-checkout() {
 }
 alias gco="fzf-git-checkout"
 
+fzf-git-log(){
+  git log --oneline | fzf --preview "git show --color=always {1}" --preview-window=right:50%:wrap
+}
+alias glf="fzf-git-log"
 
 
 
@@ -77,6 +81,7 @@ alias sshf="fzf-ssh"
 
 
 
+bindkey '^F' ranger
 #bindkey '^R' fzf-history-widget
 #bindkey '^T' fzf-file-widget
 #bindkey '\ec' fzf-cd-widget  # Alt+C için alternatif bağlama
@@ -117,4 +122,10 @@ export VIMINIT='let $MYVIMRC="$HOME/.config/vim/.vimrc" | source $MYVIMRC'
 
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border --preview "bat --color=always {}"'
 export GIT_CONFIG_GLOBAL="$HOME/.config/git/.gitconfig"
+
+
+() {
+  xbindkeys -f ~/.config/xbindkeys/config &>/dev/null &!
+}
+
 
