@@ -72,7 +72,7 @@ set showmode
 set showmatch
 
 " Use highlighting when doing a search.
-set hlsearch
+set nohlsearch
 
 " Set the commands to save in history default number is 20.
 set history=10000
@@ -87,6 +87,14 @@ set wildmode=list:longest
 " Wildmenu will ignore files with these extensions.
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
+" 24-bit renk desteği
+set termguicolors  
+
+" Fare ile tıklamayı etkinleştir
+"----set mouse=a  
+
+" Nerd Fonts önerilir
+set guifont=Fira\ Code\ Nerd\ Font\ Mono:h12  
 
 
 " PLUGINS ---------------------------------------------------------------- {{{
@@ -101,11 +109,124 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }  " Bu kritik öneme sahip!
 Plug 'junegunn/fzf.vim'                              " FZF'nin Vim komutları
 
 
-Plug 'preservim/nerdtree'
+Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'npm install',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html']
+\ }
+Plug 'preservim/tagbar', { 'for': 'python' }
+
+
+"-----------Plug 'rust-lang/rust.vim'   rust kodu kulanimi icin
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
 Plug 'dense-analysis/ale'
-"-----------Plug 'rust-lang/rust.vim'
+
+" nerdtree icin gereken plaginlaer
+Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'ryanoasis/vim-devicons'
+" guzelendirmek icin bir plugin
+Plug 'morhetz/gruvbox'
+
+
+
+""auto complet
+"Plug 'SirVer/ultisnips'
+"Plug 'honza/vim-snippets'
+"Plug 'mattn/emmet-vim'
+"Plug 'posva/vim-vue'
+"Plug 'jiangmiao/auto-pairs'
+"Plug 'ervandew/supertab'
 
 call plug#end()
+
+
+" }}}
+
+" PLUGIN EDIT  ----------------------------------------------------------- {{{
+
+
+
+" Ayarlar auto complet
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+
+
+" NERDTree'de gizli dosyaları göster
+let NERDTreeShowHidden=1
+"Gereksiz Dosyaları Gizleme
+let NERDTreeIgnore=['\.git$', '\.pyc$', '\.swp$', '\.DS_Store$']
+" Genişlik = 35 karakter
+let NERDTreeWinSize=20
+" NERDTree'de dosyaları yeni sekmede aç
+let NERDTreeCustomOpenArgs = {'file': {'where': 't'}}
+" Pencere genişliğini otomatik ayarla
+let NERDTreeAutoResize = 1  
+" NERDTree'de satır kaydırmayı kapat
+autocmd FileType nerdtree setlocal nowrap  
+"" Dosya silindiğinde buffer'ı da sil
+"let NERDTreeAutoDeleteBuffer = 1 
+"" Dosya açılınca NERDTree'yi kapat
+"let NERDTreeQuitOnOpen = 1       
+
+
+
+" Klasörler sarı
+highlight NERDTreeDir guifg=#FFD700 ctermfg=Yellow 
+" Dosyalar mavi
+highlight NERDTreeFile guifg=#87CEEB ctermfg=Blue   
+" Sadece NERDTree'de gruvbox teması
+autocmd FileType nerdtree colorscheme gruvbox  
+" Koyu gri arka plan
+highlight NERDTreeBackground guibg=#282828 ctermbg=235 
+
+
+
+
+" NERDTree için kısayol
+nmap <C-n> :NERDTreeToggle<CR>
+
+" Tagbar için kısayol
+nmap <F8> :TagbarToggle<CR>
+
+" FZF için kısayollar
+nmap <C-p> :Files<CR>
+nmap <C-f> :Rg<CR>
+
+" Python-mode için kısayol
+nmap <leader>p :PymodeRun<CR>
+
+" NERDTree'de <Enter> normal açsın, <T> yeni sekmede açsın
+let NERDTreeMapOpenInTab = 'T'  " Büyük T harfi ile yeni sekme
+let NERDTreeMapOpenSplit = 's'  " s ile yatay böl
+let NERDTreeMapOpenVSplit = 'v'  " v ile dikey böl
+
+
+
+
+" Vim açıldığında NERDTree'yi başlat
+autocmd VimEnter * NERDTree  
+" NERDTree tek açık pencereyse Vim'den çık
+autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif  
+
+
+
+
+autocmd FileType html setlocal omnifunc=htmlcomplete#CompleteTags
+
+
+
+
+
+
+let g:ale_javascript_eslint_use_global = 0  " Global ESLint'i kullanma
+let g:ale_javascript_eslint_executable = 'npx eslint'  " npx ile çalıştır
+
+
+
 
 
 " }}}
@@ -194,7 +315,6 @@ nnoremap <Leader>dq :q!<CR>
 nnoremap <Leader>e :e ~/.config/vim/.vimrc<CR>
 
 
-
 " }}}
 
 " VIMSCRIPT -------------------------------------------------------------- {{{
@@ -205,7 +325,7 @@ autocmd Filetype html setlocal tabstop=2 shiftwidth=2 expandtab
 augroup cursor_off
     autocmd!
     autocmd WinLeave * set nocursorline nocursorcolumn
-    autocmd WinEnter * set cursorline cursorcolumn
+"    autocmd WinEnter * set cursorline cursorcolumn
 augroup END
 
 
@@ -228,6 +348,8 @@ set backupdir=$HOME/.cache/vim/backup//
 " View dosyaları için özel dizin
 set viewdir=~/.cache/vim/view/  
 
+
+set background=dark
 
 " If GUI version of Vim is running set these options.
 if has('gui_running')

@@ -20,10 +20,34 @@
 $
 
 # Command Line History (newest to oldest):
+:PlugInstall
+|2,0,1748888929,,"PlugInstall"
+:tab new osama.html
+|2,0,1748888675,,"tab new osama.html"
+:q
+|2,0,1748888648,,"q"
+:ALEDetail
+|2,0,1748888492,,"ALEDetail"
+:!zshrc
+|2,0,1748886156,,"!zshrc"
+:qa
+|2,0,1748889154,,"qa"
+:set modifiable
+|2,0,1748885552,,"set modifiable"
+:set modifiable?
+|2,0,1748885536,,"set modifiable?"
+:!mkdir -p ~/.config/fonts
+|2,0,1748881895,,"!mkdir -p ~/.config/fonts"
+:reg
+|2,0,1748879517,,"reg"
+:Gstatus
+|2,0,1748878123,,"Gstatus"
+:Files
+|2,0,1748877961,,"Files"
+:!pip install pylint flake8 jedi mypy
+|2,0,1748877666,,"!pip install pylint flake8 jedi mypy"
 :!ls
 |2,0,1748843353,,"!ls"
-:reg
-|2,0,1748840774,,"reg"
 :rag
 |2,0,1748840768,,"rag"
 :rang
@@ -34,8 +58,6 @@ $
 |2,0,1748800655,,"Rg"
 :Ag
 |2,0,1748800635,,"Ag"
-:PlugInstall
-|2,0,1748800609,,"PlugInstall"
 :rg
 |2,0,1748800277,,"rg"
 :source ~/.config/vim/.vimrc
@@ -48,8 +70,6 @@ $
 |2,0,1748791919,,"%b"
 :wq
 |2,0,1748791502,,"wq"
-:q
-|2,0,1748791499,,"q"
 :tab ba
 |2,0,1748791341,,"tab ba"
 :ls
@@ -92,8 +112,6 @@ $
 |2,0,1748739181,,"vers"
 :qa!
 |2,0,1748739121,,"qa!"
-:qa
-|2,0,1748739107,,"qa"
 :bn
 |2,0,1748738548,,"bn"
 :new b omar.txt
@@ -130,273 +148,571 @@ $
 # Expression History (newest to oldest):
 
 # Input Line History (newest to oldest):
+@y
+|2,3,1748890738,,"y"
 
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	
-	alias exa='eza'
-|3,0,0,1,2,0,1748798118,"","alias exa='eza'"
 "1	LINE	0
-	xbindkeys -f ~/.config/xbindkeys/config >/dev/null 2>&1 & disown
-|3,0,1,1,1,0,1748842232,"xbindkeys -f ~/.config/xbindkeys/config >/dev/null 2>&1 & disown"
+	Plug 'ataayaa/atayama.vim'
+|3,0,1,1,1,0,1748890271,"Plug 'ataayaa/atayama.vim'"
 "2	LINE	0
-	xbindkeys -f ~/.config/xbindkeys/config &> /dev/null &
-|3,0,2,1,1,0,1748842123,"xbindkeys -f ~/.config/xbindkeys/config &> /dev/null &"
+	Plug 'yuki-yano/atayama.vim'
+|3,0,2,1,1,0,1748890202,"Plug 'yuki-yano/atayama.vim'"
 "3	LINE	0
-	xbindkeys -f ~/.config/xbindkeys/config &
-|3,0,3,1,1,0,1748842064,"xbindkeys -f ~/.config/xbindkeys/config &"
+	
+|3,0,3,1,1,0,1748888621,""
 "4	LINE	0
-	ranger/
-|3,0,4,1,1,0,1748808277,"ranger/"
+	
+|3,0,4,1,1,0,1748888620,""
 "5	LINE	0
-	git/
-|3,0,5,1,1,0,1748808276,"git/"
+	
+|3,0,5,1,1,0,1748888620,""
 "6	LINE	0
-	Plug 'junegunn/fzf.vim'
-|3,0,6,1,1,0,1748800550,"Plug 'junegunn/fzf.vim'"
+	  [ î˜’ ].bash_history
+|3,0,6,1,1,0,1748885557,"  [ î˜’ ].bash_history"
 "7	LINE	0
-	Plug 'junegunn/fzf.vim'
-|3,0,7,1,1,0,1748800494,"Plug 'junegunn/fzf.vim'"
+	let NERDTreeCustomOpenArgs = {'file': {'where': 't'}}
+|3,0,7,1,1,0,1748885276,"let NERDTreeCustomOpenArgs = {'file': {'where': 't'}}"
 "8	LINE	0
-	Plug 'junegunn/fzf.vim'
-|3,0,8,1,1,0,1748800484,"Plug 'junegunn/fzf.vim'"
+	
+|3,0,8,1,1,0,1748884803,""
 "9	LINE	0
-	alias bat='batcat'
-|3,0,9,1,1,0,1748798387,"alias bat='batcat'"
+	
+|3,0,9,1,1,0,1748884802,""
 "q	CHAR	0
 	€kb
 |3,0,26,0,1,0,1748789182,"€kb"
 ""-	CHAR	0
-	
-|3,1,36,0,1,0,1748842279,""
+	y
+|3,1,36,0,1,0,1748888982,"y"
 
 # File marks:
-'0  9  9  ~/.config/.gitignore
-|4,48,9,9,1748843523,"~/.config/.gitignore"
-'1  10  8  ~/.config/.gitignore
-|4,49,10,8,1748843404,"~/.config/.gitignore"
-'2  9  8  ~/.config/.gitignore
-|4,50,9,8,1748843404,"~/.config/.gitignore"
-'3  11  0  ~/.config/.gitignore
-|4,51,11,0,1748843380,"~/.config/.gitignore"
-'4  10  0  ~/.config/.gitignore
-|4,52,10,0,1748843380,"~/.config/.gitignore"
-'5  10  0  ~/.config/.gitignore
-|4,53,10,0,1748843380,"~/.config/.gitignore"
-'6  9  0  ~/.config/.gitignore
-|4,54,9,0,1748843380,"~/.config/.gitignore"
-'7  1  0  ~/.config/vim/test.txt
-|4,55,1,0,1748843094,"~/.config/vim/test.txt"
-'8  1  0  ~/.config/vim/test.txt
-|4,56,1,0,1748842856,"~/.config/vim/test.txt"
-'9  1  0  ~/.config/vim/test.txt
-|4,57,1,0,1748842660,"~/.config/vim/test.txt"
+'0  9  12  ~/osama.html
+|4,48,9,12,1748890799,"~/osama.html"
+'1  1  0  ~/.config/vim/.vimrc
+|4,49,1,0,1748890792,"~/.config/vim/.vimrc"
+'2  4  0  ~/[Plugins]
+|4,50,4,0,1748890739,"~/[Plugins]"
+'3  28  0  ~/NERD_tree_tab_1
+|4,51,28,0,1748890713,"~/NERD_tree_tab_1"
+'4  6  0  ~/NERD_tree_tab_1
+|4,52,6,0,1748890713,"~/NERD_tree_tab_1"
+'5  46  0  ~/NERD_tree_tab_1
+|4,53,46,0,1748890532,"~/NERD_tree_tab_1"
+'6  26  0  ~/NERD_tree_tab_1
+|4,54,26,0,1748890532,"~/NERD_tree_tab_1"
+'7  24  0  ~/NERD_tree_tab_1
+|4,55,24,0,1748890532,"~/NERD_tree_tab_1"
+'8  4  0  ~/NERD_tree_tab_1
+|4,56,4,0,1748890532,"~/NERD_tree_tab_1"
+'9  67  0  ~/NERD_tree_tab_1
+|4,57,67,0,1748890323,"~/NERD_tree_tab_1"
 
 # Jumplist (newest first):
--'  9  9  ~/.config/.gitignore
-|4,39,9,9,1748843523,"~/.config/.gitignore"
--'  1  0  ~/.config/.gitignore
-|4,39,1,0,1748843509,"~/.config/.gitignore"
--'  10  8  ~/.config/.gitignore
-|4,39,10,8,1748843404,"~/.config/.gitignore"
--'  9  8  ~/.config/.gitignore
-|4,39,9,8,1748843404,"~/.config/.gitignore"
--'  1  0  ~/.config/.gitignore
-|4,39,1,0,1748843387,"~/.config/.gitignore"
--'  11  0  ~/.config/.gitignore
-|4,39,11,0,1748843380,"~/.config/.gitignore"
--'  10  0  ~/.config/.gitignore
-|4,39,10,0,1748843380,"~/.config/.gitignore"
--'  9  0  ~/.config/.gitignore
-|4,39,9,0,1748843380,"~/.config/.gitignore"
--'  1  0  ~/.config/.gitignore
-|4,39,1,0,1748843336,"~/.config/.gitignore"
--'  1  0  ~/.config/vim/test.txt
-|4,39,1,0,1748843094,"~/.config/vim/test.txt"
--'  1  0  ~/.config/vim/test.txt
-|4,39,1,0,1748843094,"~/.config/vim/test.txt"
--'  1  0  ~/.config/vim/test.txt
-|4,39,1,0,1748843094,"~/.config/vim/test.txt"
--'  1  0  ~/.config/vim/test.txt
-|4,39,1,0,1748843094,"~/.config/vim/test.txt"
--'  1  0  ~/.config/vim/test.txt
-|4,39,1,0,1748843094,"~/.config/vim/test.txt"
--'  1  0  ~/.config/vim/test.txt
-|4,39,1,0,1748843094,"~/.config/vim/test.txt"
--'  1  0  ~/.config/vim/test.txt
-|4,39,1,0,1748843094,"~/.config/vim/test.txt"
--'  1  0  ~/.config/vim/test.txt
-|4,39,1,0,1748843094,"~/.config/vim/test.txt"
--'  1  0  ~/.config/vim/test.txt
-|4,39,1,0,1748842856,"~/.config/vim/test.txt"
--'  1  0  ~/.config/vim/test.txt
-|4,39,1,0,1748842856,"~/.config/vim/test.txt"
--'  1  0  ~/.config/vim/test.txt
-|4,39,1,0,1748842856,"~/.config/vim/test.txt"
--'  1  0  ~/.config/vim/test.txt
-|4,39,1,0,1748842856,"~/.config/vim/test.txt"
--'  1  0  ~/.config/vim/test.txt
-|4,39,1,0,1748842856,"~/.config/vim/test.txt"
--'  1  0  ~/.config/vim/test.txt
-|4,39,1,0,1748842856,"~/.config/vim/test.txt"
--'  1  0  ~/.config/vim/test.txt
-|4,39,1,0,1748842856,"~/.config/vim/test.txt"
--'  1  0  ~/.config/vim/test.txt
-|4,39,1,0,1748842856,"~/.config/vim/test.txt"
--'  1  0  ~/.config/vim/test.txt
-|4,39,1,0,1748842660,"~/.config/vim/test.txt"
--'  1  0  ~/.config/vim/test.txt
-|4,39,1,0,1748842660,"~/.config/vim/test.txt"
--'  1  0  ~/.config/vim/test.txt
-|4,39,1,0,1748842660,"~/.config/vim/test.txt"
--'  1  0  ~/.config/vim/test.txt
-|4,39,1,0,1748842660,"~/.config/vim/test.txt"
--'  1  0  ~/.config/vim/test.txt
-|4,39,1,0,1748842660,"~/.config/vim/test.txt"
--'  1  0  ~/.config/vim/test.txt
-|4,39,1,0,1748842660,"~/.config/vim/test.txt"
--'  1  0  ~/.config/vim/test.txt
-|4,39,1,0,1748842660,"~/.config/vim/test.txt"
--'  1  0  ~/.config/vim/test.txt
-|4,39,1,0,1748842660,"~/.config/vim/test.txt"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842505,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842454,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842454,"~/.config/vim/osadjsajda"
--'  1  0  ~/.config/vim/osadjsajda
-|4,39,1,0,1748842454,"~/.config/vim/osadjsajda"
+-'  9  12  ~/osama.html
+|4,39,9,12,1748890799,"~/osama.html"
+-'  1  0  ~/.config/vim/.vimrc
+|4,39,1,0,1748890792,"~/.config/vim/.vimrc"
+-'  4  0  ~/[Plugins]
+|4,39,4,0,1748890739,"~/[Plugins]"
+-'  4  0  ~/[Plugins]
+|4,39,4,0,1748890739,"~/[Plugins]"
+-'  2  0  ~/[Plugins]
+|4,39,2,0,1748890717,"~/[Plugins]"
+-'  2  0  ~/[Plugins]
+|4,39,2,0,1748890717,"~/[Plugins]"
+-'  3  0  ~/[Plugins]
+|4,39,3,0,1748890716,"~/[Plugins]"
+-'  3  0  ~/[Plugins]
+|4,39,3,0,1748890716,"~/[Plugins]"
+-'  28  0  ~/NERD_tree_tab_1
+|4,39,28,0,1748890713,"~/NERD_tree_tab_1"
+-'  6  0  ~/NERD_tree_tab_1
+|4,39,6,0,1748890713,"~/NERD_tree_tab_1"
+-'  6  0  ~/NERD_tree_tab_1
+|4,39,6,0,1748890713,"~/NERD_tree_tab_1"
+-'  45  2  ~/NERD_tree_tab_1
+|4,39,45,2,1748890633,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1748890633,"~/NERD_tree_tab_1"
+-'  23  2  ~/NERD_tree_tab_1
+|4,39,23,2,1748890633,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1748890633,"~/NERD_tree_tab_1"
+-'  23  2  ~/NERD_tree_tab_1
+|4,39,23,2,1748890633,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1748890633,"~/NERD_tree_tab_1"
+-'  26  0  ~/NERD_tree_tab_1
+|4,39,26,0,1748890532,"~/NERD_tree_tab_1"
+-'  4  0  ~/NERD_tree_tab_1
+|4,39,4,0,1748890532,"~/NERD_tree_tab_1"
+-'  4  0  ~/NERD_tree_tab_1
+|4,39,4,0,1748890532,"~/NERD_tree_tab_1"
+-'  23  2  ~/NERD_tree_tab_1
+|4,39,23,2,1748890518,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1748890518,"~/NERD_tree_tab_1"
+-'  23  2  ~/NERD_tree_tab_1
+|4,39,23,2,1748890518,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1748890518,"~/NERD_tree_tab_1"
+-'  4  0  ~/NERD_tree_tab_1
+|4,39,4,0,1748890323,"~/NERD_tree_tab_1"
+-'  4  0  ~/NERD_tree_tab_1
+|4,39,4,0,1748890323,"~/NERD_tree_tab_1"
+-'  23  2  ~/NERD_tree_tab_1
+|4,39,23,2,1748890180,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1748890180,"~/NERD_tree_tab_1"
+-'  23  2  ~/NERD_tree_tab_1
+|4,39,23,2,1748890180,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1748890180,"~/NERD_tree_tab_1"
+-'  4  0  ~/NERD_tree_tab_1
+|4,39,4,0,1748889154,"~/NERD_tree_tab_1"
+-'  4  0  ~/NERD_tree_tab_1
+|4,39,4,0,1748889154,"~/NERD_tree_tab_1"
+-'  47  2  ~/NERD_tree_tab_1
+|4,39,47,2,1748889091,"~/NERD_tree_tab_1"
+-'  25  2  ~/NERD_tree_tab_1
+|4,39,25,2,1748889091,"~/NERD_tree_tab_1"
+-'  25  2  ~/NERD_tree_tab_1
+|4,39,25,2,1748889091,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1748889090,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1748889090,"~/NERD_tree_tab_1"
+-'  6  14  ~/osama.html
+|4,39,6,14,1748888965,"~/osama.html"
+-'  4  0  ~/NERD_tree_tab_1
+|4,39,4,0,1748888751,"~/NERD_tree_tab_1"
+-'  4  0  ~/NERD_tree_tab_1
+|4,39,4,0,1748888751,"~/NERD_tree_tab_1"
+-'  148  21  ~/.config/vim/.vimrc
+|4,39,148,21,1748888675,"~/.config/vim/.vimrc"
+-'  25  2  ~/NERD_tree_tab_1
+|4,39,25,2,1748888633,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1748888633,"~/NERD_tree_tab_1"
+-'  25  2  ~/NERD_tree_tab_1
+|4,39,25,2,1748888633,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1748888633,"~/NERD_tree_tab_1"
+-'  1  0  ~/.config/vim/.vimrc
+|4,39,1,0,1748888001,"~/.config/vim/.vimrc"
+-'  5  0  ~/.config/vim/.vimrc
+|4,39,5,0,1748887983,"~/.config/vim/.vimrc"
+-'  31  2  ~/NERD_tree_tab_1
+|4,39,31,2,1748885596,"~/NERD_tree_tab_1"
+-'  43  2  ~/NERD_tree_tab_1
+|4,39,43,2,1748885596,"~/NERD_tree_tab_1"
+-'  21  2  ~/NERD_tree_tab_1
+|4,39,21,2,1748885596,"~/NERD_tree_tab_1"
+-'  21  2  ~/NERD_tree_tab_1
+|4,39,21,2,1748885596,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1748885423,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1748885423,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1748885423,"~/NERD_tree_tab_1"
+-'  1  0  ~/.bash_history
+|4,39,1,0,1748885393,"~/.bash_history"
+-'  1  0  ~/.bash_history
+|4,39,1,0,1748885393,"~/.bash_history"
+-'  1  0  ~/.bash_history
+|4,39,1,0,1748885393,"~/.bash_history"
+-'  1  0  ~/.bash_history
+|4,39,1,0,1748885393,"~/.bash_history"
+-'  1  0  ~/.bash_history
+|4,39,1,0,1748885393,"~/.bash_history"
+-'  163  0  ~/.config/vim/.vimrc
+|4,39,163,0,1748885376,"~/.config/vim/.vimrc"
+-'  150  0  ~/.config/vim/.vimrc
+|4,39,150,0,1748885376,"~/.config/vim/.vimrc"
+-'  150  0  ~/.config/vim/.vimrc
+|4,39,150,0,1748885376,"~/.config/vim/.vimrc"
+-'  150  0  ~/.config/vim/.vimrc
+|4,39,150,0,1748885376,"~/.config/vim/.vimrc"
+-'  1  0  ~/.config/vim/.vimrc
+|4,39,1,0,1748885352,"~/.config/vim/.vimrc"
+-'  1  0  ~/.config/vim/.vimrc
+|4,39,1,0,1748885352,"~/.config/vim/.vimrc"
+-'  1  0  ~/.bash_history
+|4,39,1,0,1748885345,"~/.bash_history"
+-'  1  0  ~/.bash_history
+|4,39,1,0,1748885345,"~/.bash_history"
+-'  1  0  ~/.bash_history
+|4,39,1,0,1748885345,"~/.bash_history"
+-'  1  0  ~/.bash_history
+|4,39,1,0,1748885345,"~/.bash_history"
+-'  172  0  ~/.config/vim/.vimrc
+|4,39,172,0,1748884995,"~/.config/vim/.vimrc"
+-'  159  0  ~/.config/vim/.vimrc
+|4,39,159,0,1748884995,"~/.config/vim/.vimrc"
+-'  159  0  ~/.config/vim/.vimrc
+|4,39,159,0,1748884995,"~/.config/vim/.vimrc"
+-'  159  0  ~/.config/vim/.vimrc
+|4,39,159,0,1748884995,"~/.config/vim/.vimrc"
+-'  159  0  ~/.config/vim/.vimrc
+|4,39,159,0,1748884995,"~/.config/vim/.vimrc"
+-'  159  0  ~/.config/vim/.vimrc
+|4,39,159,0,1748884995,"~/.config/vim/.vimrc"
+-'  175  0  ~/.config/vim/.vimrc
+|4,39,175,0,1748884909,"~/.config/vim/.vimrc"
+-'  162  0  ~/.config/vim/.vimrc
+|4,39,162,0,1748884909,"~/.config/vim/.vimrc"
+-'  162  0  ~/.config/vim/.vimrc
+|4,39,162,0,1748884909,"~/.config/vim/.vimrc"
+-'  162  0  ~/.config/vim/.vimrc
+|4,39,162,0,1748884909,"~/.config/vim/.vimrc"
+-'  162  0  ~/.config/vim/.vimrc
+|4,39,162,0,1748884909,"~/.config/vim/.vimrc"
+-'  162  0  ~/.config/vim/.vimrc
+|4,39,162,0,1748884909,"~/.config/vim/.vimrc"
+-'  1  0  ~/.config/vim/.vimrc
+|4,39,1,0,1748884907,"~/.config/vim/.vimrc"
+-'  1  0  ~/.config/vim/.vimrc
+|4,39,1,0,1748884907,"~/.config/vim/.vimrc"
+-'  34  0  ~/NERD_tree_tab_1
+|4,39,34,0,1748884876,"~/NERD_tree_tab_1"
+-'  46  0  ~/NERD_tree_tab_1
+|4,39,46,0,1748884876,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1748884876,"~/NERD_tree_tab_1"
+-'  24  0  ~/NERD_tree_tab_1
+|4,39,24,0,1748884876,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1748884876,"~/NERD_tree_tab_1"
+-'  4  0  ~/NERD_tree_tab_1
+|4,39,4,0,1748884876,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1748884876,"~/NERD_tree_tab_1"
+-'  24  0  ~/NERD_tree_tab_1
+|4,39,24,0,1748884876,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1748884876,"~/NERD_tree_tab_1"
+-'  4  0  ~/NERD_tree_tab_1
+|4,39,4,0,1748884876,"~/NERD_tree_tab_1"
+-'  62  2  ~/NERD_tree_tab_1
+|4,39,62,2,1748884821,"~/NERD_tree_tab_1"
+-'  52  2  ~/NERD_tree_tab_1
+|4,39,52,2,1748884821,"~/NERD_tree_tab_1"
+-'  42  2  ~/NERD_tree_tab_1
+|4,39,42,2,1748884821,"~/NERD_tree_tab_1"
+-'  32  2  ~/NERD_tree_tab_1
+|4,39,32,2,1748884821,"~/NERD_tree_tab_1"
+-'  74  2  ~/NERD_tree_tab_1
+|4,39,74,2,1748884821,"~/NERD_tree_tab_1"
+-'  64  2  ~/NERD_tree_tab_1
+|4,39,64,2,1748884821,"~/NERD_tree_tab_1"
+-'  54  2  ~/NERD_tree_tab_1
+|4,39,54,2,1748884821,"~/NERD_tree_tab_1"
 
 # History of marks within files (newest to oldest):
+
+> ~/osama.html
+	*	1748890799	0
+	"	9	12
+	^	9	13
+	.	9	13
+	+	1	12
+	+	27	11
+	+	18	11
+	+	25	85
+	+	23	0
+	+	24	0
+	+	26	52
+	+	29	0
+	+	35	0
+	+	31	0
+	+	33	0
+	+	15	32
+	+	1	0
+	+	6	0
+	+	9	13
+
+> ~/Projects/test/index.html
+	*	1748890518	0
+	"	1	9
+	^	1	10
+	.	1	10
+	+	1	10
+
+> ~/.config/vim/.vimrc
+	*	1748889067	0
+	"	151	0
+	^	137	22
+	.	137	21
+	+	90	0
+	+	91	19
+	+	90	0
+	+	93	0
+	+	94	0
+	+	95	0
+	+	99	0
+	+	94	13
+	+	93	0
+	+	94	5
+	+	97	0
+	+	98	0
+	+	97	46
+	+	96	0
+	+	163	52
+	+	203	0
+	+	204	0
+	+	202	50
+	+	164	28
+	+	163	0
+	+	167	0
+	+	184	0
+	+	166	86
+	+	166	124
+	+	166	43
+	+	165	0
+	+	166	43
+	+	167	0
+	+	165	0
+	+	166	0
+	+	308	1
+	+	174	0
+	+	175	0
+	+	179	0
+	+	181	0
+	+	182	0
+	+	183	0
+	+	177	52
+	+	175	52
+	+	177	0
+	+	174	0
+	+	175	0
+	+	175	51
+	+	176	0
+	+	179	47
+	+	178	0
+	+	127	45
+	+	129	0
+	+	128	0
+	+	129	21
+	+	125	33
+	+	129	0
+	+	124	0
+	+	129	0
+	+	120	0
+	+	130	0
+	+	129	0
+	+	120	62
+	+	181	55
+	+	180	0
+	+	333	0
+	+	334	0
+	+	332	0
+	+	168	0
+	+	170	33
+	+	170	69
+	+	170	33
+	+	174	0
+	+	169	0
+	+	170	0
+	+	168	33
+	+	167	0
+	+	171	0
+	+	170	0
+	+	169	0
+	+	168	0
+	+	167	0
+	+	163	0
+	+	163	67
+	+	163	0
+	+	174	0
+	+	172	0
+	+	173	0
+	+	171	0
+	+	163	0
+	+	163	51
+	+	162	0
+	+	133	0
+	+	134	0
+	+	137	0
+	+	138	0
+	+	135	23
+	+	136	24
+	+	146	0
+	+	147	0
+	+	148	0
+	+	152	0
+	+	151	41
+	+	148	21
+	+	137	21
+
+> ~/NERD_tree_tab_1
+	*	1748887289	0
+	"	6	0
+	.	1	0
+	+	1	0
+	+	27	0
+	+	1	0
+
+> ~/.config/zsh/.zshrc
+	*	1748887263	0
+	"	8	6
+	^	8	7
+	.	8	14
+	+	44	0
+	+	47	0
+	+	48	0
+	+	45	0
+	+	45	80
+	+	45	72
+	+	45	66
+	+	46	48
+	+	46	106
+	+	46	102
+	+	46	0
+	+	45	9
+	+	80	0
+	+	49	0
+	+	47	0
+	+	46	0
+	+	45	0
+	+	49	9
+	+	54	48
+	+	51	29
+	+	52	29
+	+	73	0
+	+	78	71
+	+	81	0
+	+	85	0
+	+	86	0
+	+	84	27
+	+	91	0
+	+	92	0
+	+	93	0
+	+	96	20
+	+	96	19
+	+	93	0
+	+	139	0
+	+	140	0
+	+	141	0
+	+	148	0
+	+	139	97
+	+	56	0
+	+	55	15
+	+	126	0
+	+	122	0
+	+	123	0
+	+	124	0
+	+	122	17
+	+	122	0
+	+	148	0
+	+	122	0
+	+	140	53
+	+	86	14
+	+	87	94
+	+	88	1
+	+	87	2
+	+	89	22
+	+	97	0
+	+	100	18
+	+	142	0
+	+	148	0
+	+	143	0
+	+	147	0
+	+	146	0
+	+	143	4
+	+	144	56
+	+	18	1
+	+	18	0
+	+	16	0
+	+	11	40
+	+	1	0
+	+	5	0
+	+	6	0
+	+	7	0
+	+	8	0
+	+	9	0
+	+	10	0
+	+	11	1
+	+	12	1
+	+	13	0
+	+	14	0
+	+	2	0
+	+	3	0
+	+	4	0
+	+	1	68
+	+	14	1
+	+	9	0
+	+	5	1
+	+	6	1
+	+	7	1
+	+	8	1
+	+	9	1
+	+	10	1
+	+	5	1
+	+	10	14
+	+	9	14
+	+	8	19
+	+	7	16
+	+	5	14
+	+	6	15
+	+	8	14
+
+> ~/.bash_history
+	*	1748885392	0
+	"	1	0
+
+> ~/.lesshst
+	*	1748885344	0
+	"	1	0
+
+> /mnt/d/osama/My-Project-Learn/personal-website/package-lock.json
+	*	1748882725	0
+	"	1	0
+
+> /mnt/d/osama/My-Project-Learn/personal-website/index.html
+	*	1748882536	0
+	"	1	0
+
+> ~/Document/urls.txt
+	*	1748878702	0
+	"	1	0
+	^	13	0
+	.	12	58
+	+	1	47
+	+	2	57
+	+	3	0
+	+	1	0
+	+	3	57
+	+	4	57
+	+	5	57
+	+	6	57
+	+	7	57
+	+	8	58
+	+	12	58
+
+> ~/Document/yabmam-gereken-seyler.txt
+	*	1748874207	0
+	"	8	3
+	^	8	4
+	.	8	3
+	+	1	2
+	+	3	0
+	+	4	0
+	+	5	0
+	+	6	0
+	+	2	0
+	+	3	0
+	+	1	5
+	+	2	5
+	+	3	5
+	+	4	8
+	+	5	10
+	+	6	11
+	+	7	6
+	+	8	3
 
 > ~/.config/.gitignore
 	*	1748843522	0
@@ -423,88 +739,6 @@ $
 	"	1	0
 	^	1	0
 
-> ~/.config/zsh/.zshrc
-	*	1748842279	0
-	"	128	55
-	^	130	0
-	.	128	56
-	+	118	0
-	+	1	1
-	+	121	37
-	+	88	0
-	+	87	61
-	+	58	60
-	+	33	48
-	+	85	0
-	+	86	0
-	+	87	0
-	+	64	31
-	+	39	0
-	+	62	0
-	+	28	0
-	+	31	0
-	+	32	0
-	+	29	0
-	+	29	80
-	+	29	72
-	+	29	66
-	+	30	48
-	+	30	106
-	+	30	102
-	+	30	0
-	+	29	9
-	+	64	0
-	+	33	0
-	+	31	0
-	+	30	0
-	+	29	0
-	+	33	9
-	+	38	48
-	+	35	29
-	+	36	29
-	+	57	0
-	+	62	71
-	+	65	0
-	+	69	0
-	+	70	0
-	+	68	27
-	+	75	0
-	+	76	0
-	+	77	0
-	+	80	20
-	+	80	19
-	+	77	0
-	+	123	0
-	+	124	0
-	+	125	0
-	+	132	0
-	+	123	97
-	+	40	0
-	+	39	15
-	+	110	0
-	+	106	0
-	+	107	0
-	+	108	0
-	+	106	17
-	+	106	0
-	+	132	0
-	+	106	0
-	+	124	53
-	+	70	14
-	+	71	94
-	+	72	1
-	+	71	2
-	+	73	22
-	+	81	0
-	+	84	18
-	+	126	0
-	+	132	0
-	+	127	0
-	+	131	0
-	+	130	0
-	+	127	4
-	+	128	56
-
 > ~/.config/vim/Windows.-vim-rc.bak
 	*	1748840785	0
 	"	2	0
@@ -515,115 +749,6 @@ $
 	*	1748840708	0
 	"	1	0
 	^	1	0
-
-> ~/.lesshst
-	*	1748840473	0
-	"	1	0
-
-> ~/.config/vim/.vimrc
-	*	1748840274	0
-	"	26	0
-	^	102	0
-	.	101	77
-	+	112	0
-	+	91	0
-	+	91	26
-	+	91	9
-	+	89	0
-	+	88	75
-	+	91	0
-	+	49	0
-	+	91	0
-	+	90	0
-	+	12	0
-	+	13	0
-	+	46	0
-	+	49	0
-	+	61	0
-	+	60	0
-	+	61	0
-	+	60	0
-	+	61	0
-	+	13	0
-	+	78	0
-	+	78	13
-	+	105	11
-	+	105	24
-	+	105	25
-	+	106	0
-	+	105	0
-	+	106	0
-	+	109	0
-	+	107	0
-	+	295	0
-	+	293	4
-	+	277	16
-	+	276	0
-	+	61	0
-	+	53	4
-	+	13	0
-	+	201	0
-	+	229	0
-	+	273	0
-	+	219	0
-	+	201	0
-	+	12	0
-	+	203	27
-	+	203	0
-	+	273	0
-	+	202	62
-	+	204	0
-	+	217	4
-	+	214	35
-	+	210	0
-	+	209	11
-	+	273	0
-	+	271	5
-	+	273	0
-	+	271	0
-	+	233	0
-	+	229	33
-	+	228	34
-	+	214	34
-	+	228	35
-	+	213	21
-	+	228	0
-	+	229	19
-	+	34	57
-	+	35	5
-	+	35	0
-	+	32	5
-	+	176	0
-	+	174	128
-	+	127	11
-	+	118	17
-	+	277	43
-	+	290	15
-	+	291	0
-	+	292	0
-	+	287	0
-	+	177	0
-	+	178	33
-	+	177	66
-	+	178	0
-	+	198	0
-	+	180	0
-	+	197	0
-	+	179	0
-	+	178	45
-	+	181	0
-	+	195	0
-	+	196	0
-	+	194	45
-	+	182	18
-	+	78	0
-	+	104	0
-	+	105	0
-	+	98	1
-	+	103	0
-	+	98	0
-	+	99	50
-	+	101	77
 
 > ~/.config/README.md
 	*	1748808395	0
@@ -651,12 +776,6 @@ $
 	*	1748791362	0
 	"	1	7
 
-> ~/NERD_tree_tab_1
-	*	1748791307	0
-	"	23	0
-	.	1	0
-	+	1	0
-
 > ~/.config/vim/.vimrc.plug
 	*	1748772623	0
 	"	7	14
@@ -666,24 +785,6 @@ $
 	+	1	14
 	+	1	17
 	+	7	14
-
-> ~/osama.html
-	*	1748763863	0
-	"	6	0
-	^	6	0
-	.	5	32
-	+	1	12
-	+	17	11
-	+	8	11
-	+	15	85
-	+	13	0
-	+	14	0
-	+	16	52
-	+	19	0
-	+	25	0
-	+	21	0
-	+	23	0
-	+	5	32
 
 > /mnt/c/Users/kanjo/Desktop/New Delphi.Cmd
 	*	1748763379	0
