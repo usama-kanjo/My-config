@@ -11,21 +11,37 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/hi
+~Msle0~/\<export\>
 
 # Last Substitute Search Pattern:
-~MSle0&hi
+~MSle0&^M
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1748947441,,"q"
+:Q
+|2,0,1748947374,,"Q"
+::q
+|2,0,1748946985,,":q"
+:source ~/.config/vim/.vimrc
+|2,0,1748946148,,"source ~/.config/vim/.vimrc"
+:q!
+|2,0,1748945930,,"q!"
+:sorce ~/.config/vim/.vimrc
+|2,0,1748945802,,"sorce ~/.config/vim/.vimrc"
+:scriptnames
+|2,0,1748945758,,"scriptnames"
 :PlugInstall
-|2,0,1748888929,,"PlugInstall"
+|2,0,1748945705,,"PlugInstall"
+:s/
+|2,0,1748935522,,"s/"
+:s/^M/
+|2,0,1748935477,,"s/^M/"
 :tab new osama.html
 |2,0,1748888675,,"tab new osama.html"
-:q
-|2,0,1748888648,,"q"
 :ALEDetail
 |2,0,1748888492,,"ALEDetail"
 :!zshrc
@@ -60,8 +76,6 @@ $
 |2,0,1748800635,,"Ag"
 :rg
 |2,0,1748800277,,"rg"
-:source ~/.config/vim/.vimrc
-|2,0,1748793191,,"source ~/.config/vim/.vimrc"
 :w
 |2,0,1748793187,,"w"
 :loadview
@@ -82,8 +96,6 @@ $
 |2,0,1748786492,,"erg"
 :nnoremap
 |2,0,1748784611,,"nnoremap"
-:q!
-|2,0,1748773459,,"q!"
 :set runtimepath?
 |2,0,1748773414,,"set runtimepath?"
 :qw
@@ -132,6 +144,12 @@ $
 |2,0,1748661943,,"W"
 
 # Search String History (newest to oldest):
+? \<export\>
+|2,1,1748952310,,"\\<export\\>"
+? \<vim\>
+|2,1,1748938801,,"\\<vim\\>"
+? ^M
+|2,1,1748935477,,"^M"
 ? @$
 |2,1,1748763358,,"@$"
 ??\a
@@ -154,476 +172,480 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-"1	LINE	0
-	Plug 'ataayaa/atayama.vim'
-|3,0,1,1,1,0,1748890271,"Plug 'ataayaa/atayama.vim'"
+"0	LINE	0
+	  export VIMINIT='let $MYVIMRC="$HOME/.config/vim/.vimrc" | source $MYVIMRC'
+|3,0,0,1,1,0,1748946605,"  export VIMINIT='let $MYVIMRC=\"$HOME/.config/vim/.vimrc\" | source $MYVIMRC'"
+""1	LINE	0
+	-- Initialize plugin manager
+	require('plugins.init')
+	
+	-- Load plugin configurations
+	require('plugins.telescope')
+	require('plugins.treesitter')
+	require('plugins.colorscheme')
+|3,1,1,1,7,0,1748975529,"-- Initialize plugin manager","require('plugins.init')","","-- Load plugin configurations","require('plugins.telescope')","require('plugins.treesitter')","require('plugins.colorscheme')"
 "2	LINE	0
-	Plug 'yuki-yano/atayama.vim'
-|3,0,2,1,1,0,1748890202,"Plug 'yuki-yano/atayama.vim'"
+	-- ... (add all other keymaps here)
+|3,0,2,1,1,0,1748973687,"-- ... (add all other keymaps here)"
 "3	LINE	0
-	
-|3,0,3,1,1,0,1748888621,""
+	vim.keymap.set('n', '<C-k>', '<C-w>k', { desc = "Move to window above" })
+|3,0,3,1,1,0,1748973687,"vim.keymap.set('n', '<C-k>', '<C-w>k', { desc = \"Move to window above\" })"
 "4	LINE	0
-	
-|3,0,4,1,1,0,1748888620,""
+	vim.keymap.set('n', '<C-j>', '<C-w>j', { desc = "Move to window below" })
+|3,0,4,1,1,0,1748973685,"vim.keymap.set('n', '<C-j>', '<C-w>j', { desc = \"Move to window below\" })"
 "5	LINE	0
-	
-|3,0,5,1,1,0,1748888620,""
+	    'nvim-telescope/telescope.nvim', tag = '0.1.8',
+	      dependencies = { 'nvim-lua/plenary.nvim' }
+|3,0,5,1,2,0,1748953561,"    'nvim-telescope/telescope.nvim', tag = '0.1.8',","      dependencies = { 'nvim-lua/plenary.nvim' }"
 "6	LINE	0
-	  [ î˜’ ].bash_history
-|3,0,6,1,1,0,1748885557,"  [ î˜’ ].bash_history"
+	    'nvim-telescope/telescope.nvim', tag = '0.1.8',
+	      dependencies = { 'nvim-lua/plenary.nvim' }
+|3,0,6,1,2,0,1748953556,"    'nvim-telescope/telescope.nvim', tag = '0.1.8',","      dependencies = { 'nvim-lua/plenary.nvim' }"
 "7	LINE	0
-	let NERDTreeCustomOpenArgs = {'file': {'where': 't'}}
-|3,0,7,1,1,0,1748885276,"let NERDTreeCustomOpenArgs = {'file': {'where': 't'}}"
+	      dependencies = { 'nvim-lua/plenary.nvim' }
+	    }
+|3,0,7,1,2,0,1748953543,"      dependencies = { 'nvim-lua/plenary.nvim' }","    }"
 "8	LINE	0
-	
-|3,0,8,1,1,0,1748884803,""
+	-- or                              , branch = '0.1.x',
+|3,0,8,1,1,0,1748953538,"-- or                              , branch = '0.1.x',"
 "9	LINE	0
-	
-|3,0,9,1,1,0,1748884802,""
+	#export FZF_DEFAULT_COMMAND='fd --type f --hidden --exclude .git'
+|3,0,9,1,1,0,1748953075,"#export FZF_DEFAULT_COMMAND='fd --type f --hidden --exclude .git'"
+"a	CHAR	0
+	$x€kd0
+|3,0,10,0,1,0,1748937793,"$x€kd0"
 "q	CHAR	0
 	€kb
 |3,0,26,0,1,0,1748789182,"€kb"
-""-	CHAR	0
-	y
-|3,1,36,0,1,0,1748888982,"y"
+"-	CHAR	0
+	-
+|3,0,36,0,1,0,1748973693,"-"
 
 # File marks:
-'0  9  12  ~/osama.html
-|4,48,9,12,1748890799,"~/osama.html"
-'1  1  0  ~/.config/vim/.vimrc
-|4,49,1,0,1748890792,"~/.config/vim/.vimrc"
-'2  4  0  ~/[Plugins]
-|4,50,4,0,1748890739,"~/[Plugins]"
-'3  28  0  ~/NERD_tree_tab_1
-|4,51,28,0,1748890713,"~/NERD_tree_tab_1"
-'4  6  0  ~/NERD_tree_tab_1
-|4,52,6,0,1748890713,"~/NERD_tree_tab_1"
-'5  46  0  ~/NERD_tree_tab_1
-|4,53,46,0,1748890532,"~/NERD_tree_tab_1"
-'6  26  0  ~/NERD_tree_tab_1
-|4,54,26,0,1748890532,"~/NERD_tree_tab_1"
-'7  24  0  ~/NERD_tree_tab_1
-|4,55,24,0,1748890532,"~/NERD_tree_tab_1"
-'8  4  0  ~/NERD_tree_tab_1
-|4,56,4,0,1748890532,"~/NERD_tree_tab_1"
-'9  67  0  ~/NERD_tree_tab_1
-|4,57,67,0,1748890323,"~/NERD_tree_tab_1"
+'0  155  0  ~/.config/vim/.vimrc
+|4,48,155,0,1748977572,"~/.config/vim/.vimrc"
+'1  1  0  ~/.config/nvim/init.lua
+|4,49,1,0,1748953827,"~/.config/nvim/init.lua"
+'2  1  0  ~/.config/nvim/init.lua
+|4,50,1,0,1748953827,"~/.config/nvim/init.lua"
+'3  83  2  ~/NERD_tree_tab_1
+|4,51,83,2,1748953815,"~/NERD_tree_tab_1"
+'4  59  2  ~/NERD_tree_tab_1
+|4,52,59,2,1748953815,"~/NERD_tree_tab_1"
+'5  49  2  ~/NERD_tree_tab_1
+|4,53,49,2,1748953815,"~/NERD_tree_tab_1"
+'6  25  2  ~/NERD_tree_tab_1
+|4,54,25,2,1748953815,"~/NERD_tree_tab_1"
+'7  1  0  ~/.config/nvim/init.lua
+|4,55,1,0,1748953634,"~/.config/nvim/init.lua"
+'8  1  0  ~/.config/nvim/init.lua
+|4,56,1,0,1748953634,"~/.config/nvim/init.lua"
+'9  131  2  ~/NERD_tree_tab_1
+|4,57,131,2,1748953612,"~/NERD_tree_tab_1"
 
 # Jumplist (newest first):
--'  9  12  ~/osama.html
-|4,39,9,12,1748890799,"~/osama.html"
+-'  155  0  ~/.config/vim/.vimrc
+|4,39,155,0,1748977572,"~/.config/vim/.vimrc"
 -'  1  0  ~/.config/vim/.vimrc
-|4,39,1,0,1748890792,"~/.config/vim/.vimrc"
--'  4  0  ~/[Plugins]
-|4,39,4,0,1748890739,"~/[Plugins]"
--'  4  0  ~/[Plugins]
-|4,39,4,0,1748890739,"~/[Plugins]"
--'  2  0  ~/[Plugins]
-|4,39,2,0,1748890717,"~/[Plugins]"
--'  2  0  ~/[Plugins]
-|4,39,2,0,1748890717,"~/[Plugins]"
--'  3  0  ~/[Plugins]
-|4,39,3,0,1748890716,"~/[Plugins]"
--'  3  0  ~/[Plugins]
-|4,39,3,0,1748890716,"~/[Plugins]"
+|4,39,1,0,1748960498,"~/.config/vim/.vimrc"
+-'  1  0  ~/.config/nvim/init.lua
+|4,39,1,0,1748953827,"~/.config/nvim/init.lua"
+-'  1  0  ~/.config/nvim/init.lua
+|4,39,1,0,1748953827,"~/.config/nvim/init.lua"
+-'  1  0  ~/.config/nvim/init.lua
+|4,39,1,0,1748953827,"~/.config/nvim/init.lua"
+-'  83  2  ~/NERD_tree_tab_1
+|4,39,83,2,1748953815,"~/NERD_tree_tab_1"
+-'  59  2  ~/NERD_tree_tab_1
+|4,39,59,2,1748953815,"~/NERD_tree_tab_1"
+-'  49  2  ~/NERD_tree_tab_1
+|4,39,49,2,1748953815,"~/NERD_tree_tab_1"
+-'  25  2  ~/NERD_tree_tab_1
+|4,39,25,2,1748953815,"~/NERD_tree_tab_1"
+-'  49  2  ~/NERD_tree_tab_1
+|4,39,49,2,1748953815,"~/NERD_tree_tab_1"
+-'  25  2  ~/NERD_tree_tab_1
+|4,39,25,2,1748953815,"~/NERD_tree_tab_1"
+-'  62  0  ~/NERD_tree_tab_1
+|4,39,62,0,1748953793,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1748953793,"~/NERD_tree_tab_1"
 -'  28  0  ~/NERD_tree_tab_1
-|4,39,28,0,1748890713,"~/NERD_tree_tab_1"
--'  6  0  ~/NERD_tree_tab_1
-|4,39,6,0,1748890713,"~/NERD_tree_tab_1"
--'  6  0  ~/NERD_tree_tab_1
-|4,39,6,0,1748890713,"~/NERD_tree_tab_1"
--'  45  2  ~/NERD_tree_tab_1
-|4,39,45,2,1748890633,"~/NERD_tree_tab_1"
+|4,39,28,0,1748953793,"~/NERD_tree_tab_1"
 -'  1  0  ~/NERD_tree_tab_1
-|4,39,1,0,1748890633,"~/NERD_tree_tab_1"
--'  23  2  ~/NERD_tree_tab_1
-|4,39,23,2,1748890633,"~/NERD_tree_tab_1"
--'  1  0  ~/NERD_tree_tab_1
-|4,39,1,0,1748890633,"~/NERD_tree_tab_1"
--'  23  2  ~/NERD_tree_tab_1
-|4,39,23,2,1748890633,"~/NERD_tree_tab_1"
--'  1  0  ~/NERD_tree_tab_1
-|4,39,1,0,1748890633,"~/NERD_tree_tab_1"
--'  26  0  ~/NERD_tree_tab_1
-|4,39,26,0,1748890532,"~/NERD_tree_tab_1"
+|4,39,1,0,1748953793,"~/NERD_tree_tab_1"
 -'  4  0  ~/NERD_tree_tab_1
-|4,39,4,0,1748890532,"~/NERD_tree_tab_1"
--'  4  0  ~/NERD_tree_tab_1
-|4,39,4,0,1748890532,"~/NERD_tree_tab_1"
--'  23  2  ~/NERD_tree_tab_1
-|4,39,23,2,1748890518,"~/NERD_tree_tab_1"
+|4,39,4,0,1748953793,"~/NERD_tree_tab_1"
 -'  1  0  ~/NERD_tree_tab_1
-|4,39,1,0,1748890518,"~/NERD_tree_tab_1"
--'  23  2  ~/NERD_tree_tab_1
-|4,39,23,2,1748890518,"~/NERD_tree_tab_1"
+|4,39,1,0,1748953793,"~/NERD_tree_tab_1"
+-'  28  0  ~/NERD_tree_tab_1
+|4,39,28,0,1748953793,"~/NERD_tree_tab_1"
 -'  1  0  ~/NERD_tree_tab_1
-|4,39,1,0,1748890518,"~/NERD_tree_tab_1"
+|4,39,1,0,1748953793,"~/NERD_tree_tab_1"
 -'  4  0  ~/NERD_tree_tab_1
-|4,39,4,0,1748890323,"~/NERD_tree_tab_1"
--'  4  0  ~/NERD_tree_tab_1
-|4,39,4,0,1748890323,"~/NERD_tree_tab_1"
--'  23  2  ~/NERD_tree_tab_1
-|4,39,23,2,1748890180,"~/NERD_tree_tab_1"
+|4,39,4,0,1748953793,"~/NERD_tree_tab_1"
 -'  1  0  ~/NERD_tree_tab_1
-|4,39,1,0,1748890180,"~/NERD_tree_tab_1"
--'  23  2  ~/NERD_tree_tab_1
-|4,39,23,2,1748890180,"~/NERD_tree_tab_1"
--'  1  0  ~/NERD_tree_tab_1
-|4,39,1,0,1748890180,"~/NERD_tree_tab_1"
--'  4  0  ~/NERD_tree_tab_1
-|4,39,4,0,1748889154,"~/NERD_tree_tab_1"
--'  4  0  ~/NERD_tree_tab_1
-|4,39,4,0,1748889154,"~/NERD_tree_tab_1"
--'  47  2  ~/NERD_tree_tab_1
-|4,39,47,2,1748889091,"~/NERD_tree_tab_1"
+|4,39,1,0,1748953793,"~/NERD_tree_tab_1"
+-'  1  0  ~/.config/nvim/init.lua
+|4,39,1,0,1748953634,"~/.config/nvim/init.lua"
+-'  1  0  ~/.config/nvim/init.lua
+|4,39,1,0,1748953634,"~/.config/nvim/init.lua"
+-'  107  2  ~/NERD_tree_tab_1
+|4,39,107,2,1748953612,"~/NERD_tree_tab_1"
+-'  73  2  ~/NERD_tree_tab_1
+|4,39,73,2,1748953612,"~/NERD_tree_tab_1"
+-'  49  2  ~/NERD_tree_tab_1
+|4,39,49,2,1748953612,"~/NERD_tree_tab_1"
 -'  25  2  ~/NERD_tree_tab_1
-|4,39,25,2,1748889091,"~/NERD_tree_tab_1"
+|4,39,25,2,1748953612,"~/NERD_tree_tab_1"
+-'  73  2  ~/NERD_tree_tab_1
+|4,39,73,2,1748953612,"~/NERD_tree_tab_1"
+-'  49  2  ~/NERD_tree_tab_1
+|4,39,49,2,1748953612,"~/NERD_tree_tab_1"
 -'  25  2  ~/NERD_tree_tab_1
-|4,39,25,2,1748889091,"~/NERD_tree_tab_1"
--'  1  0  ~/NERD_tree_tab_1
-|4,39,1,0,1748889090,"~/NERD_tree_tab_1"
--'  1  0  ~/NERD_tree_tab_1
-|4,39,1,0,1748889090,"~/NERD_tree_tab_1"
--'  6  14  ~/osama.html
-|4,39,6,14,1748888965,"~/osama.html"
+|4,39,25,2,1748953612,"~/NERD_tree_tab_1"
+-'  1  2  ~/NERD_tree_tab_1
+|4,39,1,2,1748953598,"~/NERD_tree_tab_1"
+-'  1  2  ~/NERD_tree_tab_1
+|4,39,1,2,1748953598,"~/NERD_tree_tab_1"
+-'  1  2  ~/NERD_tree_tab_1
+|4,39,1,2,1748953598,"~/NERD_tree_tab_1"
+-'  1  2  ~/NERD_tree_tab_1
+|4,39,1,2,1748953598,"~/NERD_tree_tab_1"
+-'  86  0  ~/NERD_tree_tab_1
+|4,39,86,0,1748953140,"~/NERD_tree_tab_1"
+-'  52  0  ~/NERD_tree_tab_1
+|4,39,52,0,1748953140,"~/NERD_tree_tab_1"
+-'  28  0  ~/NERD_tree_tab_1
+|4,39,28,0,1748953140,"~/NERD_tree_tab_1"
 -'  4  0  ~/NERD_tree_tab_1
-|4,39,4,0,1748888751,"~/NERD_tree_tab_1"
+|4,39,4,0,1748953140,"~/NERD_tree_tab_1"
+-'  52  0  ~/NERD_tree_tab_1
+|4,39,52,0,1748953140,"~/NERD_tree_tab_1"
+-'  28  0  ~/NERD_tree_tab_1
+|4,39,28,0,1748953140,"~/NERD_tree_tab_1"
 -'  4  0  ~/NERD_tree_tab_1
-|4,39,4,0,1748888751,"~/NERD_tree_tab_1"
--'  148  21  ~/.config/vim/.vimrc
-|4,39,148,21,1748888675,"~/.config/vim/.vimrc"
+|4,39,4,0,1748953140,"~/NERD_tree_tab_1"
 -'  25  2  ~/NERD_tree_tab_1
-|4,39,25,2,1748888633,"~/NERD_tree_tab_1"
+|4,39,25,2,1748953124,"~/NERD_tree_tab_1"
 -'  1  0  ~/NERD_tree_tab_1
-|4,39,1,0,1748888633,"~/NERD_tree_tab_1"
+|4,39,1,0,1748953124,"~/NERD_tree_tab_1"
 -'  25  2  ~/NERD_tree_tab_1
-|4,39,25,2,1748888633,"~/NERD_tree_tab_1"
+|4,39,25,2,1748953124,"~/NERD_tree_tab_1"
 -'  1  0  ~/NERD_tree_tab_1
-|4,39,1,0,1748888633,"~/NERD_tree_tab_1"
--'  1  0  ~/.config/vim/.vimrc
-|4,39,1,0,1748888001,"~/.config/vim/.vimrc"
--'  5  0  ~/.config/vim/.vimrc
-|4,39,5,0,1748887983,"~/.config/vim/.vimrc"
--'  31  2  ~/NERD_tree_tab_1
-|4,39,31,2,1748885596,"~/NERD_tree_tab_1"
--'  43  2  ~/NERD_tree_tab_1
-|4,39,43,2,1748885596,"~/NERD_tree_tab_1"
--'  21  2  ~/NERD_tree_tab_1
-|4,39,21,2,1748885596,"~/NERD_tree_tab_1"
--'  21  2  ~/NERD_tree_tab_1
-|4,39,21,2,1748885596,"~/NERD_tree_tab_1"
--'  1  0  ~/NERD_tree_tab_1
-|4,39,1,0,1748885423,"~/NERD_tree_tab_1"
--'  1  0  ~/NERD_tree_tab_1
-|4,39,1,0,1748885423,"~/NERD_tree_tab_1"
--'  1  0  ~/NERD_tree_tab_1
-|4,39,1,0,1748885423,"~/NERD_tree_tab_1"
--'  1  0  ~/.bash_history
-|4,39,1,0,1748885393,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1748885393,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1748885393,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1748885393,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1748885393,"~/.bash_history"
--'  163  0  ~/.config/vim/.vimrc
-|4,39,163,0,1748885376,"~/.config/vim/.vimrc"
--'  150  0  ~/.config/vim/.vimrc
-|4,39,150,0,1748885376,"~/.config/vim/.vimrc"
--'  150  0  ~/.config/vim/.vimrc
-|4,39,150,0,1748885376,"~/.config/vim/.vimrc"
--'  150  0  ~/.config/vim/.vimrc
-|4,39,150,0,1748885376,"~/.config/vim/.vimrc"
--'  1  0  ~/.config/vim/.vimrc
-|4,39,1,0,1748885352,"~/.config/vim/.vimrc"
--'  1  0  ~/.config/vim/.vimrc
-|4,39,1,0,1748885352,"~/.config/vim/.vimrc"
--'  1  0  ~/.bash_history
-|4,39,1,0,1748885345,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1748885345,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1748885345,"~/.bash_history"
--'  1  0  ~/.bash_history
-|4,39,1,0,1748885345,"~/.bash_history"
--'  172  0  ~/.config/vim/.vimrc
-|4,39,172,0,1748884995,"~/.config/vim/.vimrc"
--'  159  0  ~/.config/vim/.vimrc
-|4,39,159,0,1748884995,"~/.config/vim/.vimrc"
--'  159  0  ~/.config/vim/.vimrc
-|4,39,159,0,1748884995,"~/.config/vim/.vimrc"
--'  159  0  ~/.config/vim/.vimrc
-|4,39,159,0,1748884995,"~/.config/vim/.vimrc"
--'  159  0  ~/.config/vim/.vimrc
-|4,39,159,0,1748884995,"~/.config/vim/.vimrc"
--'  159  0  ~/.config/vim/.vimrc
-|4,39,159,0,1748884995,"~/.config/vim/.vimrc"
--'  175  0  ~/.config/vim/.vimrc
-|4,39,175,0,1748884909,"~/.config/vim/.vimrc"
--'  162  0  ~/.config/vim/.vimrc
-|4,39,162,0,1748884909,"~/.config/vim/.vimrc"
--'  162  0  ~/.config/vim/.vimrc
-|4,39,162,0,1748884909,"~/.config/vim/.vimrc"
--'  162  0  ~/.config/vim/.vimrc
-|4,39,162,0,1748884909,"~/.config/vim/.vimrc"
--'  162  0  ~/.config/vim/.vimrc
-|4,39,162,0,1748884909,"~/.config/vim/.vimrc"
--'  162  0  ~/.config/vim/.vimrc
-|4,39,162,0,1748884909,"~/.config/vim/.vimrc"
--'  1  0  ~/.config/vim/.vimrc
-|4,39,1,0,1748884907,"~/.config/vim/.vimrc"
--'  1  0  ~/.config/vim/.vimrc
-|4,39,1,0,1748884907,"~/.config/vim/.vimrc"
--'  34  0  ~/NERD_tree_tab_1
-|4,39,34,0,1748884876,"~/NERD_tree_tab_1"
--'  46  0  ~/NERD_tree_tab_1
-|4,39,46,0,1748884876,"~/NERD_tree_tab_1"
--'  1  0  ~/NERD_tree_tab_1
-|4,39,1,0,1748884876,"~/NERD_tree_tab_1"
--'  24  0  ~/NERD_tree_tab_1
-|4,39,24,0,1748884876,"~/NERD_tree_tab_1"
--'  1  0  ~/NERD_tree_tab_1
-|4,39,1,0,1748884876,"~/NERD_tree_tab_1"
+|4,39,1,0,1748953124,"~/NERD_tree_tab_1"
 -'  4  0  ~/NERD_tree_tab_1
-|4,39,4,0,1748884876,"~/NERD_tree_tab_1"
--'  1  0  ~/NERD_tree_tab_1
-|4,39,1,0,1748884876,"~/NERD_tree_tab_1"
--'  24  0  ~/NERD_tree_tab_1
-|4,39,24,0,1748884876,"~/NERD_tree_tab_1"
--'  1  0  ~/NERD_tree_tab_1
-|4,39,1,0,1748884876,"~/NERD_tree_tab_1"
+|4,39,4,0,1748952584,"~/NERD_tree_tab_1"
 -'  4  0  ~/NERD_tree_tab_1
-|4,39,4,0,1748884876,"~/NERD_tree_tab_1"
--'  62  2  ~/NERD_tree_tab_1
-|4,39,62,2,1748884821,"~/NERD_tree_tab_1"
--'  52  2  ~/NERD_tree_tab_1
-|4,39,52,2,1748884821,"~/NERD_tree_tab_1"
--'  42  2  ~/NERD_tree_tab_1
-|4,39,42,2,1748884821,"~/NERD_tree_tab_1"
--'  32  2  ~/NERD_tree_tab_1
-|4,39,32,2,1748884821,"~/NERD_tree_tab_1"
--'  74  2  ~/NERD_tree_tab_1
-|4,39,74,2,1748884821,"~/NERD_tree_tab_1"
--'  64  2  ~/NERD_tree_tab_1
-|4,39,64,2,1748884821,"~/NERD_tree_tab_1"
--'  54  2  ~/NERD_tree_tab_1
-|4,39,54,2,1748884821,"~/NERD_tree_tab_1"
+|4,39,4,0,1748952584,"~/NERD_tree_tab_1"
+-'  25  2  ~/NERD_tree_tab_1
+|4,39,25,2,1748952583,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1748952583,"~/NERD_tree_tab_1"
+-'  25  2  ~/NERD_tree_tab_1
+|4,39,25,2,1748952583,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1748952583,"~/NERD_tree_tab_1"
+-'  4  0  ~/NERD_tree_tab_1
+|4,39,4,0,1748952486,"~/NERD_tree_tab_1"
+-'  4  0  ~/NERD_tree_tab_1
+|4,39,4,0,1748952486,"~/NERD_tree_tab_1"
+-'  25  2  ~/NERD_tree_tab_1
+|4,39,25,2,1748952299,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1748952299,"~/NERD_tree_tab_1"
+-'  25  2  ~/NERD_tree_tab_1
+|4,39,25,2,1748952299,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1748952299,"~/NERD_tree_tab_1"
+-'  4  0  ~/NERD_tree_tab_1
+|4,39,4,0,1748952010,"~/NERD_tree_tab_1"
+-'  4  0  ~/NERD_tree_tab_1
+|4,39,4,0,1748952010,"~/NERD_tree_tab_1"
+-'  25  2  ~/NERD_tree_tab_1
+|4,39,25,2,1748951919,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1748951919,"~/NERD_tree_tab_1"
+-'  25  2  ~/NERD_tree_tab_1
+|4,39,25,2,1748951919,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1748951919,"~/NERD_tree_tab_1"
+-'  4  0  ~/NERD_tree_tab_1
+|4,39,4,0,1748951851,"~/NERD_tree_tab_1"
+-'  4  0  ~/NERD_tree_tab_1
+|4,39,4,0,1748951851,"~/NERD_tree_tab_1"
+-'  25  2  ~/NERD_tree_tab_1
+|4,39,25,2,1748951847,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1748951847,"~/NERD_tree_tab_1"
+-'  25  2  ~/NERD_tree_tab_1
+|4,39,25,2,1748951847,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1748951847,"~/NERD_tree_tab_1"
+-'  4  0  ~/NERD_tree_tab_1
+|4,39,4,0,1748951755,"~/NERD_tree_tab_1"
+-'  4  0  ~/NERD_tree_tab_1
+|4,39,4,0,1748951755,"~/NERD_tree_tab_1"
+-'  25  2  ~/NERD_tree_tab_1
+|4,39,25,2,1748951711,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1748951711,"~/NERD_tree_tab_1"
+-'  25  2  ~/NERD_tree_tab_1
+|4,39,25,2,1748951711,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1748951711,"~/NERD_tree_tab_1"
+-'  4  0  ~/NERD_tree_tab_1
+|4,39,4,0,1748951480,"~/NERD_tree_tab_1"
+-'  4  0  ~/NERD_tree_tab_1
+|4,39,4,0,1748951480,"~/NERD_tree_tab_1"
+-'  25  2  ~/NERD_tree_tab_1
+|4,39,25,2,1748951460,"~/NERD_tree_tab_1"
+-'  25  2  ~/NERD_tree_tab_1
+|4,39,25,2,1748951460,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1748951459,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1748951459,"~/NERD_tree_tab_1"
+-'  4  0  ~/NERD_tree_tab_1
+|4,39,4,0,1748951415,"~/NERD_tree_tab_1"
+-'  4  0  ~/NERD_tree_tab_1
+|4,39,4,0,1748951415,"~/NERD_tree_tab_1"
+-'  25  2  ~/NERD_tree_tab_1
+|4,39,25,2,1748951399,"~/NERD_tree_tab_1"
+-'  25  2  ~/NERD_tree_tab_1
+|4,39,25,2,1748951399,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1748951398,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1748951398,"~/NERD_tree_tab_1"
+-'  4  0  ~/NERD_tree_tab_1
+|4,39,4,0,1748951361,"~/NERD_tree_tab_1"
+-'  4  0  ~/NERD_tree_tab_1
+|4,39,4,0,1748951361,"~/NERD_tree_tab_1"
+-'  25  2  ~/NERD_tree_tab_1
+|4,39,25,2,1748951359,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1748951359,"~/NERD_tree_tab_1"
+-'  25  2  ~/NERD_tree_tab_1
+|4,39,25,2,1748951359,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1748951359,"~/NERD_tree_tab_1"
+-'  4  0  ~/NERD_tree_tab_1
+|4,39,4,0,1748949273,"~/NERD_tree_tab_1"
+-'  4  0  ~/NERD_tree_tab_1
+|4,39,4,0,1748949273,"~/NERD_tree_tab_1"
+-'  25  2  ~/NERD_tree_tab_1
+|4,39,25,2,1748949255,"~/NERD_tree_tab_1"
+-'  25  2  ~/NERD_tree_tab_1
+|4,39,25,2,1748949255,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1748949254,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1748949254,"~/NERD_tree_tab_1"
+-'  4  0  ~/NERD_tree_tab_1
+|4,39,4,0,1748949135,"~/NERD_tree_tab_1"
 
 # History of marks within files (newest to oldest):
 
-> ~/osama.html
-	*	1748890799	0
-	"	9	12
-	^	9	13
-	.	9	13
-	+	1	12
-	+	27	11
-	+	18	11
-	+	25	85
-	+	23	0
-	+	24	0
-	+	26	52
-	+	29	0
-	+	35	0
-	+	31	0
-	+	33	0
-	+	15	32
-	+	1	0
-	+	6	0
-	+	9	13
-
-> ~/Projects/test/index.html
-	*	1748890518	0
-	"	1	9
-	^	1	10
-	.	1	10
-	+	1	10
-
 > ~/.config/vim/.vimrc
-	*	1748889067	0
-	"	151	0
-	^	137	22
-	.	137	21
-	+	90	0
-	+	91	19
-	+	90	0
-	+	93	0
-	+	94	0
-	+	95	0
-	+	99	0
-	+	94	13
-	+	93	0
-	+	94	5
-	+	97	0
-	+	98	0
-	+	97	46
-	+	96	0
-	+	163	52
-	+	203	0
-	+	204	0
-	+	202	50
-	+	164	28
-	+	163	0
-	+	167	0
-	+	184	0
-	+	166	86
-	+	166	124
-	+	166	43
-	+	165	0
-	+	166	43
-	+	167	0
-	+	165	0
-	+	166	0
-	+	308	1
-	+	174	0
-	+	175	0
-	+	179	0
-	+	181	0
-	+	182	0
-	+	183	0
-	+	177	52
-	+	175	52
-	+	177	0
-	+	174	0
-	+	175	0
-	+	175	51
-	+	176	0
-	+	179	47
-	+	178	0
-	+	127	45
-	+	129	0
-	+	128	0
-	+	129	21
-	+	125	33
-	+	129	0
-	+	124	0
-	+	129	0
-	+	120	0
-	+	130	0
-	+	129	0
-	+	120	62
-	+	181	55
-	+	180	0
-	+	333	0
-	+	334	0
-	+	332	0
-	+	168	0
-	+	170	33
-	+	170	69
-	+	170	33
-	+	174	0
-	+	169	0
-	+	170	0
-	+	168	33
-	+	167	0
-	+	171	0
-	+	170	0
-	+	169	0
-	+	168	0
-	+	167	0
-	+	163	0
-	+	163	67
-	+	163	0
-	+	174	0
-	+	172	0
-	+	173	0
-	+	171	0
-	+	163	0
-	+	163	51
-	+	162	0
-	+	133	0
-	+	134	0
-	+	137	0
-	+	138	0
-	+	135	23
-	+	136	24
-	+	146	0
-	+	147	0
-	+	148	0
-	+	152	0
-	+	151	41
-	+	148	21
-	+	137	21
+	*	1748975546	0
+	"	155	0
+
+> ~/.config/nvim/init.lua
+	*	1748975545	0
+	"	20	0
+	^	27	0
+	.	20	0
+	+	60	26
+	+	60	0
+	+	60	25
+	+	60	45
+	+	60	59
+	+	60	111
+	+	60	112
+	+	60	0
+	+	60	52
+	+	60	60
+	+	60	38
+	+	60	17
+	+	60	10
+	+	60	12
+	+	60	24
+	+	60	44
+	+	60	13
+	+	60	4
+	+	60	3
+	+	60	29
+	+	60	0
+	+	60	20
+	+	60	23
+	+	60	27
+	+	60	38
+	+	60	28
+	+	60	2
+	+	60	0
+	+	60	23
+	+	60	44
+	+	60	0
+	+	60	16
+	+	60	15
+	+	60	0
+	+	60	34
+	+	60	18
+	+	60	0
+	+	60	43
+	+	60	0
+	+	1	59
+	+	3	111
+	+	5	112
+	+	6	0
+	+	15	42
+	+	16	60
+	+	17	38
+	+	18	17
+	+	19	10
+	+	28	12
+	+	29	25
+	+	30	45
+	+	31	52
+	+	32	13
+	+	33	4
+	+	33	3
+	+	33	1
+	+	52	55
+	+	57	58
+	+	58	0
+	+	59	59
+	+	7	0
+	+	12	0
+	+	13	0
+	+	14	0
+	+	13	79
+	+	3	66
+	+	2	1
+	+	5	65
+	+	4	0
+	+	13	47
+	+	13	0
+	+	3	2
+	+	5	3
+	+	3	3
+	+	13	0
+	+	8	0
+	+	10	0
+	+	13	0
+	+	9	0
+	+	12	47
+	+	11	0
+	+	33	0
+	+	42	0
+	+	33	0
+	+	39	0
+	+	33	0
+	+	37	0
+	+	33	3
+	+	33	63
+	+	37	4
+	+	37	0
+	+	36	0
+	+	34	0
+	+	37	4
+	+	36	5
+	+	33	0
+	+	27	0
+	+	20	0
 
 > ~/NERD_tree_tab_1
-	*	1748887289	0
-	"	6	0
+	*	1748975515	0
+	"	22	0
 	.	1	0
 	+	1	0
-	+	27	0
+	+	1129	0
+	+	1	0
+
+> ~/.config/nvim/lua/plugins/init.lua
+	*	1748974987	0
+	"	20	1
+	^	20	2
+	.	20	1
+	+	20	1
+
+> ~/.config/nvim/lua/plugins/telescope.lua
+	*	1748974804	0
+	"	13	0
+	^	13	1
+	.	13	0
+	+	13	0
+
+> ~/.config/nvim/lua/utils.lua
+	*	1748974771	0
+	"	21	7
+	^	21	8
+	.	21	7
+	+	21	7
+
+> ~/.config/nvim/lua/plugins/treesitter.lua
+	*	1748974390	0
+	"	1	0
+	^	11	1
+	.	11	0
+	+	11	0
+
+> ~/.config/nvim/lua/plugins/colorscheme.lua
+	*	1748974384	0
+	"	8	0
+	^	8	1
+	.	8	0
+	+	8	0
+
+> ~/NERD_tree_tab_4
+	*	1748974368	0
+	"	17	0
+	.	1	0
+	+	1	0
+
+> ~/.config/nvim/lua/core/keymaps.lua
+	*	1748973959	0
+	"	64	0
+	^	90	0
+	.	18	0
+	+	91	0
+	+	15	2
+	+	16	0
+	+	15	0
+	+	17	0
+	+	90	0
+	+	18	0
+
+> ~/NERD_tree_tab_3
+	*	1748973924	0
+	"	20	0
+	.	1	0
+	+	1	0
+
+> ~/NERD_tree_tab_2
+	*	1748973666	0
+	"	17	0
+	.	1	0
+	+	1	0
+
+> ~/.config/nvim/NERD_tree_tab_1
+	*	1748973076	0
+	"	4	0
+	.	1	0
 	+	1	0
 
 > ~/.config/zsh/.zshrc
-	*	1748887263	0
-	"	8	6
-	^	8	7
-	.	8	14
-	+	44	0
-	+	47	0
-	+	48	0
-	+	45	0
-	+	45	80
-	+	45	72
-	+	45	66
-	+	46	48
-	+	46	106
-	+	46	102
-	+	46	0
-	+	45	9
-	+	80	0
-	+	49	0
-	+	47	0
-	+	46	0
-	+	45	0
-	+	49	9
-	+	54	48
-	+	51	29
-	+	52	29
-	+	73	0
-	+	78	71
-	+	81	0
-	+	85	0
-	+	86	0
-	+	84	27
-	+	91	0
-	+	92	0
-	+	93	0
-	+	96	20
-	+	96	19
-	+	93	0
-	+	139	0
-	+	140	0
-	+	141	0
-	+	148	0
-	+	139	97
-	+	56	0
-	+	55	15
-	+	126	0
-	+	122	0
-	+	123	0
-	+	124	0
-	+	122	17
-	+	122	0
-	+	148	0
-	+	122	0
-	+	140	53
-	+	86	14
-	+	87	94
-	+	88	1
-	+	87	2
-	+	89	22
-	+	97	0
-	+	100	18
-	+	142	0
-	+	148	0
-	+	143	0
-	+	147	0
-	+	146	0
-	+	143	4
-	+	144	56
+	*	1748953815	0
+	"	124	14
+	^	124	15
+	.	124	14
+	+	162	0
+	+	166	0
+	+	163	0
+	+	166	0
+	+	163	4
+	+	164	56
 	+	18	1
 	+	18	0
 	+	16	0
@@ -659,6 +681,125 @@ $
 	+	5	14
 	+	6	15
 	+	8	14
+	+	138	0
+	+	149	0
+	+	138	78
+	+	138	52
+	+	138	0
+	+	138	43
+	+	138	57
+	+	138	0
+	+	139	0
+	+	143	0
+	+	145	0
+	+	146	0
+	+	147	0
+	+	148	0
+	+	142	1
+	+	146	129
+	+	136	2
+	+	138	0
+	+	146	118
+	+	145	0
+	+	144	0
+	+	141	0
+	+	144	0
+	+	146	0
+	+	141	0
+	+	144	0
+	+	141	0
+	+	125	0
+	+	124	40
+	+	160	64
+	+	159	0
+	+	160	0
+	+	157	0
+	+	159	0
+	+	157	97
+	+	159	0
+	+	157	0
+	+	158	64
+	+	158	97
+	+	157	0
+	+	166	36
+	+	166	0
+	+	161	37
+	+	166	0
+	+	161	63
+	+	158	0
+	+	161	1
+	+	157	0
+	+	166	72
+	+	108	62
+	+	109	65
+	+	108	59
+	+	166	0
+	+	158	0
+	+	152	0
+	+	153	0
+	+	154	105
+	+	156	93
+	+	124	14
+
+> ~/osdas
+	*	1748932334	0
+	"	3	0
+	^	3	0
+	.	2	54
+	+	2	54
+
+> ~/Document/urls.txt
+	*	1748904150	0
+	"	6	0
+	^	6	0
+	.	5	58
+	+	1	47
+	+	1	57
+	+	1	0
+	+	1	57
+	+	1	58
+	+	1	57
+	+	2	57
+	+	7	0
+	+	5	58
+
+> ~/.config/Document/urls.txt
+	*	1748897696	0
+	"	1	0
+
+> ~/.config/NERD_tree_tab_1
+	*	1748897621	0
+	"	17	0
+	.	1	0
+	+	1	0
+
+> ~/osama.html
+	*	1748890799	0
+	"	9	12
+	^	9	13
+	.	9	13
+	+	1	12
+	+	27	11
+	+	18	11
+	+	25	85
+	+	23	0
+	+	24	0
+	+	26	52
+	+	29	0
+	+	35	0
+	+	31	0
+	+	33	0
+	+	15	32
+	+	1	0
+	+	6	0
+	+	9	13
+
+> ~/Projects/test/index.html
+	*	1748890518	0
+	"	1	9
+	^	1	10
+	.	1	10
+	+	1	10
 
 > ~/.bash_history
 	*	1748885392	0
@@ -675,23 +816,6 @@ $
 > /mnt/d/osama/My-Project-Learn/personal-website/index.html
 	*	1748882536	0
 	"	1	0
-
-> ~/Document/urls.txt
-	*	1748878702	0
-	"	1	0
-	^	13	0
-	.	12	58
-	+	1	47
-	+	2	57
-	+	3	0
-	+	1	0
-	+	3	57
-	+	4	57
-	+	5	57
-	+	6	57
-	+	7	57
-	+	8	58
-	+	12	58
 
 > ~/Document/yabmam-gereken-seyler.txt
 	*	1748874207	0
