@@ -134,6 +134,7 @@ alias exa='eza'
 alias vim='vim --cmd "set rtp+=~/.config/vim" -u ~/.config/vim/.vimrc'
 alias nrc='n ~/.config/nvim/init.lua'
 alias n='nvim'
+alias lgit='lazygit'
 
 yellow="\e[1;33m" # Sarı renk
 RESET="\e[0m" 
