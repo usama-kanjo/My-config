@@ -11,33 +11,57 @@
 --
 ---------------------------------------------------------------------------
 
-vim.g.mapleader = "\\" -- Lider tuş tanımı
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system({
+    "git",
+    "clone",
+    "--filter=blob:none",
+    "https://github.com/folke/lazy.nvim.git",
+    "--branch=stable", -- latest stable release
+    lazypath,
+  })
+end
+vim.opt.rtp:prepend(lazypath)
+
+require("vim-options")
+require("lazy").setup("plugins")
+
+
+
+
+
+
+
+
+-- vim.g.mapleader = "\\" -- Lider tuş tanımı
 
 -- Neovim konfigürasyon yolu ayarlar
-vim.opt.rtp:prepend(vim.fn.expand("~/.config/nvim"))
-vim.opt.rtp:remove(vim.fn.expand("~/.config/vim"))
+-- vim.opt.rtp:prepend(vim.fn.expand("~/.config/nvim"))
+-- vim.opt.rtp:remove(vim.fn.expand("~/.config/vim"))
 
 -- Initialize plugin manager
-require("plugins.init")
+-- require("plugins.init")
 
 -- Load plugin configurations
-require("plugins.telescope")
-require("plugins.treesitter")
-require("plugins.catppuccin")
-require("plugins.noice")
-require("plugins.gitsigns")
+-- require("plugins.telescope")
+-- require("plugins.treesitter")
+-- require("plugins.catppuccin")
+-- require("plugins.noice")
+-- require("plugins.gitsigns")
 -- require('plugins.which-key')
-require("plugins.lsp-config")
-require("plugins.mini")
-require("plugins.lualine")
-require("plugins.none-ls")
+-- require("plugins.lsp-config")
+-- require("plugins.mini")
+-- require("plugins.lualine")
+-- require("plugins.none-ls")
+-- require("plugins.alpha")
 
 -- Load core configuration
-require("core.options")
-require("core.keymaps")
-require("core.autocommands")
+-- require("core.options")
+-- require("core.keymaps")
+-- require("core.autocommands")
 
-print("✅ Neovim yapılandırması başarıyla yüklendi!")
+-- print("✅ Neovim yapılandırması başarıyla yüklendi!")
 
 --|-->  Recommended Folder Structure
 ---
