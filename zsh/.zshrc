@@ -42,8 +42,18 @@ compinit
 
 
 
+export ZSH_CUSTOM="$HOME/.config/zsh"
 
-
+#plugins=(
+#  git
+#  zsh-autosuggestions 
+#  zsh-syntax-highlighting
+#  zsh-z
+#  fzf
+#  fzf-tab
+#  sudo
+#  copyfile
+#)
 
 
 # Plugins
@@ -53,7 +63,8 @@ source ~/.config/zsh/plugins/syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/doc/fzf/examples/key-bindings.zsh
 source /usr/share/doc/fzf/examples/completion.zsh
 source ~/.config/zsh/plugins/fzf-tab/fzf-tab.zsh
-
+source ~/.config/zsh/plugins/sudo/sudo.plugin.zsh
+source ~/.config/zsh/plugins/copyfile/copyfile.plugin.zsh
 
 # ranger-cd
 function ranger-cd {
@@ -121,7 +132,8 @@ alias l='lsd -1hlA'
 alias ls='lsd'
 alias exa='eza'
 alias vim='vim --cmd "set rtp+=~/.config/vim" -u ~/.config/vim/.vimrc'
-alias nvimrc='nvim ~/.config/nvim/init.lua'
+alias nrc='n ~/.config/nvim/init.lua'
+alias n='nvim'
 
 yellow="\e[1;33m" # Sarı renk
 RESET="\e[0m" 
