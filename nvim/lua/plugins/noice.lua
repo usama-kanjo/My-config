@@ -1,46 +1,77 @@
 return {
-	"folke/noice.nvim",
-	dependencies = { "MunifTanjim/nui.nvim" },
-	event = "VeryLazy",
-	opts = {
-		-- ===== BİLDİRİM AYARLARI ===== --
-		messages = {
-			enabled = true,
-			view = "notify", -- Bildirimler için "notify" görünümü (sağ üst)
-			view_error = "notify", -- Hatalar için de aynı görünüm
-			view_warn = "notify",
-			timeout = 10000, -- 3 saniye göster (varsayılan: 2000 ms)
-		},
+  "folke/noice.nvim",
+  dependencies = { "MunifTanjim/nui.nvim" },
+  event = "VeryLazy",
+  opts = {
+    -- Bildirim konumu ve stil ayarları
+    views = {
+      notify = {
+        position = {
+          row = 2,           -- Üstten boşluk
+          col = "100%",       -- Sağ kenara yasla
+        },
+        anchor = "top", -- Sağ üst köşe
+        timeout = 19000,      -- 10 saniye
+        replace = true,       -- önceki mesajı yenisiyle değiştir
+      },
+      mini = {
+        timeout = 16000,
+      }
+    },
 
-		-- ===== POPUP KONUMU ===== --
-		popupmenu = {
-			enabled = true,
-			backend = "nui", -- NUI popup kullan
-			position = {
-				row = 2, -- Ekranın üst kısmına yakın (1 = en üst)
-				col = "100%", -- Sağ kenara yasla
-			},
-		},
+    -- Tüm mesajlar notify ile gözüksün
+    messages = {
+      enabled = true,
+      view = "notify",       -- bilgi mesajları
+      view_warn = "notify",  -- uyarılar
+      view_error = "notify", -- hatalar
+    },
 
-		-- ===== LSP MESAJLARI ===== --
-		lsp = {
-			override = {
-				["vim.lsp.util.convert_input_to_markdown_lines"] = true,
-				["vim.lsp.util.stylize_markdown"] = true,
-			},
-			message = {
-				view = "notify", -- LSP mesajları da notify ile gözüksün
-				timeout = 10000,
-			},
-		},
+    -- Komut satırında yazılanlar da popup şeklinde görünsün
+    cmdline = {
+      enabled = true,
+      view = "cmdline_popup",
+      format = {
+        cmdline = { icon = "", lang = "vim" },
+      },
+    },
 
-		-- ===== KOMUT SATIRI ===== --
-		cmdline = {
-			view = "cmdline_popup", -- Komut satırı popup'ı
-			position = {
-				row = 5, -- Ekranın altından 5. satır
-				col = "25%", -- Ortaya hizala
-			},
-		},
-	},
+    popupmenu = {
+      enabled = true,
+      backend = "nui",
+    },
+
+    -- LSP mesajları da notify ile
+    lsp = {
+      override = {
+        ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
+        ["vim.lsp.util.stylize_markdown"] = true,
+        ["cmp.entry.get_documentation"] = true,
+      },
+      message = {
+        enabled = true,
+        view = "notify",
+      },
+      progress = {
+        enabled = true,
+      },
+      hover = {
+        enabled = false,
+      },
+      signature = {
+        enabled = false,
+      },
+    },
+
+    -- Alt satırda eski Neovim mesajlarını engelle
+    routes = {
+      {
+        filter = {
+          event = "msg_show",
+          kind = "",
+        },
+        opts = { skip = true },
+      },
+    },
+  },
 }

@@ -222,30 +222,126 @@ $
 |3,1,36,0,1,0,1749050935,"v"
 
 # File marks:
-'0  4  0  ~/.config/NERD_tree_tab_1
-|4,48,4,0,1749160998,"~/.config/NERD_tree_tab_1"
-'1  4  0  ~/NERD_tree_tab_1
-|4,49,4,0,1749051004,"~/NERD_tree_tab_1"
-'2  27  0  ~/NERD_tree_tab_1
-|4,50,27,0,1749039112,"~/NERD_tree_tab_1"
-'3  4  0  ~/NERD_tree_tab_1
-|4,51,4,0,1749039112,"~/NERD_tree_tab_1"
-'4  51  0  ~/NERD_tree_tab_1
-|4,52,51,0,1749038895,"~/NERD_tree_tab_1"
-'5  27  0  ~/NERD_tree_tab_1
-|4,53,27,0,1749038895,"~/NERD_tree_tab_1"
-'6  28  0  ~/NERD_tree_tab_1
-|4,54,28,0,1749038895,"~/NERD_tree_tab_1"
-'7  4  0  ~/NERD_tree_tab_1
-|4,55,4,0,1749038895,"~/NERD_tree_tab_1"
-'8  1  0  ~/.config/zsh/.zshrc
-|4,56,1,0,1749038705,"~/.config/zsh/.zshrc"
-'9  1  0  ~/.config/zsh/.zshrc
-|4,57,1,0,1749038705,"~/.config/zsh/.zshrc"
+'0  1  0  ~/rtp+=~/.config/vim
+|4,48,1,0,1750878202,"~/rtp+=~/.config/vim"
+'1  1  0  ~/Document/urls.txt
+|4,49,1,0,1749468574,"~/Document/urls.txt"
+'2  1  0  ~/Document/urls.txt
+|4,50,1,0,1749468557,"~/Document/urls.txt"
+'3  46  0  ~/NERD_tree_tab_1
+|4,51,46,0,1749167453,"~/NERD_tree_tab_1"
+'4  25  0  ~/NERD_tree_tab_1
+|4,52,25,0,1749167453,"~/NERD_tree_tab_1"
+'5  25  0  ~/NERD_tree_tab_1
+|4,53,25,0,1749167453,"~/NERD_tree_tab_1"
+'6  4  0  ~/NERD_tree_tab_1
+|4,54,4,0,1749167453,"~/NERD_tree_tab_1"
+'7  4  0  ~/.config/NERD_tree_tab_1
+|4,55,4,0,1749160998,"~/.config/NERD_tree_tab_1"
+'8  67  0  ~/NERD_tree_tab_1
+|4,56,67,0,1749051004,"~/NERD_tree_tab_1"
+'9  46  0  ~/NERD_tree_tab_1
+|4,57,46,0,1749051004,"~/NERD_tree_tab_1"
 
 # Jumplist (newest first):
+-'  1  0  ~/rtp+=~/.config/vim
+|4,39,1,0,1750878202,"~/rtp+=~/.config/vim"
+-'  1  0  ~/Document/urls.txt
+|4,39,1,0,1749468574,"~/Document/urls.txt"
+-'  1  0  ~/Document/urls.txt
+|4,39,1,0,1749468574,"~/Document/urls.txt"
+-'  1  0  ~/Document/urls.txt
+|4,39,1,0,1749468557,"~/Document/urls.txt"
+-'  1  0  ~/Document/urls.txt
+|4,39,1,0,1749468557,"~/Document/urls.txt"
+-'  46  0  ~/NERD_tree_tab_1
+|4,39,46,0,1749167453,"~/NERD_tree_tab_1"
+-'  25  0  ~/NERD_tree_tab_1
+|4,39,25,0,1749167453,"~/NERD_tree_tab_1"
+-'  25  0  ~/NERD_tree_tab_1
+|4,39,25,0,1749167453,"~/NERD_tree_tab_1"
+-'  4  0  ~/NERD_tree_tab_1
+|4,39,4,0,1749167453,"~/NERD_tree_tab_1"
+-'  46  0  ~/NERD_tree_tab_1
+|4,39,46,0,1749167453,"~/NERD_tree_tab_1"
+-'  25  0  ~/NERD_tree_tab_1
+|4,39,25,0,1749167453,"~/NERD_tree_tab_1"
+-'  25  0  ~/NERD_tree_tab_1
+|4,39,25,0,1749167453,"~/NERD_tree_tab_1"
+-'  4  0  ~/NERD_tree_tab_1
+|4,39,4,0,1749167453,"~/NERD_tree_tab_1"
+-'  64  2  ~/NERD_tree_tab_1
+|4,39,64,2,1749165622,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1749165622,"~/NERD_tree_tab_1"
+-'  43  2  ~/NERD_tree_tab_1
+|4,39,43,2,1749165622,"~/NERD_tree_tab_1"
+-'  43  2  ~/NERD_tree_tab_1
+|4,39,43,2,1749165622,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1749165622,"~/NERD_tree_tab_1"
+-'  22  2  ~/NERD_tree_tab_1
+|4,39,22,2,1749165622,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1749165622,"~/NERD_tree_tab_1"
+-'  64  2  ~/NERD_tree_tab_1
+|4,39,64,2,1749165622,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1749165622,"~/NERD_tree_tab_1"
+-'  43  2  ~/NERD_tree_tab_1
+|4,39,43,2,1749165622,"~/NERD_tree_tab_1"
+-'  43  2  ~/NERD_tree_tab_1
+|4,39,43,2,1749165622,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1749165622,"~/NERD_tree_tab_1"
+-'  22  2  ~/NERD_tree_tab_1
+|4,39,22,2,1749165622,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1749165622,"~/NERD_tree_tab_1"
 -'  4  0  ~/.config/NERD_tree_tab_1
 |4,39,4,0,1749160998,"~/.config/NERD_tree_tab_1"
+-'  4  0  ~/.config/NERD_tree_tab_1
+|4,39,4,0,1749160998,"~/.config/NERD_tree_tab_1"
+-'  4  0  ~/.config/NERD_tree_tab_1
+|4,39,4,0,1749160998,"~/.config/NERD_tree_tab_1"
+-'  4  0  ~/.config/NERD_tree_tab_1
+|4,39,4,0,1749160998,"~/.config/NERD_tree_tab_1"
+-'  4  0  ~/.config/NERD_tree_tab_1
+|4,39,4,0,1749160998,"~/.config/NERD_tree_tab_1"
+-'  4  0  ~/.config/NERD_tree_tab_1
+|4,39,4,0,1749160998,"~/.config/NERD_tree_tab_1"
+-'  4  0  ~/.config/NERD_tree_tab_1
+|4,39,4,0,1749160998,"~/.config/NERD_tree_tab_1"
+-'  4  0  ~/.config/NERD_tree_tab_1
+|4,39,4,0,1749160998,"~/.config/NERD_tree_tab_1"
+-'  23  2  ~/.config/NERD_tree_tab_1
+|4,39,23,2,1749160960,"~/.config/NERD_tree_tab_1"
+-'  1  0  ~/.config/NERD_tree_tab_1
+|4,39,1,0,1749160960,"~/.config/NERD_tree_tab_1"
+-'  23  2  ~/.config/NERD_tree_tab_1
+|4,39,23,2,1749160960,"~/.config/NERD_tree_tab_1"
+-'  1  0  ~/.config/NERD_tree_tab_1
+|4,39,1,0,1749160960,"~/.config/NERD_tree_tab_1"
+-'  23  2  ~/.config/NERD_tree_tab_1
+|4,39,23,2,1749160960,"~/.config/NERD_tree_tab_1"
+-'  1  0  ~/.config/NERD_tree_tab_1
+|4,39,1,0,1749160960,"~/.config/NERD_tree_tab_1"
+-'  23  2  ~/.config/NERD_tree_tab_1
+|4,39,23,2,1749160960,"~/.config/NERD_tree_tab_1"
+-'  1  0  ~/.config/NERD_tree_tab_1
+|4,39,1,0,1749160960,"~/.config/NERD_tree_tab_1"
+-'  23  2  ~/.config/NERD_tree_tab_1
+|4,39,23,2,1749160960,"~/.config/NERD_tree_tab_1"
+-'  1  0  ~/.config/NERD_tree_tab_1
+|4,39,1,0,1749160960,"~/.config/NERD_tree_tab_1"
+-'  23  2  ~/.config/NERD_tree_tab_1
+|4,39,23,2,1749160960,"~/.config/NERD_tree_tab_1"
+-'  1  0  ~/.config/NERD_tree_tab_1
+|4,39,1,0,1749160960,"~/.config/NERD_tree_tab_1"
+-'  23  2  ~/.config/NERD_tree_tab_1
+|4,39,23,2,1749160960,"~/.config/NERD_tree_tab_1"
+-'  1  0  ~/.config/NERD_tree_tab_1
+|4,39,1,0,1749160960,"~/.config/NERD_tree_tab_1"
 -'  23  2  ~/.config/NERD_tree_tab_1
 |4,39,23,2,1749160960,"~/.config/NERD_tree_tab_1"
 -'  1  0  ~/.config/NERD_tree_tab_1
@@ -254,6 +350,26 @@ $
 |4,39,4,0,1749051004,"~/NERD_tree_tab_1"
 -'  4  0  ~/NERD_tree_tab_1
 |4,39,4,0,1749051004,"~/NERD_tree_tab_1"
+-'  4  0  ~/NERD_tree_tab_1
+|4,39,4,0,1749051004,"~/NERD_tree_tab_1"
+-'  4  0  ~/NERD_tree_tab_1
+|4,39,4,0,1749051004,"~/NERD_tree_tab_1"
+-'  67  2  ~/NERD_tree_tab_1
+|4,39,67,2,1749050930,"~/NERD_tree_tab_1"
+-'  46  2  ~/NERD_tree_tab_1
+|4,39,46,2,1749050930,"~/NERD_tree_tab_1"
+-'  25  2  ~/NERD_tree_tab_1
+|4,39,25,2,1749050930,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1749050930,"~/NERD_tree_tab_1"
+-'  25  2  ~/NERD_tree_tab_1
+|4,39,25,2,1749050930,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1749050930,"~/NERD_tree_tab_1"
+-'  67  2  ~/NERD_tree_tab_1
+|4,39,67,2,1749050930,"~/NERD_tree_tab_1"
+-'  46  2  ~/NERD_tree_tab_1
+|4,39,46,2,1749050930,"~/NERD_tree_tab_1"
 -'  25  2  ~/NERD_tree_tab_1
 |4,39,25,2,1749050930,"~/NERD_tree_tab_1"
 -'  1  0  ~/NERD_tree_tab_1
@@ -266,6 +382,18 @@ $
 |4,39,4,0,1749039112,"~/NERD_tree_tab_1"
 -'  4  0  ~/NERD_tree_tab_1
 |4,39,4,0,1749039112,"~/NERD_tree_tab_1"
+-'  4  0  ~/NERD_tree_tab_1
+|4,39,4,0,1749039112,"~/NERD_tree_tab_1"
+-'  4  0  ~/NERD_tree_tab_1
+|4,39,4,0,1749039112,"~/NERD_tree_tab_1"
+-'  25  2  ~/NERD_tree_tab_1
+|4,39,25,2,1749039054,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1749039054,"~/NERD_tree_tab_1"
+-'  25  2  ~/NERD_tree_tab_1
+|4,39,25,2,1749039054,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1749039054,"~/NERD_tree_tab_1"
 -'  25  2  ~/NERD_tree_tab_1
 |4,39,25,2,1749039054,"~/NERD_tree_tab_1"
 -'  1  0  ~/NERD_tree_tab_1
@@ -278,6 +406,18 @@ $
 |4,39,4,0,1749038895,"~/NERD_tree_tab_1"
 -'  4  0  ~/NERD_tree_tab_1
 |4,39,4,0,1749038895,"~/NERD_tree_tab_1"
+-'  4  0  ~/NERD_tree_tab_1
+|4,39,4,0,1749038895,"~/NERD_tree_tab_1"
+-'  4  0  ~/NERD_tree_tab_1
+|4,39,4,0,1749038895,"~/NERD_tree_tab_1"
+-'  25  2  ~/NERD_tree_tab_1
+|4,39,25,2,1749038853,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1749038853,"~/NERD_tree_tab_1"
+-'  25  2  ~/NERD_tree_tab_1
+|4,39,25,2,1749038853,"~/NERD_tree_tab_1"
+-'  1  0  ~/NERD_tree_tab_1
+|4,39,1,0,1749038853,"~/NERD_tree_tab_1"
 -'  25  2  ~/NERD_tree_tab_1
 |4,39,25,2,1749038853,"~/NERD_tree_tab_1"
 -'  1  0  ~/NERD_tree_tab_1
@@ -290,175 +430,51 @@ $
 |4,39,1,0,1749038705,"~/.config/zsh/.zshrc"
 -'  1  0  ~/.config/zsh/.zshrc
 |4,39,1,0,1749038705,"~/.config/zsh/.zshrc"
--'  68  0  ~/.config/zsh/.zshrc
-|4,39,68,0,1749038702,"~/.config/zsh/.zshrc"
--'  68  0  ~/.config/zsh/.zshrc
-|4,39,68,0,1749038702,"~/.config/zsh/.zshrc"
--'  17  0  ~/NERD_tree_tab_1
-|4,39,17,0,1749037898,"~/NERD_tree_tab_1"
--'  17  0  ~/NERD_tree_tab_1
-|4,39,17,0,1749037898,"~/NERD_tree_tab_1"
--'  25  2  ~/NERD_tree_tab_1
-|4,39,25,2,1749037867,"~/NERD_tree_tab_1"
--'  1  0  ~/NERD_tree_tab_1
-|4,39,1,0,1749037867,"~/NERD_tree_tab_1"
--'  25  2  ~/NERD_tree_tab_1
-|4,39,25,2,1749037867,"~/NERD_tree_tab_1"
--'  1  0  ~/NERD_tree_tab_1
-|4,39,1,0,1749037867,"~/NERD_tree_tab_1"
--'  4  0  ~/NERD_tree_tab_1
-|4,39,4,0,1749037798,"~/NERD_tree_tab_1"
--'  4  0  ~/NERD_tree_tab_1
-|4,39,4,0,1749037798,"~/NERD_tree_tab_1"
--'  25  2  ~/NERD_tree_tab_1
-|4,39,25,2,1749037764,"~/NERD_tree_tab_1"
--'  1  0  ~/NERD_tree_tab_1
-|4,39,1,0,1749037764,"~/NERD_tree_tab_1"
--'  25  2  ~/NERD_tree_tab_1
-|4,39,25,2,1749037764,"~/NERD_tree_tab_1"
--'  1  0  ~/NERD_tree_tab_1
-|4,39,1,0,1749037764,"~/NERD_tree_tab_1"
--'  12  0  ~/NERD_tree_tab_1
-|4,39,12,0,1749037341,"~/NERD_tree_tab_1"
--'  12  0  ~/NERD_tree_tab_1
-|4,39,12,0,1749037341,"~/NERD_tree_tab_1"
--'  25  2  ~/NERD_tree_tab_1
-|4,39,25,2,1749037222,"~/NERD_tree_tab_1"
--'  1  0  ~/NERD_tree_tab_1
-|4,39,1,0,1749037222,"~/NERD_tree_tab_1"
--'  25  2  ~/NERD_tree_tab_1
-|4,39,25,2,1749037222,"~/NERD_tree_tab_1"
--'  1  0  ~/NERD_tree_tab_1
-|4,39,1,0,1749037222,"~/NERD_tree_tab_1"
 -'  1  0  ~/.config/zsh/.zshrc
-|4,39,1,0,1749035560,"~/.config/zsh/.zshrc"
+|4,39,1,0,1749038705,"~/.config/zsh/.zshrc"
 -'  1  0  ~/.config/zsh/.zshrc
-|4,39,1,0,1749035560,"~/.config/zsh/.zshrc"
+|4,39,1,0,1749038705,"~/.config/zsh/.zshrc"
 -'  1  0  ~/.config/zsh/.zshrc
-|4,39,1,0,1749035180,"~/.config/zsh/.zshrc"
+|4,39,1,0,1749038705,"~/.config/zsh/.zshrc"
 -'  1  0  ~/.config/zsh/.zshrc
-|4,39,1,0,1749035180,"~/.config/zsh/.zshrc"
--'  41  0  ~/NERD_tree_tab_1
-|4,39,41,0,1749035146,"~/NERD_tree_tab_1"
--'  42  0  ~/NERD_tree_tab_1
-|4,39,42,0,1749035146,"~/NERD_tree_tab_1"
--'  18  0  ~/NERD_tree_tab_1
-|4,39,18,0,1749035146,"~/NERD_tree_tab_1"
--'  41  0  ~/NERD_tree_tab_1
-|4,39,41,0,1749035146,"~/NERD_tree_tab_1"
--'  42  0  ~/NERD_tree_tab_1
-|4,39,42,0,1749035146,"~/NERD_tree_tab_1"
--'  18  0  ~/NERD_tree_tab_1
-|4,39,18,0,1749035146,"~/NERD_tree_tab_1"
--'  4  0  ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/NERD_tree_tab_1
-|4,39,4,0,1749035098,"~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/NERD_tree_tab_1"
--'  4  0  ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/NERD_tree_tab_1
-|4,39,4,0,1749035098,"~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/NERD_tree_tab_1"
--'  4  0  ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/NERD_tree_tab_1
-|4,39,4,0,1749035098,"~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/NERD_tree_tab_1"
--'  4  0  ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/NERD_tree_tab_1
-|4,39,4,0,1749035098,"~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/NERD_tree_tab_1"
--'  4  0  ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/NERD_tree_tab_1
-|4,39,4,0,1749035098,"~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/NERD_tree_tab_1"
--'  4  0  ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/NERD_tree_tab_1
-|4,39,4,0,1749035098,"~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/NERD_tree_tab_1"
--'  14  2  ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/NERD_tree_tab_1
-|4,39,14,2,1749035095,"~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/NERD_tree_tab_1"
--'  1  0  ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/NERD_tree_tab_1
-|4,39,1,0,1749035095,"~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/NERD_tree_tab_1"
--'  14  2  ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/NERD_tree_tab_1
-|4,39,14,2,1749035095,"~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/NERD_tree_tab_1"
--'  1  0  ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/NERD_tree_tab_1
-|4,39,1,0,1749035095,"~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/NERD_tree_tab_1"
--'  14  2  ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/NERD_tree_tab_1
-|4,39,14,2,1749035095,"~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/NERD_tree_tab_1"
--'  1  0  ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/NERD_tree_tab_1
-|4,39,1,0,1749035095,"~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/NERD_tree_tab_1"
--'  14  2  ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/NERD_tree_tab_1
-|4,39,14,2,1749035095,"~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/NERD_tree_tab_1"
--'  1  0  ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/NERD_tree_tab_1
-|4,39,1,0,1749035095,"~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/NERD_tree_tab_1"
--'  14  2  ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/NERD_tree_tab_1
-|4,39,14,2,1749035095,"~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/NERD_tree_tab_1"
--'  1  0  ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/NERD_tree_tab_1
-|4,39,1,0,1749035095,"~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/NERD_tree_tab_1"
--'  14  2  ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/NERD_tree_tab_1
-|4,39,14,2,1749035095,"~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/NERD_tree_tab_1"
--'  1  0  ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/NERD_tree_tab_1
-|4,39,1,0,1749035095,"~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/NERD_tree_tab_1"
--'  48  2  ~/NERD_tree_tab_1
-|4,39,48,2,1749034771,"~/NERD_tree_tab_1"
--'  1  0  ~/NERD_tree_tab_1
-|4,39,1,0,1749034771,"~/NERD_tree_tab_1"
--'  49  2  ~/NERD_tree_tab_1
-|4,39,49,2,1749034771,"~/NERD_tree_tab_1"
--'  1  0  ~/NERD_tree_tab_1
-|4,39,1,0,1749034771,"~/NERD_tree_tab_1"
--'  25  2  ~/NERD_tree_tab_1
-|4,39,25,2,1749034771,"~/NERD_tree_tab_1"
--'  1  0  ~/NERD_tree_tab_1
-|4,39,1,0,1749034771,"~/NERD_tree_tab_1"
--'  48  2  ~/NERD_tree_tab_1
-|4,39,48,2,1749034771,"~/NERD_tree_tab_1"
--'  1  0  ~/NERD_tree_tab_1
-|4,39,1,0,1749034771,"~/NERD_tree_tab_1"
--'  49  2  ~/NERD_tree_tab_1
-|4,39,49,2,1749034771,"~/NERD_tree_tab_1"
--'  1  0  ~/NERD_tree_tab_1
-|4,39,1,0,1749034771,"~/NERD_tree_tab_1"
--'  25  2  ~/NERD_tree_tab_1
-|4,39,25,2,1749034771,"~/NERD_tree_tab_1"
--'  1  0  ~/NERD_tree_tab_1
-|4,39,1,0,1749034771,"~/NERD_tree_tab_1"
--'  56  0  ~/.config/zsh/.zshrc
-|4,39,56,0,1748992724,"~/.config/zsh/.zshrc"
--'  56  0  ~/.config/zsh/.zshrc
-|4,39,56,0,1748992724,"~/.config/zsh/.zshrc"
--'  12  0  ~/.cache/ranger/NERD_tree_tab_1
-|4,39,12,0,1748982649,"~/.cache/ranger/NERD_tree_tab_1"
--'  12  0  ~/.cache/ranger/NERD_tree_tab_1
-|4,39,12,0,1748982649,"~/.cache/ranger/NERD_tree_tab_1"
--'  12  0  ~/.cache/ranger/NERD_tree_tab_1
-|4,39,12,0,1748982649,"~/.cache/ranger/NERD_tree_tab_1"
--'  12  0  ~/.cache/ranger/NERD_tree_tab_1
-|4,39,12,0,1748982649,"~/.cache/ranger/NERD_tree_tab_1"
--'  12  0  ~/.cache/ranger/NERD_tree_tab_1
-|4,39,12,0,1748982649,"~/.cache/ranger/NERD_tree_tab_1"
--'  12  0  ~/.cache/ranger/NERD_tree_tab_1
-|4,39,12,0,1748982649,"~/.cache/ranger/NERD_tree_tab_1"
--'  12  0  ~/.cache/ranger/NERD_tree_tab_1
-|4,39,12,0,1748982649,"~/.cache/ranger/NERD_tree_tab_1"
--'  12  0  ~/.cache/ranger/NERD_tree_tab_1
-|4,39,12,0,1748982649,"~/.cache/ranger/NERD_tree_tab_1"
--'  19  2  ~/.cache/ranger/NERD_tree_tab_1
-|4,39,19,2,1748982645,"~/.cache/ranger/NERD_tree_tab_1"
--'  1  0  ~/.cache/ranger/NERD_tree_tab_1
-|4,39,1,0,1748982645,"~/.cache/ranger/NERD_tree_tab_1"
--'  19  2  ~/.cache/ranger/NERD_tree_tab_1
-|4,39,19,2,1748982645,"~/.cache/ranger/NERD_tree_tab_1"
--'  1  0  ~/.cache/ranger/NERD_tree_tab_1
-|4,39,1,0,1748982645,"~/.cache/ranger/NERD_tree_tab_1"
--'  19  2  ~/.cache/ranger/NERD_tree_tab_1
-|4,39,19,2,1748982645,"~/.cache/ranger/NERD_tree_tab_1"
--'  1  0  ~/.cache/ranger/NERD_tree_tab_1
-|4,39,1,0,1748982645,"~/.cache/ranger/NERD_tree_tab_1"
--'  19  2  ~/.cache/ranger/NERD_tree_tab_1
-|4,39,19,2,1748982645,"~/.cache/ranger/NERD_tree_tab_1"
+|4,39,1,0,1749038705,"~/.config/zsh/.zshrc"
+-'  1  0  ~/.config/zsh/.zshrc
+|4,39,1,0,1749038705,"~/.config/zsh/.zshrc"
+-'  1  0  ~/.config/zsh/.zshrc
+|4,39,1,0,1749038705,"~/.config/zsh/.zshrc"
+-'  1  0  ~/.config/zsh/.zshrc
+|4,39,1,0,1749038705,"~/.config/zsh/.zshrc"
 
 # History of marks within files (newest to oldest):
 
-> ~/.config/zsh/.zshrc
-	*	1749160997	0
-	"	137	18
-	^	137	19
-	.	137	18
+> ~/Document/urls.txt
+	*	1749468571	0
+	"	1	0
+	^	6	0
+	.	5	58
+	+	1	47
+	+	1	57
+	+	1	0
+	+	1	57
+	+	1	58
+	+	1	57
+	+	2	57
 	+	7	0
-	+	8	0
-	+	9	0
-	+	10	0
-	+	11	1
-	+	12	1
-	+	13	0
+	+	5	58
+
+> ~/NERD_tree_tab_1
+	*	1749468559	0
+	"	4	0
+	.	1	0
+	+	1	0
+	+	1309	0
+	+	1	0
+
+> ~/.config/zsh/.zshrc
+	*	1749167450	0
+	"	73	90
+	^	73	91
+	.	73	90
 	+	14	0
 	+	2	0
 	+	3	0
@@ -480,65 +496,65 @@ $
 	+	5	14
 	+	6	15
 	+	8	14
-	+	140	0
-	+	151	0
-	+	140	78
-	+	140	52
-	+	140	0
-	+	140	43
-	+	140	57
-	+	140	0
-	+	141	0
-	+	145	0
+	+	147	0
+	+	158	0
+	+	147	78
+	+	147	52
+	+	147	0
+	+	147	43
+	+	147	57
 	+	147	0
 	+	148	0
-	+	149	0
-	+	150	0
-	+	144	1
-	+	148	129
-	+	136	2
-	+	140	0
-	+	148	118
-	+	147	0
-	+	146	0
-	+	143	0
-	+	146	0
-	+	148	0
-	+	143	0
-	+	146	0
-	+	143	0
-	+	125	0
-	+	124	40
-	+	162	64
-	+	161	0
-	+	162	0
-	+	159	0
-	+	161	0
-	+	159	97
-	+	161	0
-	+	159	0
-	+	160	64
-	+	160	97
-	+	159	0
-	+	168	36
-	+	168	0
-	+	163	37
-	+	168	0
-	+	163	63
-	+	160	0
-	+	163	1
-	+	159	0
-	+	168	72
-	+	108	62
-	+	109	65
-	+	108	59
-	+	168	0
-	+	160	0
+	+	152	0
 	+	154	0
 	+	155	0
-	+	156	105
-	+	158	93
-	+	124	14
+	+	156	0
+	+	157	0
+	+	151	1
+	+	155	129
+	+	143	2
+	+	147	0
+	+	155	118
+	+	154	0
+	+	153	0
+	+	150	0
+	+	153	0
+	+	155	0
+	+	150	0
+	+	153	0
+	+	150	0
+	+	132	0
+	+	131	40
+	+	169	64
+	+	168	0
+	+	169	0
+	+	166	0
+	+	168	0
+	+	166	97
+	+	168	0
+	+	166	0
+	+	167	64
+	+	167	97
+	+	166	0
+	+	175	36
+	+	175	0
+	+	170	37
+	+	175	0
+	+	170	63
+	+	167	0
+	+	170	1
+	+	166	0
+	+	175	72
+	+	115	62
+	+	116	65
+	+	115	59
+	+	175	0
+	+	167	0
+	+	161	0
+	+	162	0
+	+	163	105
+	+	165	93
+	+	131	14
 	+	48	0
 	+	59	0
 	+	60	0
@@ -548,10 +564,17 @@ $
 	+	64	0
 	+	65	0
 	+	66	0
-	+	135	7
-	+	138	0
-	+	136	12
-	+	137	18
+	+	142	7
+	+	145	0
+	+	143	12
+	+	144	18
+	+	43	0
+	+	69	0
+	+	70	0
+	+	71	0
+	+	74	0
+	+	75	0
+	+	73	90
 
 > ~/.config/NERD_tree_tab_1
 	*	1749160960	0
@@ -689,14 +712,6 @@ $
 	.	1	0
 	+	1	0
 
-> ~/NERD_tree_tab_1
-	*	1749050912	0
-	"	4	0
-	.	1	0
-	+	1	0
-	+	1246	0
-	+	1	0
-
 > ~/.config/zsh/plugins/copyfile/copyfile.plugin.zsh
 	*	1749038894	0
 	"	6	6
@@ -792,21 +807,6 @@ $
 	^	3	0
 	.	2	54
 	+	2	54
-
-> ~/Document/urls.txt
-	*	1748904150	0
-	"	6	0
-	^	6	0
-	.	5	58
-	+	1	47
-	+	1	57
-	+	1	0
-	+	1	57
-	+	1	58
-	+	1	57
-	+	2	57
-	+	7	0
-	+	5	58
 
 > ~/.config/Document/urls.txt
 	*	1748897696	0

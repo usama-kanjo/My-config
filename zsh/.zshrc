@@ -66,6 +66,13 @@ source ~/.config/zsh/plugins/fzf-tab/fzf-tab.zsh
 source ~/.config/zsh/plugins/sudo/sudo.plugin.zsh
 source ~/.config/zsh/plugins/copyfile/copyfile.plugin.zsh
 
+
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # NVM'i yükle
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # Tamamlama (opsiyonel)
+
+
 # ranger-cd
 function ranger-cd {
     tempfile="$(mktemp -t tmp.XXXXXX)"
