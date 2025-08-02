@@ -20,7 +20,7 @@ return {
 		config = function()
 			local builtin = require("telescope.builtin")
 			-- Telescope keymaps
-			vim.keymap.set("n", "<C-p>", function()
+			vim.keymap.set("n", "<leader>ff", function()
 				builtin.find_files({ hidden = true })
 			end)
 
@@ -29,7 +29,8 @@ return {
 					additional_args = { "--hidden", "--glob", "!**/.git/*" },
 				})
 			end, { desc = "Live grep (including hidden files)" })
-
+			vim.keymap.set("n", "<leader>fb", ":Telescope buffers<CR>")
+			vim.keymap.set("n", "<leader>fh", ":Telescope help_tags<CR>")
 			require("telescope").setup({
 				defaults = {
 					file_ignore_patterns = { "^.git/" },
