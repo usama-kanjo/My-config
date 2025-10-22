@@ -1,7 +1,7 @@
 return {
 	-- tools
 	{
-		"williamboman/mason.nvim",
+		"mason-org/mason.nvim",
 		opts = function(_, opts)
 			vim.list_extend(opts.ensure_installed, {
 				"stylua",
@@ -36,6 +36,9 @@ return {
 					single_file_support = false,
 					settings = {
 						typescript = {
+                                                        suggest = {
+                                                                completeFunctionCalls = true,
+                                                        },
 							inlayHints = {
 								includeInlayParameterNameHints = "literal",
 								includeInlayParameterNameHintsWhenArgumentMatchesName = false,
@@ -47,6 +50,9 @@ return {
 							},
 						},
 						javascript = {
+                                                        suggest = {
+                                                                completeFunctionCalls = true,
+                                                        },
 							inlayHints = {
 								includeInlayParameterNameHints = "all",
 								includeInlayParameterNameHintsWhenArgumentMatchesName = false,
@@ -60,6 +66,8 @@ return {
 					},
 				},
 				html = {},
+                                prismals = {},
+                                pyright = {},
 				yamlls = {
 					settings = {
 						yaml = {

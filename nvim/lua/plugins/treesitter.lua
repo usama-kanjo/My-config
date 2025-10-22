@@ -3,8 +3,11 @@ return {
 
 	{
 		"nvim-treesitter/nvim-treesitter",
+		build = ":TSUpdate",
 		opts = {
 			ensure_installed = {
+                                "python",
+                                "prisma",
 				"astro",
 				"cmake",
 				"cpp",
@@ -21,7 +24,8 @@ return {
 				"sql",
 				"svelte",
 			},
-
+                        highlight = { enable = true },
+                        indent = { enable = true },
 			-- matchup = {
 			-- 	enable = true,
 			-- },
@@ -53,7 +57,8 @@ return {
 			},
 		},
 		config = function(_, opts)
-			require("nvim-treesitter.configs").setup(opts)
+			local TS = require("nvim-treesitter")
+			TS.setup(opts)
 
 			-- MDX
 			vim.filetype.add({

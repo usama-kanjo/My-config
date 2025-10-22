@@ -10,13 +10,6 @@ return {
 				},
 				opts = { skip = true },
 			})
-			table.insert(opts.routes, {
-				filter = {
-					event = "notify",
-					find = "Request getCompletions failed with message: getaddrinfo EAI_AGAIN api.github.com",
-				},
-				opts = { skip = true },
-			})
 			local focused = true
 			vim.api.nvim_create_autocmd("FocusGained", {
 				callback = function()
@@ -63,7 +56,7 @@ return {
 	{
 		"rcarriga/nvim-notify",
 		opts = {
-			timeout = 10000,
+			timeout = 5000,
 		},
 	},
 
@@ -143,15 +136,7 @@ return {
 			}
 		end,
 	},
-	{
-		"echasnovski/mini.animate",
-		event = "VeryLazy",
-		opts = function(_, opts)
-			opts.scroll = {
-				enable = false,
-			}
-		end,
-	},
+
 	{
 		"folke/zen-mode.nvim",
 		cmd = "ZenMode",
