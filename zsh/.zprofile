@@ -1,3 +1,3 @@
 
-# Created by `pipx` on 2025-01-26 19:25:40
-export PATH="$PATH:/home/kanjo/.local/bin"
+# Created by `pipx` on 2026-01-12 04:18:19
+export PATH="$PATH:/home/amani/.local/bin"
