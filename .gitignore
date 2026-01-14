@@ -1,7 +1,7 @@
 .oh-my-zsh/
-bash/
 pulse/
-ssh/
+bash/.bash_history
+bash/.bash_logout
 tmux/plugins/
 zsh/plugins/
 vim/autoload
