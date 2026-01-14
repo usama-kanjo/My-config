@@ -1,0 +1,23 @@
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# systemd generates mount units based on this file, see systemd.mount(5).
+# Please run 'systemctl daemon-reload' after making changes here.
+#
+# <file system>                        <mount point>                            <type>    <options>                                             <dump>                  <pass>
+
+
+//192.168.1.*/1.*.\040*****\040*****  /home/amani/server/1.M.\040*****\040*****  cifs  credentials=${CREDENTIALS_PATH},iocharset=utf8,noperm,_netdev,x-systemd.automount  0  0
+//192.168.1.*/2.****\040*****         /home/amani/server/2.****\040*****         cifs  credentials=${CREDENTIALS_PATH},iocharset=utf8,noperm,_netdev,x-systemd.automount  0  0
+//192.168.1.*/3.****\040*****         /home/amani/server/3.****\040*****         cifs  credentials=${CREDENTIALS_PATH},iocharset=utf8,noperm,_netdev,x-systemd.automount  0  0
+//192.168.1.*/4.*****\040*****        /home/amani/server/4.*****\040*****        cifs  credentials=${CREDENTIALS_PATH},iocharset=utf8,noperm,_netdev,x-systemd.automount  0  0
+//192.168.1.*/5.*****\040*****        /home/amani/server/5.*****\040*****        cifs  credentials=${CREDENTIALS_PATH},iocharset=utf8,noperm,_netdev,x-systemd.automount  0  0
+//192.168.1.*/6.downloads             /home/amani/server/6.downloads             cifs  credentials=${CREDENTIALS_PATH},iocharset=utf8,noperm,_netdev,x-systemd.automount  0  0
+//192.168.1.*/7.USB                   /home/amani/server/7.USB                   cifs  credentials=${CREDENTIALS_PATH},iocharset=utf8,noperm,_netdev,x-systemd.automount  0  0
+//192.168.1.*/8.TV                    /home/amani/server/8.TV                    cifs  credentials=${CREDENTIALS_PATH},iocharset=utf8,noperm,_netdev,x-systemd.automount  0  0
+//192.168.1.*/9.home                  /home/amani/server/9.home                  cifs  credentials=${CREDENTIALS_PATH},iocharset=utf8,noperm,_netdev,x-systemd.automount  0  0
+//192.168.1.*/10.srv                  /home/amani/server/10.srv                  cifs  credentials=${CREDENTIALS_PATH},iocharset=utf8,noperm,_netdev,x-systemd.automount  0  0
+//192.168.1.*/11.share                /home/amani/server/11.share                cifs  credentials=${CREDENTIALS_PATH},iocharset=utf8,noperm,_netdev,x-systemd.automount  0  0
