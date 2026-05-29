@@ -1,0 +1,5 @@
+.config/tmux/plugins
+.config/yarn/global/node_modules/
+.config/opencode/node_modules
+.config/zsh/plugins
+.config/zsh/.histfile

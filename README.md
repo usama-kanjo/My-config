@@ -1,78 +1,56 @@
-# Configuration Setup Guide
+# My Config
 
-## TMUX Configuration
+Kişisel dotfiles yapılandırmalarım — [chezmoi](https://chezmoi.io) ile yönetiliyor.
 
-### Step 1: Install TPM (Tmux Plugin Manager)
+## İçindekiler
+
+| Kategori | İçerik |
+|----------|--------|
+| 🖥️ **Shell** | zsh, p10k, zoxide, fzf |
+| ✍️ **Editörler** | Neovim (LazyVim), Vim |
+| 🖼️ **DE/WM** | Fastfetch, btop, kitty, tmux |
+| 🔧 **Araçlar** | Git, gh, lazygit, ranger, htop |
+| 🔐 **Güvenlik** | SSH yapılandırması, age şifreli dosyalar |
+| 📦 **Servisler** | opencode, yarn, gh CLI |
+
+## Başka Bir Debian Makinesine Kurulum
+
+### 1. Gereksinimleri yükle
+
 ```bash
-git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
+sudo apt install curl git age
 ```
 
-### Step 2: Install Tmux Configuration
+### 2. Chezmoi'yi yükle
+
 ```bash
-git clone https://github.com/usama-kanjo/My-config.git && \
-cd My-config && \
-rm -rf README.md .git .gitignore zsh/ neofetch/ vim/ htop/ git/ ranger/ && \
-mv tmux/ ~/.config/ && \
-cd .. && \
-rm -rf My-config && \
-echo "Tmux configuration installed successfully"
+sh -c "$(curl -fsLS chezmoi.io/get)"
 ```
 
-## VIM Configuration
+### 3. Age anahtarını kopyala
 
-### Step 1: Install Vim Configuration
+Şifrelenmiş dosyaları çözmek için age anahtarı gerekli. Mevcut makineden al:
+
 ```bash
-git clone https://github.com/usama-kanjo/My-config.git && \
-cd My-config && \
-rm -rf README.md .git .gitignore zsh/ neofetch/ htop/ tmux/ git/ ranger/ && \
-mv vim/ ~/.config && \
-cd .. && \
-rm -rf My-config && \
-echo "Vim configuration installed successfully"
+# Mevcut makinede:
+scp ~/.config/chezmoi/key.txt yeni-makine:~/.config/chezmoi/key.txt
 ```
 
-### Step 2: Install Vim-Plug Plugin Manager
+### 4. Repoyu init et ve uygula
+
 ```bash
-curl -fLo ~/.config/vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim && \
-mv ~/.viminfo ~/.config/vim/.viminfo
+chezmoi init https://github.com/usama-kanjo/My-config.git
+chezmoi diff       # değişiklikleri önizle
+chezmoi apply      # uygula
 ```
 
-### Step 3: Install Plugins
-1. Open Vim:
+### 5. (İsteğe bağlı) Güncellemeleri çek
+
 ```bash
-vim
-```
-2. Run the following command in Vim:
-```vim
-:PlugInstall
+chezmoi update     # git pull + chezmoi apply
 ```
 
-### Step 4: Configure Vim Environment
-Add this to your `~/.bashrc` or `~/.zshrc`:
-```bash
-export VIMINIT='let $MYVIMRC="$HOME/.config/vim/.vimrc" | source $MYVIMRC'
-```
+## Notlar
 
-### Step 5: Set Up Cache Directories
-```bash
-mkdir -p ~/.cache/vim/{swap,backup,undo} && \
-find ~ -name "*.swp" -exec mv {} ~/.cache/vim/swap \;
-```
-
-### (Optional) Automatic Cache Cleanup
-To automatically remove old swap files (older than 30 days), you can add this to your crontab:
-```bash
-find ~/.cache/vim/swap -type f -mtime +30 -delete
-```
-
----
-
-### Notes:
-1. The commands are now more readable with proper line continuation (`\`)
-2. Success messages are added for better user feedback
-3. The structure is more organized with clear section headings
-4. The optional cleanup step is clearly marked
-5. All technical terms are properly capitalized (Vim, Tmux, etc.)
-
-Would you like me to make any additional improvements to the formatting or content?
+- `.age` dosyaları `age` ile şifrelenmiştir. Çözüm için `key.txt` gerekir.
+- `private_` önekli dosyalar hedefte `chmod 600` ile oluşturulur.

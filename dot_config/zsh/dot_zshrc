@@ -1,0 +1,77 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.config/zsh/.zshrc.
+fastfetch
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.config/zsh/.histfile
+HISTSIZE=5000
+SAVEHIST=5000
+setopt autocd extendedglob nomatch notify
+unsetopt beep
+bindkey -e
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/usama/.config/zsh/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+alias sf='echo -n "$master_password" | xclip -selection clipboard'
+alias zen-debug='flatpak run app.zen_browser.zen --start-debugger-server 9222'
+alias install='sudo apt install'
+alias update='sudo apt update && sudo apt upgrade -y'
+alias code='flatpak run com.visualstudio.code'
+alias mkcd='mkdir -p "$1" && cd "$1"'
+
+# Plugins
+source ~/.config/zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme
+source ~/.config/zsh/plugins/autosuggestions/zsh-autosuggestions.zsh
+source ~/.config/zsh/plugins/syntax-highlighting/zsh-syntax-highlighting.zsh
+
+
+# ranger-cd
+function ranger-cd {
+    tempfile="$(mktemp -t tmp.XXXXXX)"
+    /usr/bin/ranger --choosedir="$tempfile" "${@:-$(pwd)}"
+    test -f "$tempfile" &&
+    if [ "$(cat -- "$tempfile")" != "$(echo -n `pwd`)" ]; then
+        cd -- "$(cat "$tempfile")"
+    fi  
+    rm -f -- "$tempfile"
+}
+
+#ranger-cd will run by alt+r
+bindkey -s "^\er" "ranger-cd\n"
+bindkey -s "^\et" "tmux new -s coding\n"
+
+# To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
+[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
+
+
+# opencode
+export PATH=/home/usama/.opencode/bin:$PATH
+
+export PATH="$HOME/.local/bin:$PATH"
+
+
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+export PATH=$PATH:/usr/sbin
+
+# eza alias
+alias ll='eza -lah --icons --group-directories-first'
+alias ls='eza --icons --group-directories-first'
+
+# zoxide setup
+eval "$(zoxide init zsh)"
+
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+
