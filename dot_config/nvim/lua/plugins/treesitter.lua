@@ -7,6 +7,8 @@ return {
 		opts = {
 			ensure_installed = {
 				"python",
+				"markdown",
+				"markdown_inline",
 				"prisma",
 				"astro",
 				"cmake",
