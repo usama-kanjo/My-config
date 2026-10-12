@@ -23,6 +23,7 @@ return {
 			inlay_hints = { enabled = false },
 			---@type lspconfig.options
 			servers = {
+				marksman = { enabled = false },
 				cssls = {},
 				tailwindcss = {
 					root_dir = function(...)
