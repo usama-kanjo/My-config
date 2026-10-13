@@ -9,6 +9,7 @@ return {
 				"luacheck",
 				"shellcheck",
 				"shfmt",
+				"clang-format",
 				"tailwindcss-language-server",
 				"typescript-language-server",
 				"css-lsp",
