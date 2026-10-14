@@ -5,6 +5,7 @@ return {
     require("code_runner").setup({
       filetype = {
         python = "python3 -u",
+        cpp = "cd $dir && g++ -std=c++17 $fileName -o $fileNameWithoutExt && ./$fileNameWithoutExt",
       },
     })
   end,
