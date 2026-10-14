@@ -68,6 +68,7 @@ return {
 					builtin.find_files({
 						no_ignore = false,
 						hidden = true,
+						find_command = { "rg", "--files", "--color", "never", "-g", "!.git" },
 					})
 				end,
 				desc = "Lists files in your current working directory, respects .gitignore",
@@ -77,7 +78,7 @@ return {
 				function()
 					local builtin = require("telescope.builtin")
 					builtin.live_grep({
-						additional_args = { "--hidden" },
+						additional_args = { "--hidden", "--glob", "!.git" },
 					})
 				end,
 				desc = "Search for a string in your current working directory and get results live as you type, respects .gitignore",
